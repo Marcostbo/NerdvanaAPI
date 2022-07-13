@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create custom User model">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Setup JWT authentication">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/logout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/register.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <workItem from="1655768539804" duration="110000" />
       <workItem from="1655775195743" duration="143000" />
       <workItem from="1657667667100" duration="105000" />
-      <workItem from="1657667784427" duration="4623000" />
+      <workItem from="1657667784427" duration="5547000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -79,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654823345068</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Setup JWT authentication">
+      <created>1657672644942</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657672644942</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create custom User model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create custom User model" />
+    <MESSAGE value="Setup JWT authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup JWT authentication" />
   </component>
 </project>
