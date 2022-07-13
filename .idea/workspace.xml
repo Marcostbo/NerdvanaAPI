@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Setup JWT authentication">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/logout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/register.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Improvements: Organize API views in views folder">
+      <change beforePath="$PROJECT_DIR$/.idea/NerdvanaAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NerdvanaAPI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/logout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,18 +40,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Marcos Oliveira/PycharmProjects/NerdvanaAPI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Django API" type="Python.DjangoServer" factoryName="Django server">
+      <module name="NerdvanaAPI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="DJANGO_SETTINGS_MODULE" value="nerdvana.settings" />
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +92,8 @@
       <workItem from="1655768539804" duration="110000" />
       <workItem from="1655775195743" duration="143000" />
       <workItem from="1657667667100" duration="105000" />
-      <workItem from="1657667784427" duration="5547000" />
+      <workItem from="1657667784427" duration="5730000" />
+      <workItem from="1657745079105" duration="5466000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -85,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657672644942</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Improvements: Organize API views in views folder">
+      <created>1657673516347</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657673516347</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create custom User model" />
     <MESSAGE value="Setup JWT authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup JWT authentication" />
+    <MESSAGE value="Improvements: Organize API views in views folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvements: Organize API views in views folder" />
   </component>
 </project>

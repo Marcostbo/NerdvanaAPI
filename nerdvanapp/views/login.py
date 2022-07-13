@@ -2,13 +2,11 @@ from rest_framework.views import APIView
 from rest_framework.exceptions import AuthenticationFailed
 from rest_framework.response import Response
 from nerdvanapp.models import User
-import jwt
-import datetime
 
 
 class LoginView(APIView):
 
-    def post(self, request):
+    def get(self, request):
         email = request.data['email']
         password = request.data['password']
 
@@ -17,21 +15,10 @@ class LoginView(APIView):
             password=password
         )
 
-        payload = {
-            'id': user.id,
-            'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
-            'iat': datetime.datetime.utcnow()
-        }
-
-        token = jwt.encode(payload, 'secret', algorithm="HS256")
-
-        response = Response()
-        response.set_cookie(key='jwt', value=token, httponly=True)
-        response.data = {
-            'user': user.email,
-            'token': token
-        }
-        return response
+        return Response({
+            'email': user.email,
+            'status': 'validated'
+        })
 
     @staticmethod
     def validate_user_and_password(email, password):
