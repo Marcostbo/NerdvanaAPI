@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Improvements: Organize API views in views folder">
-      <change beforePath="$PROJECT_DIR$/.idea/NerdvanaAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NerdvanaAPI.iml" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Improvements: Improve JWT authentication with django-simple-jwt">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0002_alter_user_managers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0003_company_family_console.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/models/console.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/models/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/logout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +97,7 @@
       <workItem from="1655775195743" duration="143000" />
       <workItem from="1657667667100" duration="105000" />
       <workItem from="1657667784427" duration="5730000" />
-      <workItem from="1657745079105" duration="5466000" />
+      <workItem from="1657745079105" duration="7583000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -123,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657673516347</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Improvements: Improve JWT authentication with django-simple-jwt">
+      <created>1657751625284</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657751625284</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +155,7 @@
     <MESSAGE value="Create custom User model" />
     <MESSAGE value="Setup JWT authentication" />
     <MESSAGE value="Improvements: Organize API views in views folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improvements: Organize API views in views folder" />
+    <MESSAGE value="Improvements: Improve JWT authentication with django-simple-jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvements: Improve JWT authentication with django-simple-jwt" />
   </component>
 </project>
