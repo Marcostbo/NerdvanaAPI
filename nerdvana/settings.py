@@ -175,3 +175,8 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_LIFETIME': datetime.timedelta(minutes=5),
     'SLIDING_TOKEN_REFRESH_LIFETIME': datetime.timedelta(days=1),
 }
+
+# Twitch Connection
+
+twitch_client_id = '3d2zdvuspo8925eerye9r9etrs67dd'
+twitch_secret = 'peimgz6p1bvmfsoar7kp7tuqb3o7d8'

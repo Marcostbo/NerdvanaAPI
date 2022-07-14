@@ -25,8 +25,9 @@ class CustomUserAdmin(UserAdmin):
 
 
 class ConsoleAdmin(admin.ModelAdmin):
-    list_display = ['name', 'initials', 'release', 'family', 'company']
+    list_display = ['name', 'initials', 'release', 'family', 'company', 'twitch_id']
     search_fields = ['id', 'name', 'initials']
+    list_filter = ('family',)
 
 
 class FamilyAdmin(admin.ModelAdmin):
