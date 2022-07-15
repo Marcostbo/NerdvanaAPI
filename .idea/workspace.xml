@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Improvements: Create console models">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0004_alter_company_options_alter_family_options_and_more.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create Twitch field">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/models/games.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/scripts/games_twich_connection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/console.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,28 +39,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Marcos Oliveira/PycharmProjects/NerdvanaAPI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marcos Oliveira/PycharmProjects/NerdvanaAPI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Django API" type="Python.DjangoServer" factoryName="Django server">
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="DJANGO_SETTINGS_MODULE" value="nerdvana.settings" />
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="nerdvana.settings" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -93,7 +92,8 @@
       <workItem from="1655775195743" duration="143000" />
       <workItem from="1657667667100" duration="105000" />
       <workItem from="1657667784427" duration="5730000" />
-      <workItem from="1657745079105" duration="12456000" />
+      <workItem from="1657745079105" duration="13890000" />
+      <workItem from="1657842844597" duration="4015000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -137,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657753616311</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create Twitch field">
+      <created>1657767491945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657767491945</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +167,7 @@
     <MESSAGE value="Improvements: Organize API views in views folder" />
     <MESSAGE value="Improvements: Improve JWT authentication with django-simple-jwt" />
     <MESSAGE value="Improvements: Create console models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improvements: Create console models" />
+    <MESSAGE value="Create Twitch field" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Twitch field" />
   </component>
 </project>
