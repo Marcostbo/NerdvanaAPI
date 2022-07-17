@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add GameCompany model">
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/game_company.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/game_company.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/games.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/games.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add GameCompany to admin">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/scripts/games_twich_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/scripts/games_twich_connection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +49,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Django Server.Django API">
+  <component name="RunManager" selected="Python.games_twich_connection">
     <configuration name="games_twich_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="nerdvana.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nerdvanapp/scripts" />
@@ -65,7 +65,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nerdvanapp/scripts/games_twich_connection.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -123,7 +123,7 @@
       <workItem from="1657842844597" duration="6445000" />
       <workItem from="1658018831589" duration="297000" />
       <workItem from="1658019431671" duration="3783000" />
-      <workItem from="1658086831363" duration="315000" />
+      <workItem from="1658086831363" duration="1549000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -216,7 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658087025131</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Create relation Game &lt;-&gt; GameCompany and add migrations">
+      <created>1658087390637</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658087390637</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add GameCompany to admin">
+      <created>1658087528993</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658087528993</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,9 +259,11 @@
     <MESSAGE value="Rename to Nerd Models" />
     <MESSAGE value="Fix GitHub email" />
     <MESSAGE value="Add GameCompany model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add GameCompany model" />
+    <MESSAGE value="Create relation Game &lt;-&gt; GameCompany and add migrations" />
+    <MESSAGE value="Add GameCompany to admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add GameCompany to admin" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1657852409459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
+    <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
   </component>
 </project>
