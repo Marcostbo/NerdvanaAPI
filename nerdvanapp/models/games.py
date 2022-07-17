@@ -7,6 +7,7 @@ class Games(models.Model):
     summary = models.TextField(blank=True, null=True)
     storyline = models.TextField(blank=True, null=True)
     console = models.ManyToManyField('Console')
+    game_company = models.ForeignKey('GameCompany', on_delete=models.CASCADE, blank=True, null=True)
     rating = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
     rating_count = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
 
