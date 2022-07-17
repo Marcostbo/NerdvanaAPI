@@ -14,6 +14,8 @@ class User(AbstractUser):
 
     class Meta:
         app_label = 'nerdvanapp'
+        verbose_name = 'User'
+        verbose_name_plural = 'Users'
 
     objects = CustomUserManager()
 
