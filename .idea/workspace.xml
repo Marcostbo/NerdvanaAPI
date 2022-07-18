@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="build TwitchAPI script">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0007_alter_games_rating_count.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0008_add_games_via_json_pt1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/scripts/games_v2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/scripts/games_v3.json" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add first batch of games">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0009_add_games_via_json_pt2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/games.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/games.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +156,7 @@
       <workItem from="1658019431671" duration="3783000" />
       <workItem from="1658086831363" duration="2266000" />
       <workItem from="1658089134233" duration="16240000" />
-      <workItem from="1658145746823" duration="2116000" />
+      <workItem from="1658145746823" duration="3910000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -274,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658088587830</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add first batch of games">
+      <created>1658157554075</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658157554075</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +309,8 @@
     <MESSAGE value="Create relation Game &lt;-&gt; GameCompany and add migrations" />
     <MESSAGE value="Add GameCompany to admin" />
     <MESSAGE value="build TwitchAPI script" />
-    <option name="LAST_COMMIT_MESSAGE" value="build TwitchAPI script" />
+    <MESSAGE value="Add first batch of games" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add first batch of games" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
