@@ -9,3 +9,6 @@ class GameCompany(models.Model):
     class Meta:
         verbose_name = "Game Company"
         verbose_name_plural = "Game Companies"
+
+    def __str__(self):
+        return self.name
