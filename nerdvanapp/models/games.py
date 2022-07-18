@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Games(models.Model):
-    name = models.CharField(max_length=20, unique=True)
+    name = models.CharField(max_length=60, unique=True)
     release = models.DateField(blank=True, null=True)
     summary = models.TextField(blank=True, null=True)
     storyline = models.TextField(blank=True, null=True)
