@@ -31,6 +31,12 @@ class GameAdmin(admin.ModelAdmin):
     filter_horizontal = ('console',)
 
 
+class GameInline(admin.TabularInline):
+    model = Games
+    fields = ['name', 'release', 'console']
+    extra = 0
+
+
 class ConsoleAdmin(admin.ModelAdmin):
     list_display = ['name', 'initials', 'release', 'family', 'company', 'twitch_id']
     search_fields = ['id', 'name', 'initials']
@@ -60,6 +66,9 @@ class GameCompanyAdmin(admin.ModelAdmin):
     list_display = ['name', 'country']
     search_fields = ['id', 'name']
     list_filter = ['country']
+    inlines = [
+        GameInline
+    ]
 
 
 admin.site.register(User, CustomUserAdmin)
