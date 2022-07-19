@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Game name with 60 length">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0011_add_games_via_json_pt2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0012_add_games_via_json_pt4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add more games">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0013_add_games_via_json_pt5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +155,7 @@
       <workItem from="1658019431671" duration="3783000" />
       <workItem from="1658086831363" duration="2266000" />
       <workItem from="1658089134233" duration="16240000" />
-      <workItem from="1658145746823" duration="8700000" />
+      <workItem from="1658145746823" duration="9519000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -299,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658162483402</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add more games">
+      <created>1658187273093</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1658187273093</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +340,8 @@
     <MESSAGE value="Add second batch of games" />
     <MESSAGE value="Add admin inline for games" />
     <MESSAGE value="Game name with 60 length" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game name with 60 length" />
+    <MESSAGE value="Add more games" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add more games" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
