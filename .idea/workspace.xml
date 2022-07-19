@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add more games">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add last of games">
       <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0013_add_games_via_json_pt5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0014_add_games_via_json_pt6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +157,7 @@
       <workItem from="1658019431671" duration="3783000" />
       <workItem from="1658086831363" duration="2266000" />
       <workItem from="1658089134233" duration="16240000" />
-      <workItem from="1658145746823" duration="9519000" />
+      <workItem from="1658145746823" duration="10282000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -304,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658187273093</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add last of games">
+      <created>1658199644366</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1658199644366</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +350,8 @@
     <MESSAGE value="Add admin inline for games" />
     <MESSAGE value="Game name with 60 length" />
     <MESSAGE value="Add more games" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add more games" />
+    <MESSAGE value="Add last of games" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add last of games" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
