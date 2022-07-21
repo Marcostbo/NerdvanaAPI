@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add last of games">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0013_add_games_via_json_pt5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/migrations/0014_add_games_via_json_pt6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/serializers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/serializers/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +157,8 @@
       <workItem from="1658019431671" duration="3783000" />
       <workItem from="1658086831363" duration="2266000" />
       <workItem from="1658089134233" duration="16240000" />
-      <workItem from="1658145746823" duration="10282000" />
+      <workItem from="1658145746823" duration="11470000" />
+      <workItem from="1658362200186" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -313,7 +314,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658199644366</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add last of games">
+      <created>1658199708117</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1658199708117</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add last of games">
+      <created>1658200753500</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1658200753500</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
