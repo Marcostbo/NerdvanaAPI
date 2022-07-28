@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create full game serializer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix and get games by console" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +155,7 @@
       <workItem from="1658145746823" duration="11470000" />
       <workItem from="1658362200186" duration="1333000" />
       <workItem from="1658446040388" duration="1206000" />
-      <workItem from="1658964296278" duration="5088000" />
+      <workItem from="1658964296278" duration="5439000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -383,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658968117362</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Fix and get games by console">
+      <created>1658970327754</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1658970327754</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +406,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improvements: Improve JWT authentication with django-simple-jwt" />
     <MESSAGE value="Improvements: Create console models" />
     <MESSAGE value="Create Twitch field" />
     <MESSAGE value="Create game model. Improve admin with inlines" />
@@ -426,7 +430,8 @@
     <MESSAGE value="Fix" />
     <MESSAGE value="Create game_company serializer" />
     <MESSAGE value="Create full game serializer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create full game serializer" />
+    <MESSAGE value="Fix and get games by console" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix and get games by console" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
