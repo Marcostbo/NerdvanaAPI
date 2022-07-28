@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Simple game serializer">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/games.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Start game view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/games.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/games.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +159,7 @@
       <workItem from="1658145746823" duration="11470000" />
       <workItem from="1658362200186" duration="1333000" />
       <workItem from="1658446040388" duration="1206000" />
-      <workItem from="1658964296278" duration="1082000" />
+      <workItem from="1658964296278" duration="3427000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -353,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658447129944</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Start game view">
+      <created>1658965682006</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1658965682006</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +398,8 @@
     <MESSAGE value="Organize serializer folder" />
     <MESSAGE value="Create game serializer" />
     <MESSAGE value="Simple game serializer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple game serializer" />
+    <MESSAGE value="Start game view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start game view" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />

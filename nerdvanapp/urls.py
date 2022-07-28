@@ -15,5 +15,6 @@ urlpatterns = [
     path('logged-user', views.UserView.as_view()),
     path('logout', views.LogoutView.as_view()),
     # Game routes
-    path('games', views.GameView.as_view()),
+    path('games', views.GameListView.as_view()),
+    path('games/<int:pk>/', views.GameView.as_view())
 ]
