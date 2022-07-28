@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from nerdvanapp.models import Games
-from nerdvanapp.serializers import GameCompanySerializer
+from .game_company import GameCompanySerializer
 
 
 class GameQuerySerializer(serializers.Serializer):
