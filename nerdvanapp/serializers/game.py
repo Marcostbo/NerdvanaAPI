@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from nerdvanapp.models import Games
+from nerdvanapp.serializers import GameCompanySerializer
 
 
 class GameQuerySerializer(serializers.Serializer):
@@ -15,6 +16,14 @@ class GameQuerySerializer(serializers.Serializer):
 
 
 class GameSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Games
+        fields = "__all__"
+
+
+class FullGameSerializer(serializers.ModelSerializer):
+    game_company = GameCompanySerializer()
+
     class Meta:
         model = Games
         fields = "__all__"
