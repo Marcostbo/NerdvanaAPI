@@ -2,7 +2,6 @@ from django.urls import path
 from nerdvanapp import views
 from rest_framework_simplejwt import views as jwt_views
 
-
 urlpatterns = [
     # Register routes
     path('register', views.RegisterView.as_view()),
