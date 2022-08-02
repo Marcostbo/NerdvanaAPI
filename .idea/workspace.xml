@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better pagination validation" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better pagination validation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +159,7 @@
       <workItem from="1658446040388" duration="1206000" />
       <workItem from="1658964296278" duration="6343000" />
       <workItem from="1659218496918" duration="74000" />
-      <workItem from="1659470793646" duration="5311000" />
+      <workItem from="1659470793646" duration="5907000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -453,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659477903970</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Better pagination validation">
+      <created>1659481038115</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1659481038115</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
