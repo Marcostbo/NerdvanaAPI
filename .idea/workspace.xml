@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Paginate viewset">
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/utils/custom_basic_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/utils/custom_basic_views.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better pagination validation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +157,7 @@
       <workItem from="1658446040388" duration="1206000" />
       <workItem from="1658964296278" duration="6343000" />
       <workItem from="1659218496918" duration="74000" />
-      <workItem from="1659470793646" duration="4711000" />
+      <workItem from="1659470793646" duration="5311000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -448,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659477412054</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Better pagination validation">
+      <created>1659477903970</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1659477903970</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add GameCompany model" />
     <MESSAGE value="Create relation Game &lt;-&gt; GameCompany and add migrations" />
     <MESSAGE value="Add GameCompany to admin" />
     <MESSAGE value="build TwitchAPI script" />
@@ -491,7 +495,8 @@
     <MESSAGE value="Create generic serializer class to filter serializer via request" />
     <MESSAGE value="Validate method in GameQuerySerializer" />
     <MESSAGE value="Paginate viewset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Paginate viewset" />
+    <MESSAGE value="Better pagination validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better pagination validation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
