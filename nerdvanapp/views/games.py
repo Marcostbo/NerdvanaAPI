@@ -22,7 +22,7 @@ class GameListView(APIView):
         if name:
             games = Games.objects.filter(name__contains=name)
         elif name_contains:
-            games = Games.objects.filter(name__contains=name).filter(rating__isnull=False)
+            games = Games.objects.filter(name__contains=name_contains).filter(rating__isnull=False)
         elif company_id:
             games = Games.objects.filter(game_company__id=company_id).filter(rating__isnull=False)
         elif console_id:
