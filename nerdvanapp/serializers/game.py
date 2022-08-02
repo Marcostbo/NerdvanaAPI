@@ -20,6 +20,7 @@ class GameSerializer(serializers.ModelSerializer):
     class Meta:
         model = Games
         fields = "__all__"
+        api_filter_name = 'game_serializer'
 
 
 class FullGameSerializer(serializers.ModelSerializer):
@@ -28,6 +29,7 @@ class FullGameSerializer(serializers.ModelSerializer):
     class Meta:
         model = Games
         fields = "__all__"
+        api_filter_name = 'full_game_serializer'
 
 
 class SimpleGameSerializer(serializers.Serializer):
@@ -40,3 +42,4 @@ class SimpleGameSerializer(serializers.Serializer):
     class Meta:
         model = Games
         fields = ('id', 'name', 'release',)
+        api_filter_name = 'simple_game_serializer'

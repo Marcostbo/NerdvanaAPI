@@ -3,12 +3,14 @@ from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from nerdvanapp.models import Games
-from nerdvanapp.serializers import GameSerializer, SimpleGameSerializer, GameQuerySerializer
+from nerdvanapp.serializers import FullGameSerializer, GameSerializer, SimpleGameSerializer, GameQuerySerializer
+from nerdvanapp.views.utils.custom_basic_views import SerializerFilterView
 
 
-class GameListView(APIView):
+class GameListView(APIView, SerializerFilterView):
     serializer_class = GameSerializer
-    serializers = (GameSerializer, SimpleGameSerializer,)
+    default_serializer = GameSerializer
+    serializers = (GameSerializer, SimpleGameSerializer, FullGameSerializer)
 
     def get(self, request):
         query_params = GameQuerySerializer(data=self.request.query_params)
@@ -30,17 +32,22 @@ class GameListView(APIView):
         else:
             raise ValidationError('Select at least one filter')
 
-        return Response(GameSerializer(games, many=True).data)
+        serializer = self.get_serializer_class()
+
+        return Response(serializer(games, many=True).data)
 
 
-class GameView(APIView):
+class GameView(APIView, SerializerFilterView):
     serializer_class = GameSerializer
-    serializers = (GameSerializer, SimpleGameSerializer,)
+    default_serializer = GameSerializer
+    serializers = (GameSerializer, SimpleGameSerializer, FullGameSerializer)
 
     def get(self, request, pk=None):
         game_id = pk
         game = self.get_object(game_id)
-        return Response(GameSerializer(game).data)
+
+        serializer = self.get_serializer_class()
+        return Response(serializer(game).data)
 
     @staticmethod
     def get_object(pk):
