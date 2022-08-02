@@ -1,4 +1,5 @@
 from nerdvanapp.constants import PAGINATION_LIMIT, DEFAULT_PAGINATION_LIMIT
+from rest_framework.exceptions import ValidationError
 
 
 class SerializerFilterView:
@@ -22,8 +23,8 @@ class PaginatedViewSet:
         self.request = None
 
     def paginate_queryset(self, queryset):
-        limit = int(self.request.query_params.get('limit'))
-        offset = int(self.request.query_params.get('offset'))
+
+        limit, offset = self.validate_limit_offset_input()
 
         headers = {
             'X-Total-Records-Count': queryset.count(),
@@ -35,3 +36,17 @@ class PaginatedViewSet:
         paginated_queryset = queryset[offset:offset + limit]
 
         return paginated_queryset, headers
+
+    def validate_limit_offset_input(self):
+
+        limit = self.request.query_params.get('limit')
+        offset = self.request.query_params.get('offset')
+
+        if not self.request.query_params.get('offset'):
+            raise ValidationError('Select an offset')
+        if not limit:
+            limit = DEFAULT_PAGINATION_LIMIT
+        elif int(limit) > PAGINATION_LIMIT:
+            limit = DEFAULT_PAGINATION_LIMIT
+
+        return int(limit), int(offset)
