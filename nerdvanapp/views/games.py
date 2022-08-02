@@ -15,11 +15,14 @@ class GameListView(APIView):
         query_params.is_valid(raise_exception=True)
 
         name = query_params.validated_data.get('name')
+        name_contains = query_params.validated_data.get('name_contains')
         company_id = query_params.validated_data.get('company_id')
         console_id = query_params.validated_data.get('console_id')
 
         if name:
             games = Games.objects.filter(name__contains=name)
+        elif name_contains:
+            games = Games.objects.filter(name__contains=name).filter(rating__isnull=False)
         elif company_id:
             games = Games.objects.filter(game_company__id=company_id).filter(rating__isnull=False)
         elif console_id:

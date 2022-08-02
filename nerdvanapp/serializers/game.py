@@ -5,6 +5,7 @@ from .game_company import GameCompanySerializer
 
 class GameQuerySerializer(serializers.Serializer):
     name = serializers.CharField(required=False)
+    name_contains = serializers.CharField(required=False)
     company_id = serializers.IntegerField(required=False)
     console_id = serializers.IntegerField(required=False)
 
