@@ -19,11 +19,11 @@ class GameListView(APIView):
         console_id = query_params.validated_data.get('console_id')
 
         if name:
-            games = Games.objects.filter(name=name)
+            games = Games.objects.filter(name__contains=name)
         elif company_id:
-            games = Games.objects.filter(game_company__id=company_id)
+            games = Games.objects.filter(game_company__id=company_id).filter(rating__isnull=False)
         elif console_id:
-            games = Games.objects.filter(console__in=[console_id])
+            games = Games.objects.filter(console__in=[console_id]).filter(rating__isnull=False)
         else:
             raise ValidationError('Select at least one filter')
 
