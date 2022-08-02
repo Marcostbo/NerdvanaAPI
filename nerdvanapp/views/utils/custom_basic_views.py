@@ -1,3 +1,6 @@
+from nerdvanapp.constants import PAGINATION_LIMIT, DEFAULT_PAGINATION_LIMIT
+
+
 class SerializerFilterView:
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -12,3 +15,23 @@ class SerializerFilterView:
                 if serializer.Meta.api_filter_name == selected_serializer:
                     return serializer
         return self.default_serializer
+
+
+class PaginatedViewSet:
+    def __init__(self):
+        self.request = None
+
+    def paginate_queryset(self, queryset):
+        limit = int(self.request.query_params.get('limit'))
+        offset = int(self.request.query_params.get('offset'))
+
+        headers = {
+            'X-Total-Records-Count': queryset.count(),
+            'X-Pagination-Default-Limit': PAGINATION_LIMIT,
+            'X-Pagination-Maximum-Limit': DEFAULT_PAGINATION_LIMIT,
+            'X-Pagination-Limit': limit,
+            'X-Pagination-Offset': offset
+        }
+        paginated_queryset = queryset[offset:offset + limit]
+
+        return paginated_queryset, headers

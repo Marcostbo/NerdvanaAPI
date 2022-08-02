@@ -4,10 +4,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from nerdvanapp.models import Games
 from nerdvanapp.serializers import FullGameSerializer, GameSerializer, SimpleGameSerializer, GameQuerySerializer
-from nerdvanapp.views.utils.custom_basic_views import SerializerFilterView
+from nerdvanapp.views.utils.custom_basic_views import SerializerFilterView, PaginatedViewSet
 
 
-class GameListView(APIView, SerializerFilterView):
+class GameListView(APIView, SerializerFilterView, PaginatedViewSet):
     serializer_class = GameSerializer
     default_serializer = GameSerializer
     serializers = (GameSerializer, SimpleGameSerializer, FullGameSerializer)
@@ -33,8 +33,11 @@ class GameListView(APIView, SerializerFilterView):
             raise ValidationError('Select at least one filter')
 
         serializer = self.get_serializer_class()
+        paginated_games, headers = self.paginate_queryset(
+            queryset=games
+        )
 
-        return Response(serializer(games, many=True).data)
+        return Response(serializer(paginated_games, many=True).data, headers=headers)
 
 
 class GameView(APIView, SerializerFilterView):
