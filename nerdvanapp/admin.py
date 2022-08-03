@@ -29,6 +29,10 @@ class GameAdmin(admin.ModelAdmin):
     search_fields = ['id', 'name']
     list_filter = ('console',)
     filter_horizontal = ('console',)
+    fieldsets = (
+        (None, {'fields': ('name', 'release', 'summary', 'storyline', 'console', 'game_company')}),
+        ('Twitch Ratings', {'fields': ('rating', 'rating_count')})
+    )
 
 
 class GameInline(admin.TabularInline):
