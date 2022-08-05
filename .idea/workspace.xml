@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better ADMIN view for games">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_recommender.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Prepare env for game recommender">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +160,7 @@
       <workItem from="1658964296278" duration="6343000" />
       <workItem from="1659218496918" duration="74000" />
       <workItem from="1659470793646" duration="6757000" />
-      <workItem from="1659566130697" duration="1269000" />
+      <workItem from="1659566130697" duration="1761000" />
     </task>
     <task id="LOCAL-00001" summary="Create custom User model">
       <created>1654823324706</created>
@@ -478,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659566431239</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Prepare env for game recommender">
+      <created>1659569767327</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1659569767327</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add GameCompany to admin" />
     <MESSAGE value="build TwitchAPI script" />
     <MESSAGE value="Add first batch of games" />
     <MESSAGE value="Add second batch of games" />
@@ -521,7 +526,8 @@
     <MESSAGE value="Paginate viewset" />
     <MESSAGE value="Better pagination validation" />
     <MESSAGE value="Better ADMIN view for games" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better ADMIN view for games" />
+    <MESSAGE value="Prepare env for game recommender" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare env for game recommender" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
