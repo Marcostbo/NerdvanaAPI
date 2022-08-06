@@ -7,8 +7,7 @@ from rest_framework.response import Response
 class UserView(APIView):
     permission_classes = (IsAuthenticated,)
 
-    @staticmethod
-    def get(request):
-        user = request.user
+    def get(self, request):
+        user = self.request.user
 
         return Response(UserSerializer(user).data)
