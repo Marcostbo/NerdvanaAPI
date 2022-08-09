@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Import from __init__">
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Import from __init__" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,14 +160,7 @@
       <workItem from="1659470793646" duration="6757000" />
       <workItem from="1659566130697" duration="1761000" />
       <workItem from="1659658724404" duration="285000" />
-      <workItem from="1659744178600" duration="511000" />
-    </task>
-    <task id="LOCAL-00003" summary="Setup JWT authentication">
-      <created>1657672644942</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1657672644942</updated>
+      <workItem from="1659744178600" duration="693000" />
     </task>
     <task id="LOCAL-00004" summary="Improvements: Organize API views in views folder">
       <created>1657673516347</created>
@@ -507,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659744666089</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Import from __init__">
+      <created>1659744859631</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1659744859631</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
