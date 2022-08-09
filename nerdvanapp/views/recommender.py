@@ -10,7 +10,7 @@ class GameRecommenderView(APIView):
     default_serializer = GameSerializer
     serializers = (GameSerializer, FullGameSerializer)
 
-    def get(self):
+    def get(self, request):
         request = self.request
         recommender_params = RecommenderQuerySerializer(data=request.data)
         recommender_params.is_valid(raise_exception=True)
