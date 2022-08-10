@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix and add number_of_recommendations in request" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Get game in recommender view inside function" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,27 +162,7 @@
       <workItem from="1659658724404" duration="285000" />
       <workItem from="1659744178600" duration="693000" />
       <workItem from="1660009477803" duration="592000" />
-    </task>
-    <task id="LOCAL-00009" summary="Build script to connect to Twitch API">
-      <created>1658019457273</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1658019457273</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Rename to Nerd Models">
-      <created>1658020380466</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1658020380466</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Fix GitHub email">
-      <created>1658021971211</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1658021971211</updated>
+      <workItem from="1660091458444" duration="394000" />
     </task>
     <task id="LOCAL-00012" summary="Fix GitHub email">
       <created>1658022204234</created>
@@ -506,7 +486,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660010060165</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Fix and add number_of_recommendations in request">
+      <created>1660091476791</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1660091476791</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Get game in recommender view">
+      <created>1660091759931</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1660091759931</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Get game in recommender view inside function">
+      <created>1660091873683</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1660091873683</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,8 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add last of games" />
-    <MESSAGE value="Organize serializer folder" />
     <MESSAGE value="Create game serializer" />
     <MESSAGE value="Simple game serializer" />
     <MESSAGE value="Start game view" />
@@ -549,7 +548,9 @@
     <MESSAGE value="Create request serializer for Recommender" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Fix and add number_of_recommendations in request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix and add number_of_recommendations in request" />
+    <MESSAGE value="Get game in recommender view" />
+    <MESSAGE value="Get game in recommender view inside function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get game in recommender view inside function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
