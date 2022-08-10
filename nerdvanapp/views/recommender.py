@@ -19,7 +19,13 @@ class GameRecommenderView(APIView):
         console_id = recommender_params.validated_data.get('console_id')
         number_of_recommendations = recommender_params.validated_data.get('number_of_recommendations')
 
-        game = Games.objects.get(pk=game_id)
+        selected_game = self.get_game_for_recommendation(pk=game_id)
 
         return None
 
+    @staticmethod
+    def get_game_for_recommendation(pk):
+        try:
+            return Games.objects.get(pk=pk)
+        except Games.DoesNotExist:
+            raise Http404
