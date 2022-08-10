@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Import from __init__" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix and add number_of_recommendations in request" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,41 +161,7 @@
       <workItem from="1659566130697" duration="1761000" />
       <workItem from="1659658724404" duration="285000" />
       <workItem from="1659744178600" duration="693000" />
-    </task>
-    <task id="LOCAL-00004" summary="Improvements: Organize API views in views folder">
-      <created>1657673516347</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1657673516347</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Improvements: Improve JWT authentication with django-simple-jwt">
-      <created>1657751625284</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1657751625284</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Improvements: Create console models">
-      <created>1657753616311</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1657753616311</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Create Twitch field">
-      <created>1657767491945</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1657767491945</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Create game model. Improve admin with inlines">
-      <created>1657847266705</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1657847266705</updated>
+      <workItem from="1660009477803" duration="592000" />
     </task>
     <task id="LOCAL-00009" summary="Build script to connect to Twitch API">
       <created>1658019457273</created>
@@ -505,7 +471,42 @@
       <option name="project" value="LOCAL" />
       <updated>1659744859631</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Serializers for GameRecommenderView">
+      <created>1660009557560</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1660009557560</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Create request serializer for Recommender">
+      <created>1660009854466</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1660009854467</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Create request serializer for Recommender">
+      <created>1660009966729</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1660009966729</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Fix">
+      <created>1660010001298</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1660010001298</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Fix and add number_of_recommendations in request">
+      <created>1660010060165</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1660010060165</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,9 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add admin inline for games" />
-    <MESSAGE value="Game name with 60 length" />
-    <MESSAGE value="Add more games" />
     <MESSAGE value="Add last of games" />
     <MESSAGE value="Organize serializer folder" />
     <MESSAGE value="Create game serializer" />
@@ -538,7 +536,6 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Filter games only with rating" />
     <MESSAGE value="Get games by name_contains" />
-    <MESSAGE value="Fix" />
     <MESSAGE value="Create generic serializer class to filter serializer via request" />
     <MESSAGE value="Validate method in GameQuerySerializer" />
     <MESSAGE value="Paginate viewset" />
@@ -548,7 +545,11 @@
     <MESSAGE value="Add recommender.py" />
     <MESSAGE value="Start game recommender view" />
     <MESSAGE value="Import from __init__" />
-    <option name="LAST_COMMIT_MESSAGE" value="Import from __init__" />
+    <MESSAGE value="Serializers for GameRecommenderView" />
+    <MESSAGE value="Create request serializer for Recommender" />
+    <MESSAGE value="Fix" />
+    <MESSAGE value="Fix and add number_of_recommendations in request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix and add number_of_recommendations in request" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
