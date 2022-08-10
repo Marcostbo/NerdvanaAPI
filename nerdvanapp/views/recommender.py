@@ -18,4 +18,8 @@ class GameRecommenderView(APIView):
         game_id = recommender_params.validated_data.get('game_id')
         console_id = recommender_params.validated_data.get('console_id')
         number_of_recommendations = recommender_params.validated_data.get('number_of_recommendations')
+
+        game = Games.objects.get(pk=game_id)
+
         return None
+
