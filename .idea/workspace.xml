@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Get game in recommender view inside function" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Get game in recommender view inside function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,14 +164,7 @@
       <workItem from="1659658724404" duration="285000" />
       <workItem from="1659744178600" duration="693000" />
       <workItem from="1660009477803" duration="592000" />
-      <workItem from="1660091458444" duration="394000" />
-    </task>
-    <task id="LOCAL-00012" summary="Fix GitHub email">
-      <created>1658022204234</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1658022204234</updated>
+      <workItem from="1660091458444" duration="1096000" />
     </task>
     <task id="LOCAL-00013" summary="Add GameCompany model">
       <created>1658087025131</created>
@@ -507,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660091873683</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Get game in recommender view inside function">
+      <created>1660092042443</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1660092042444</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
