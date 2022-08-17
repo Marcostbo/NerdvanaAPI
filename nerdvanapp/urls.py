@@ -15,5 +15,7 @@ urlpatterns = [
     path('logout', views.LogoutView.as_view()),
     # Game routes
     path('games', views.GameListView.as_view()),
-    path('games/<int:pk>/', views.GameView.as_view())
+    path('games/<int:pk>/', views.GameView.as_view()),
+    # Recommender routes
+    path('recommender', views.GameRecommenderView.as_view())
 ]
