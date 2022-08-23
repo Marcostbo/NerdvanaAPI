@@ -47,13 +47,13 @@ class GameView(APIView, SerializerFilterView):
 
     def get(self, request, pk=None):
         game_id = pk
-        game = self.get_object(game_id)
+        game = self.get_object_by_pk(game_id)
 
         serializer = self.get_serializer_class()
         return Response(serializer(game).data)
 
     @staticmethod
-    def get_object(pk):
+    def get_object_by_pk(pk):
         try:
             return Games.objects.get(pk=pk)
         except Games.DoesNotExist:
