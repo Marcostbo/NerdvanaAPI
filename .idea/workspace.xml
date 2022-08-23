@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Recommender as view url">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Get list of games for recommendation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,14 +163,7 @@
       <workItem from="1659744178600" duration="693000" />
       <workItem from="1660009477803" duration="592000" />
       <workItem from="1660091458444" duration="1096000" />
-      <workItem from="1660696241077" duration="1084000" />
-    </task>
-    <task id="LOCAL-00015" summary="Add GameCompany to admin">
-      <created>1658087528993</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1658087528993</updated>
+      <workItem from="1660696241077" duration="1159000" />
     </task>
     <task id="LOCAL-00016" summary="build TwitchAPI script">
       <created>1658088587830</created>
@@ -511,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660696525422</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Get list of games for recommendation">
+      <created>1660697391563</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1660697391563</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Simple game serializer" />
     <MESSAGE value="Start game view" />
     <MESSAGE value="Get game by ID" />
     <MESSAGE value="Create game_company serializer" />
@@ -554,18 +550,8 @@
     <MESSAGE value="Get game in recommender view" />
     <MESSAGE value="Get game in recommender view inside function" />
     <MESSAGE value="Recommender as view url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recommender as view url" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/nerdvanapp/views/recommender.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Get list of games for recommendation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get list of games for recommendation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
