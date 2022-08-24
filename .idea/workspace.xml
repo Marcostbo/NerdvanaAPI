@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Prepare data">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="create_tfidf_matrix in view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_recommender.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" afterDir="false" />
@@ -169,14 +169,7 @@
       <workItem from="1660091458444" duration="1096000" />
       <workItem from="1660696241077" duration="1159000" />
       <workItem from="1661213742923" duration="868000" />
-      <workItem from="1661350101025" duration="3818000" />
-    </task>
-    <task id="LOCAL-00021" summary="Add more games">
-      <created>1658187273093</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1658187273093</updated>
+      <workItem from="1661350101025" duration="6561000" />
     </task>
     <task id="LOCAL-00022" summary="Add last of games">
       <created>1658199644366</created>
@@ -514,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661352895578</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="create_tfidf_matrix in view">
+      <created>1661354213638</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1661354213638</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create full game serializer" />
     <MESSAGE value="Fix and get games by console" />
     <MESSAGE value="Update" />
     <MESSAGE value="Filter games only with rating" />
@@ -557,18 +556,15 @@
     <MESSAGE value="Better method name" />
     <MESSAGE value="values_list to increase speed" />
     <MESSAGE value="Prepare data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepare data" />
+    <MESSAGE value="create_tfidf_matrix in view" />
+    <option name="LAST_COMMIT_MESSAGE" value="create_tfidf_matrix in view" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/nerdvanapp/views/recommender.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Python.DjangoServer">
+        <watch expression="recommended_games" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />

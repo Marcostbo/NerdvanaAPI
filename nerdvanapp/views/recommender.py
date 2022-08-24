@@ -28,15 +28,13 @@ class GameRecommenderView(APIView):
             list_of_games=list_of_games
         )
 
-        ids, summaries = self.prepare_data_for_recommender(list_of_games=list_of_games)
-
-        self.get_full_recommendation(
+        recommended_games = self.get_full_recommendation(
             list_of_games=list_of_games,
-            ids=ids,
-            summaries=summaries
+            game_id=game_id,
+            number_of_recommendations=number_of_recommendations
         )
 
-        return None
+        return Response(GameSerializer(recommended_games, many=True).data)
 
     @staticmethod
     def get_game_for_recommendation(pk):
@@ -60,23 +58,23 @@ class GameRecommenderView(APIView):
             list_of_games = list(list_of_games)
             list_of_games.append(selected_game)
         else:
-            pass
+            list_of_games = list(list_of_games)
 
         return list_of_games
 
     @staticmethod
-    def prepare_data_for_recommender(list_of_games):
-        ids = [game[0] for game in list_of_games]
-        summaries = [game[1] for game in list_of_games]
-
-        return ids, summaries
-
-    @staticmethod
-    def get_full_recommendation(list_of_games, ids, summaries):
+    def get_full_recommendation(list_of_games, game_id, number_of_recommendations):
         game_recommender = GameRecommender(
-            game_data=list_of_games,
-            ids=ids,
-            summaries=summaries
+            game_data=list_of_games
         )
 
         game_recommender.create_tfidf_matrix()
+        game_recommender.create_cosine_similarities(game_id=game_id)
+        recommendations = game_recommender.recommend(
+            game_id=game_id,
+            number_of_recommendations=number_of_recommendations
+        )
+        recommendations_ids = [rec[1] for rec in recommendations]
+        recommended_games = Games.objects.filter(id__in=recommendations_ids)
+
+        return recommended_games
