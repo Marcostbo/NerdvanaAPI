@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better method name" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better method name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,13 +168,7 @@
       <workItem from="1660091458444" duration="1096000" />
       <workItem from="1660696241077" duration="1159000" />
       <workItem from="1661213742923" duration="868000" />
-    </task>
-    <task id="LOCAL-00018" summary="Add second batch of games">
-      <created>1658162196271</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1658162196271</updated>
+      <workItem from="1661350101025" duration="1926000" />
     </task>
     <task id="LOCAL-00019" summary="Add admin inline for games">
       <created>1658162426771</created>
@@ -509,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661214016599</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Better method name">
+      <created>1661350175462</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1661350175462</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -27,11 +27,25 @@ class GameRecommenderView(APIView):
     @staticmethod
     def get_game_for_recommendation(pk):
         try:
-            return Games.objects.get(pk=pk)
+            return Games.objects.filter(pk=pk).values_list('id', 'summary').first()
         except Games.DoesNotExist:
             raise Http404
 
     @staticmethod
     def get_list_of_games_for_recommendation(console_id):
-        games = Games.objects.filter(console__in=[console_id]).filter(rating__isnull=False)
+        games = Games.objects.filter(console__in=[console_id]).filter(rating__isnull=False).values_list('id', 'summary')
+        games = list(games)
         return games
+
+    @staticmethod
+    def verify_if_game_is_in_list_of_games(selected_game, list_of_games):
+
+        game_id = selected_game[0]
+
+        is_in_list = list_of_games.filter(id=game_id).exists()
+        if not is_in_list:
+            list_of_games.extend(selected_game)
+        else:
+            pass
+
+        return list_of_games
