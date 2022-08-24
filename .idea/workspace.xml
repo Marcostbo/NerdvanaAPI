@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better method name">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="values_list to increase speed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" afterDir="false" />
     </list>
@@ -168,14 +168,7 @@
       <workItem from="1660091458444" duration="1096000" />
       <workItem from="1660696241077" duration="1159000" />
       <workItem from="1661213742923" duration="868000" />
-      <workItem from="1661350101025" duration="1926000" />
-    </task>
-    <task id="LOCAL-00019" summary="Add admin inline for games">
-      <created>1658162426771</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1658162426771</updated>
+      <workItem from="1661350101025" duration="2750000" />
     </task>
     <task id="LOCAL-00020" summary="Game name with 60 length">
       <created>1658162483402</created>
@@ -513,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661350175462</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="values_list to increase speed">
+      <created>1661352403812</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1661352403812</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Get game by ID" />
     <MESSAGE value="Create game_company serializer" />
     <MESSAGE value="Create full game serializer" />
     <MESSAGE value="Fix and get games by console" />
@@ -556,7 +555,8 @@
     <MESSAGE value="Recommender as view url" />
     <MESSAGE value="Get list of games for recommendation" />
     <MESSAGE value="Better method name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better method name" />
+    <MESSAGE value="values_list to increase speed" />
+    <option name="LAST_COMMIT_MESSAGE" value="values_list to increase speed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />

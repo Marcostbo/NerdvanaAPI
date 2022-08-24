@@ -22,6 +22,11 @@ class GameRecommenderView(APIView):
         selected_game = self.get_game_for_recommendation(pk=game_id)
         list_of_games = self.get_list_of_games_for_recommendation(console_id=console_id)
 
+        list_of_games = self.verify_if_game_is_in_list_of_games(
+            selected_game=selected_game,
+            list_of_games=list_of_games
+        )
+
         return None
 
     @staticmethod
@@ -34,7 +39,6 @@ class GameRecommenderView(APIView):
     @staticmethod
     def get_list_of_games_for_recommendation(console_id):
         games = Games.objects.filter(console__in=[console_id]).filter(rating__isnull=False).values_list('id', 'summary')
-        games = list(games)
         return games
 
     @staticmethod
@@ -44,8 +48,16 @@ class GameRecommenderView(APIView):
 
         is_in_list = list_of_games.filter(id=game_id).exists()
         if not is_in_list:
+            list_of_games = list(list_of_games)
             list_of_games.extend(selected_game)
         else:
             pass
 
         return list_of_games
+
+    @staticmethod
+    def prepare_data_for_recommender(list_of_games):
+        ids = [game[0] for game in list_of_games]
+        summaries = [game[1] for game in list_of_games]
+
+        return ids, summaries
