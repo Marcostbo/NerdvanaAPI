@@ -2,6 +2,7 @@ from django.http import Http404
 from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from nerdvanapp.methods.game_recommender import GameRecommender
 from nerdvanapp.models import Games
 from nerdvanapp.serializers import GameSerializer, FullGameSerializer, RecommenderQuerySerializer
 
@@ -27,6 +28,14 @@ class GameRecommenderView(APIView):
             list_of_games=list_of_games
         )
 
+        ids, summaries = self.prepare_data_for_recommender(list_of_games=list_of_games)
+
+        self.get_full_recommendation(
+            list_of_games=list_of_games,
+            ids=ids,
+            summaries=summaries
+        )
+
         return None
 
     @staticmethod
@@ -49,7 +58,7 @@ class GameRecommenderView(APIView):
         is_in_list = list_of_games.filter(id=game_id).exists()
         if not is_in_list:
             list_of_games = list(list_of_games)
-            list_of_games.extend(selected_game)
+            list_of_games.append(selected_game)
         else:
             pass
 
@@ -61,3 +70,13 @@ class GameRecommenderView(APIView):
         summaries = [game[1] for game in list_of_games]
 
         return ids, summaries
+
+    @staticmethod
+    def get_full_recommendation(list_of_games, ids, summaries):
+        game_recommender = GameRecommender(
+            game_data=list_of_games,
+            ids=ids,
+            summaries=summaries
+        )
+
+        game_recommender.create_tfidf_matrix()
