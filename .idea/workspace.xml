@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Get list of games for recommendation" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better method name" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,20 +164,7 @@
       <workItem from="1660009477803" duration="592000" />
       <workItem from="1660091458444" duration="1096000" />
       <workItem from="1660696241077" duration="1159000" />
-    </task>
-    <task id="LOCAL-00016" summary="build TwitchAPI script">
-      <created>1658088587830</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1658088587830</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Add first batch of games">
-      <created>1658157554075</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1658157554075</updated>
+      <workItem from="1661213742923" duration="868000" />
     </task>
     <task id="LOCAL-00018" summary="Add second batch of games">
       <created>1658162196271</created>
@@ -508,7 +495,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660697391563</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Get list of games for recommendation">
+      <created>1661213794445</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1661213794445</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Better method name">
+      <created>1661214016599</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1661214016599</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Start game view" />
     <MESSAGE value="Get game by ID" />
     <MESSAGE value="Create game_company serializer" />
     <MESSAGE value="Create full game serializer" />
@@ -551,7 +551,8 @@
     <MESSAGE value="Get game in recommender view inside function" />
     <MESSAGE value="Recommender as view url" />
     <MESSAGE value="Get list of games for recommendation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get list of games for recommendation" />
+    <MESSAGE value="Better method name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better method name" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
