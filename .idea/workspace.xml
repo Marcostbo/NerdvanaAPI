@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="create_tfidf_matrix in view">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_recommender.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/recommender.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finish recommendation endpoint" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,14 +165,7 @@
       <workItem from="1660091458444" duration="1096000" />
       <workItem from="1660696241077" duration="1159000" />
       <workItem from="1661213742923" duration="868000" />
-      <workItem from="1661350101025" duration="6561000" />
-    </task>
-    <task id="LOCAL-00022" summary="Add last of games">
-      <created>1658199644366</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1658199644366</updated>
+      <workItem from="1661350101025" duration="7334000" />
     </task>
     <task id="LOCAL-00023" summary="Add last of games">
       <created>1658199708117</created>
@@ -514,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661354213638</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Finish recommendation endpoint">
+      <created>1661363902446</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1661363902449</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +528,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix and get games by console" />
     <MESSAGE value="Update" />
     <MESSAGE value="Filter games only with rating" />
     <MESSAGE value="Get games by name_contains" />
@@ -557,7 +552,8 @@
     <MESSAGE value="values_list to increase speed" />
     <MESSAGE value="Prepare data" />
     <MESSAGE value="create_tfidf_matrix in view" />
-    <option name="LAST_COMMIT_MESSAGE" value="create_tfidf_matrix in view" />
+    <MESSAGE value="Finish recommendation endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish recommendation endpoint" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
