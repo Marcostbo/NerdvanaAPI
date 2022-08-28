@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finish recommendation endpoint">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finish recommendation endpoint" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,13 +166,7 @@
       <workItem from="1660696241077" duration="1159000" />
       <workItem from="1661213742923" duration="868000" />
       <workItem from="1661350101025" duration="7400000" />
-    </task>
-    <task id="LOCAL-00024" summary="Add last of games">
-      <created>1658200753500</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1658200753500</updated>
+      <workItem from="1661465834160" duration="41000" />
     </task>
     <task id="LOCAL-00025" summary="Organize serializer folder">
       <created>1658362576796</created>
@@ -512,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661380211346</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Finish recommendation endpoint">
+      <created>1661465839214</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1661465839215</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
