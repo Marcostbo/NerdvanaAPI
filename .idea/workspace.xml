@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finish recommendation endpoint" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Define steps for game_pricing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,34 +171,7 @@
       <workItem from="1661350101025" duration="7400000" />
       <workItem from="1661465834160" duration="41000" />
       <workItem from="1661651460594" duration="49000" />
-    </task>
-    <task id="LOCAL-00026" summary="Create game serializer">
-      <created>1658446362710</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1658446362710</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Simple game serializer">
-      <created>1658447129944</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1658447129944</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Start game view">
-      <created>1658965682006</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1658965682006</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Get game by ID">
-      <created>1658967769348</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1658967769348</updated>
+      <workItem from="1661733223131" duration="802000" />
     </task>
     <task id="LOCAL-00030" summary="Fix">
       <created>1658967816575</created>
@@ -512,7 +488,35 @@
       <option name="project" value="LOCAL" />
       <updated>1661651500416</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Finish recommendation endpoint">
+      <created>1661733235294</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1661733235294</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Create game_pricing.py file">
+      <created>1661733413992</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1661733413992</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Define steps for game_pricing">
+      <created>1661733617624</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1661733617624</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Define steps for game_pricing">
+      <created>1661733709551</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1661733709551</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,8 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update" />
-    <MESSAGE value="Filter games only with rating" />
     <MESSAGE value="Get games by name_contains" />
     <MESSAGE value="Create generic serializer class to filter serializer via request" />
     <MESSAGE value="Validate method in GameQuerySerializer" />
@@ -555,7 +557,9 @@
     <MESSAGE value="Prepare data" />
     <MESSAGE value="create_tfidf_matrix in view" />
     <MESSAGE value="Finish recommendation endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish recommendation endpoint" />
+    <MESSAGE value="Create game_pricing.py file" />
+    <MESSAGE value="Define steps for game_pricing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Define steps for game_pricing" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
