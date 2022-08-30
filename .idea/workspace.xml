@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Start store model">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/models/stores.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Image as filefield (evaluate)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,14 +169,7 @@
       <workItem from="1661465834160" duration="41000" />
       <workItem from="1661651460594" duration="49000" />
       <workItem from="1661733223131" duration="991000" />
-      <workItem from="1661819427340" duration="2232000" />
-    </task>
-    <task id="LOCAL-00032" summary="Create full game serializer">
-      <created>1658968117362</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1658968117362</updated>
+      <workItem from="1661819427340" duration="2763000" />
     </task>
     <task id="LOCAL-00033" summary="Fix and get games by console">
       <created>1658970327754</created>
@@ -517,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661821897975</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Image as filefield (evaluate)">
+      <created>1661822119018</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1661822119018</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create generic serializer class to filter serializer via request" />
     <MESSAGE value="Validate method in GameQuerySerializer" />
     <MESSAGE value="Paginate viewset" />
     <MESSAGE value="Better pagination validation" />
@@ -560,7 +556,8 @@
     <MESSAGE value="Create game_pricing.py file" />
     <MESSAGE value="Define steps for game_pricing" />
     <MESSAGE value="Start store model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start store model" />
+    <MESSAGE value="Image as filefield (evaluate)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image as filefield (evaluate)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
