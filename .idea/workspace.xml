@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Define steps for game_pricing">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Start store model">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/models/stores.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,14 +172,7 @@
       <workItem from="1661465834160" duration="41000" />
       <workItem from="1661651460594" duration="49000" />
       <workItem from="1661733223131" duration="991000" />
-      <workItem from="1661819427340" duration="1868000" />
-    </task>
-    <task id="LOCAL-00031" summary="Create game_company serializer">
-      <created>1658967877124</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1658967877124</updated>
+      <workItem from="1661819427340" duration="2232000" />
     </task>
     <task id="LOCAL-00032" summary="Create full game serializer">
       <created>1658968117362</created>
@@ -516,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661734063067</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Start store model">
+      <created>1661821897975</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1661821897975</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +535,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Get games by name_contains" />
     <MESSAGE value="Create generic serializer class to filter serializer via request" />
     <MESSAGE value="Validate method in GameQuerySerializer" />
     <MESSAGE value="Paginate viewset" />
@@ -559,7 +559,8 @@
     <MESSAGE value="Finish recommendation endpoint" />
     <MESSAGE value="Create game_pricing.py file" />
     <MESSAGE value="Define steps for game_pricing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Define steps for game_pricing" />
+    <MESSAGE value="Start store model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start store model" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
