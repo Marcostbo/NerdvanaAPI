@@ -169,14 +169,7 @@
       <workItem from="1661465834160" duration="41000" />
       <workItem from="1661651460594" duration="49000" />
       <workItem from="1661733223131" duration="991000" />
-      <workItem from="1661819427340" duration="2763000" />
-    </task>
-    <task id="LOCAL-00033" summary="Fix and get games by console">
-      <created>1658970327754</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1658970327754</updated>
+      <workItem from="1661819427340" duration="3448000" />
     </task>
     <task id="LOCAL-00034" summary="Update">
       <created>1658970558942</created>
@@ -514,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661822119018</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Image as filefield (evaluate)">
+      <created>1661822526425</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1661822526425</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
