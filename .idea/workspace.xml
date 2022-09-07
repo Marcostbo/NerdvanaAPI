@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Chromedriver and Webscrap with Selenium" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Chromedriver and Webscrap with Selenium">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +81,9 @@
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nerdvanapp/methods" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -193,14 +199,8 @@
       <workItem from="1661819427340" duration="3448000" />
       <workItem from="1661903521748" duration="30000" />
       <workItem from="1662083592667" duration="616000" />
-      <workItem from="1662422369494" duration="4244000" />
-    </task>
-    <task id="LOCAL-00038" summary="Fix">
-      <created>1659474275651</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1659474275651</updated>
+      <workItem from="1662422369494" duration="4359000" />
+      <workItem from="1662504609443" duration="4808000" />
     </task>
     <task id="LOCAL-00039" summary="Create generic serializer class to filter serializer via request">
       <created>1659476119957</created>
@@ -538,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662426975773</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Chromedriver and Webscrap with Selenium">
+      <created>1662427134650</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1662427134650</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,6 +600,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
     <SUITE FILE_PATH="coverage/NerdvanaAPI$0007_add_games_via_json.coverage" NAME="0007_add_games_via_json Coverage Results" MODIFIED="1658097079845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/migrations" />
-    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1662426929334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
+    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1662509294113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
   </component>
 </project>
