@@ -15,11 +15,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # store = "https://www.magazineluiza.com.br"
-# store = "https://www.americanas.com.br"
-store = "https://www.shoptime.com.br/"
+store = "https://www.americanas.com.br"
+# store = "https://www.shoptime.com.br/"
 # query = 'Elden Ring PS4 Magalu'
-# query = 'Elden Ring PS4 Americanas'
-query = 'Elden Ring PS4 Shoptime'
+query = 'Elden Ring PS4 Americanas'
+# query = 'Elden Ring XBOX ONE Shoptime'
 query = parse.quote_plus(query)
 
 google = 'https://www.google.com.br'
