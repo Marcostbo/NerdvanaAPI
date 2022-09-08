@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Test new games">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Test new games" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,14 +198,7 @@
       <workItem from="1662083592667" duration="616000" />
       <workItem from="1662422369494" duration="4359000" />
       <workItem from="1662504609443" duration="7742000" />
-      <workItem from="1662676258041" duration="1209000" />
-    </task>
-    <task id="LOCAL-00042" summary="Better pagination validation">
-      <created>1659477903970</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1659477903970</updated>
+      <workItem from="1662676258041" duration="1822000" />
     </task>
     <task id="LOCAL-00043" summary="Better pagination validation">
       <created>1659481038115</created>
@@ -545,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662677180431</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Test new games">
+      <created>1662678452439</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1662678452439</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
