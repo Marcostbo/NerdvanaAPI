@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .forms import CustomUserCreationForm, CustomUserChangeForm
-from .models import User, Console, Company, Family, Games, GameCompany
+from .models import User, Console, Company, Family, Games, GameCompany, Store
 
 
 class CustomUserAdmin(UserAdmin):
@@ -22,6 +22,11 @@ class CustomUserAdmin(UserAdmin):
     )
     search_fields = ('email',)
     ordering = ('email',)
+
+
+class StoreAdmin(admin.ModelAdmin):
+    list_display = ['name', 'search_name']
+    search_fields = ['name']
 
 
 class GameAdmin(admin.ModelAdmin):
@@ -81,4 +86,6 @@ admin.site.register(Company, CompanyAdmin)
 admin.site.register(Games, GameAdmin)
 admin.site.register(Family, FamilyAdmin)
 admin.site.register(GameCompany, GameCompanyAdmin)
+admin.site.register(Store, StoreAdmin)
+
 
