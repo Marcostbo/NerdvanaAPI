@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create stores migration">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add stores in admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,14 +199,7 @@
       <workItem from="1662083592667" duration="616000" />
       <workItem from="1662422369494" duration="4359000" />
       <workItem from="1662504609443" duration="7742000" />
-      <workItem from="1662676258041" duration="2875000" />
-    </task>
-    <task id="LOCAL-00044" summary="Better pagination validation">
-      <created>1659481239908</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1659481239908</updated>
+      <workItem from="1662676258041" duration="5098000" />
     </task>
     <task id="LOCAL-00045" summary="Better ADMIN view for games">
       <created>1659566431239</created>
@@ -547,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662681202885</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Add stores in admin">
+      <created>1662682008564</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1662682008564</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +562,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Start game recommender view" />
     <MESSAGE value="Import from __init__" />
     <MESSAGE value="Serializers for GameRecommenderView" />
     <MESSAGE value="Create request serializer for Recommender" />
@@ -590,7 +586,8 @@
     <MESSAGE value="link field in Store model" />
     <MESSAGE value="Test new games" />
     <MESSAGE value="Create stores migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create stores migration" />
+    <MESSAGE value="Add stores in admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add stores in admin" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -602,6 +599,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
     <SUITE FILE_PATH="coverage/NerdvanaAPI$0007_add_games_via_json.coverage" NAME="0007_add_games_via_json Coverage Results" MODIFIED="1658097079845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/migrations" />
-    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1662681560336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
+    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1662681630427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
   </component>
 </project>
