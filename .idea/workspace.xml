@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add stores in admin">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add stores in admin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,14 +199,7 @@
       <workItem from="1662504609443" duration="7742000" />
       <workItem from="1662676258041" duration="5098000" />
       <workItem from="1662773669119" duration="664000" />
-      <workItem from="1662827848203" duration="717000" />
-    </task>
-    <task id="LOCAL-00046" summary="Prepare env for game recommender">
-      <created>1659569767327</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1659569767327</updated>
+      <workItem from="1662827848203" duration="1166000" />
     </task>
     <task id="LOCAL-00047" summary="Prepare env for game recommender">
       <created>1659658801266</created>
@@ -546,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662773735401</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Add stores in admin">
+      <created>1662828723096</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1662828723098</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,6 +599,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
     <SUITE FILE_PATH="coverage/NerdvanaAPI$0007_add_games_via_json.coverage" NAME="0007_add_games_via_json Coverage Results" MODIFIED="1658097079845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/migrations" />
-    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1662828569576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
+    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1662828648280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
   </component>
 </project>
