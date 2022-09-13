@@ -200,20 +200,7 @@
       <workItem from="1662676258041" duration="5098000" />
       <workItem from="1662773669119" duration="664000" />
       <workItem from="1662827848203" duration="1166000" />
-    </task>
-    <task id="LOCAL-00047" summary="Prepare env for game recommender">
-      <created>1659658801266</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1659658801266</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Prepare env for game recommender">
-      <created>1659744389187</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1659744389187</updated>
+      <workItem from="1662937439449" duration="144000" />
     </task>
     <task id="LOCAL-00049" summary="Add recommender.py">
       <created>1659744431413</created>
@@ -544,7 +531,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662828723098</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Add stores in admin">
+      <created>1662937550651</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1662937550651</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Add stores in admin">
+      <created>1662937566155</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1662937566155</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
