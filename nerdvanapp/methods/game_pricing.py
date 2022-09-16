@@ -28,8 +28,8 @@ class GamePricing:
         results = driver.find_elements(By.CLASS_NAME, self.class_name)
         smaller_price = results[0].text
         self.smaller_price = self.treate_price_string(smaller_price=smaller_price)
-        page_source = results[0].parent.page_source
 
+        page_source = results[0].parent.page_source
         link = self.find_between(page_source, self.start, self.end)
         self.full_link = self.store_url + link
 
@@ -61,4 +61,3 @@ game_price = GamePricing(
 game_price.get_smaller_price_and_url()
 print(game_price.smaller_price)
 print(game_price.full_link)
-
