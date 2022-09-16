@@ -51,7 +51,7 @@ class GamePricing:
         for replacement in replacements:
             price.replace(replacement[0], replacement[1])
 
-        return price
+        return float(price)
 
 
 game_price = GamePricing(
