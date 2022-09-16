@@ -26,7 +26,7 @@ class GamePricing:
         driver.get(self.search_url)
 
         results = driver.find_elements(By.CLASS_NAME, self.class_name)
-        self.smaller_price = results[0].text
+        self.smaller_price = self.treate_prince_string(price=results[0].text)
         page_source = results[0].parent.page_source
 
         link = self.find_between(page_source, self.start, self.end)
@@ -40,6 +40,18 @@ class GamePricing:
             return s[link_start:link_end]
         except ValueError:
             return ""
+
+    @staticmethod
+    def treate_prince_string(price):
+        replacements = (
+            (',', '.'),
+            ('R$ ', '')
+        )
+
+        for replacement in replacements:
+            price.replace(replacement[0], replacement[1])
+
+        return price
 
 
 game_price = GamePricing(
