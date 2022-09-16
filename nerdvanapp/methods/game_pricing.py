@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 
 class GamePricing:
-    def __init__(self, store_name, store_url, game, console):
+    def __init__(self, stores_list, store_name, store_url, game, console):
         self.google = 'https://www.google.com.br'
         self.search = 'https://www.google.com.br/search?q='
         self.class_name = 'T4OwTb'
@@ -12,6 +12,7 @@ class GamePricing:
         self.end = '" data-agdh="arwt" id="vplap0"'
 
         query = game + ' ' + console + ' ' + store_name
+        self.stores_list = stores_list
         self.store_url = store_url
         self.query = parse.quote_plus(query)
         self.search_url = self.search + self.query
@@ -32,6 +33,12 @@ class GamePricing:
         page_source = results[0].parent.page_source
         link = self.find_between(page_source, self.start, self.end)
         self.full_link = self.store_url + link
+
+    def get_smaller_price_and_url_for_multiple_stores(self):
+        driver = webdriver.Chrome(
+            executable_path=r'C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\chromedriver.exe'
+        )
+        # tomorrow: call the driver for each store
 
     @staticmethod
     def find_between(s, first, last):
