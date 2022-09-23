@@ -1,10 +1,11 @@
 import urllib.parse as parse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 
 
 class GamePricing:
-    def __init__(self, stores_list, store_name, store_url, game, console):
+    def __init__(self, store_name, store_url, game, console, stores_list=None):
         self.google = 'https://www.google.com.br'
         self.search = 'https://www.google.com.br/search?q='
         self.class_name = 'T4OwTb'
@@ -21,8 +22,15 @@ class GamePricing:
         self.full_link = None
 
     def get_smaller_price_and_url(self):
+        options = Options()
+        options.add_argument("--headless")
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--no-proxy-server')
+        options.add_argument("--proxy-server='direct://'")
+        options.add_argument("--proxy-bypass-list=*")
         driver = webdriver.Chrome(
-            executable_path=r'C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\chromedriver.exe'
+            executable_path=r'C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\chromedriver.exe',
+            options=options
         )
         driver.get(self.search_url)
 
@@ -65,6 +73,10 @@ game_price = GamePricing(
     console="PS4"
 )
 
+import time
+start = time.time()
 game_price.get_smaller_price_and_url()
+end = time.time()
+print(f'-- Total time {end - start}')
 print(game_price.smaller_price)
 print(game_price.full_link)

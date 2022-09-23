@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="TODO" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="TODO">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,13 +206,8 @@
       <workItem from="1662937439449" duration="144000" />
       <workItem from="1663103969314" duration="1292000" />
       <workItem from="1663290830823" duration="3816000" />
-    </task>
-    <task id="LOCAL-00056" summary="Fix">
-      <created>1660010001298</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1660010001298</updated>
+      <workItem from="1663803226349" duration="613000" />
+      <workItem from="1663976143919" duration="955000" />
     </task>
     <task id="LOCAL-00057" summary="Fix and add number_of_recommendations in request">
       <created>1660010060165</created>
@@ -547,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663294887806</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="TODO">
+      <created>1663803239865</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1663803239866</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,6 +607,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
     <SUITE FILE_PATH="coverage/NerdvanaAPI$0007_add_games_via_json.coverage" NAME="0007_add_games_via_json Coverage Results" MODIFIED="1658097079845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/migrations" />
-    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1663294710706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
+    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1663977094381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
   </component>
 </project>
