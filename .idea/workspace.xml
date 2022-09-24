@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="TODO">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Improve webdriver call">
       <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,14 +206,7 @@
       <workItem from="1663103969314" duration="1292000" />
       <workItem from="1663290830823" duration="3816000" />
       <workItem from="1663803226349" duration="613000" />
-      <workItem from="1663976143919" duration="955000" />
-    </task>
-    <task id="LOCAL-00057" summary="Fix and add number_of_recommendations in request">
-      <created>1660010060165</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1660010060165</updated>
+      <workItem from="1663976143919" duration="2190000" />
     </task>
     <task id="LOCAL-00058" summary="Fix and add number_of_recommendations in request">
       <created>1660091476791</created>
@@ -552,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663803239866</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Improve webdriver call">
+      <created>1663977198947</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1663977198948</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Get game in recommender view inside function" />
     <MESSAGE value="Recommender as view url" />
     <MESSAGE value="Get list of games for recommendation" />
     <MESSAGE value="Better method name" />
@@ -595,7 +593,8 @@
     <MESSAGE value="Return as float" />
     <MESSAGE value="Return as float (FIX)" />
     <MESSAGE value="TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO" />
+    <MESSAGE value="Improve webdriver call" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve webdriver call" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -607,6 +606,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
     <SUITE FILE_PATH="coverage/NerdvanaAPI$0007_add_games_via_json.coverage" NAME="0007_add_games_via_json Coverage Results" MODIFIED="1658097079845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/migrations" />
-    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1663977094381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
+    <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1663978274952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
   </component>
 </project>
