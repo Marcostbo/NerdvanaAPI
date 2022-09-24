@@ -66,7 +66,8 @@ class GamePricing:
             smaller_price = self.treate_price_string(smaller_price=smaller_price)
 
             page_source = results[0].parent.page_source
-            link = self.find_between(page_source, self.start, self.end)
+            start = f'href="{store_url}'
+            link = self.find_between(page_source, start, self.end)
             full_link = store_url + link
             store_result = {
                 'Store': store_name,
@@ -112,11 +113,13 @@ game_price = GamePricing(
 
 my_stores_list = [
     ("Americanas", "https://www.americanas.com.br"),
-    ("Shoptime", "https://www.shoptime.com.br")
+    ("Shoptime", "https://www.shoptime.com.br"),
+    ("Submarino", "https://www.submarino.com.br"),
+    ("pontofrio", "https://www.pontofrio.com.br")
 ]
 
 stores_result = game_price.get_smaller_price_and_url_for_multiple_stores(
-    game="Elden Ring",
+    game="God of War",
     console="PS4",
     stores_list=my_stores_list
 )
