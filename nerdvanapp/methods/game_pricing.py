@@ -102,6 +102,7 @@ game_price = GamePricing(
     game="Elden Ring",
     console="PS4"
 )
+
 #
 # # import time
 # # start = time.time()
