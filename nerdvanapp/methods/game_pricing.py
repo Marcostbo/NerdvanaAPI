@@ -9,7 +9,8 @@ class GamePricing:
         self.google = 'https://www.google.com.br'
         self.search = 'https://www.google.com.br/search?q='
         self.class_name = 'T4OwTb'
-        self.end = '" data-agdh="arwt" id="vplap0"'
+        # self.end = '" data-agdh="arwt" id="vplap0"'
+        self.end = '"'
 
     def get_smaller_price_and_url_for_multiple_stores(self, game, console, stores_list):
         options = Options()
@@ -39,9 +40,9 @@ class GamePricing:
             link = self.find_between(page_source, start, self.end)
             full_link = store_url + link
             store_result = {
-                'Store': store_name,
-                'Price': smaller_price,
-                'Link': full_link
+                'store_name': store_name,
+                'price': smaller_price,
+                'url': full_link
             }
             store_prices.append(store_result)
 
@@ -63,21 +64,3 @@ class GamePricing:
         price = price.replace('R$ ', '')
 
         return float(price)
-
-
-game_price = GamePricing()
-
-my_stores_list = [
-    ("Americanas", "https://www.americanas.com.br"),
-    ("Shoptime", "https://www.shoptime.com.br"),
-    ("Submarino", "https://www.submarino.com.br"),
-    ("pontofrio", "https://www.pontofrio.com.br")
-]
-
-stores_result = game_price.get_smaller_price_and_url_for_multiple_stores(
-    game="God of War",
-    console="PS4",
-    stores_list=my_stores_list
-)
-
-print(stores_result)

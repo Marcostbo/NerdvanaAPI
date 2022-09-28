@@ -1,8 +1,10 @@
 from django.http import Http404
 from rest_framework.response import Response
 from rest_framework.views import APIView
+
+from nerdvanapp.methods.game_pricing import GamePricing
 from nerdvanapp.models import Games, Console, Store
-from nerdvanapp.serializers import GamePricingQuerySerializer, GamePricingOutputSerializer
+from nerdvanapp.serializers import GamePricingQuerySerializer, GamePricingOutputSerializer, StoresSerializer
 
 
 class GamePricingView(APIView):
@@ -21,6 +23,14 @@ class GamePricingView(APIView):
         )
         stores_object = self.get_all_stores_object()
 
+        game_price = GamePricing()
+        price_result = game_price.get_smaller_price_and_url_for_multiple_stores(
+            game=game_name,
+            console=console_initials,
+            stores_list=stores_object
+        )
+        return Response(GamePricingOutputSerializer(price_result, many=True).data)
+
     @staticmethod
     def get_game_name(game_id):
         try:
@@ -38,3 +48,4 @@ class GamePricingView(APIView):
     @staticmethod
     def get_all_stores_object():
         return Store.objects.all().values_list('search_name', 'link')
+
