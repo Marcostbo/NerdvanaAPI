@@ -17,5 +17,7 @@ urlpatterns = [
     path('games', views.GameListView.as_view()),
     path('games/<int:pk>/', views.GameView.as_view()),
     # Recommender routes
-    path('recommender', views.GameRecommenderView.as_view())
+    path('recommender', views.GameRecommenderView.as_view()),
+    # Game Pricing routes
+    path('gamepricing', views.GamePricingView.as_view())
 ]
