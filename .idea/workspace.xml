@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Refactor">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/serializers/gamepricing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/gamepricing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <recent name="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\nerdvanapp\scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.game_pricing">
+  <component name="RunManager" selected="Django Server.Django API">
     <configuration name="0008_add_games_via_json_pt1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -209,14 +210,7 @@
       <workItem from="1663803226349" duration="613000" />
       <workItem from="1663976143919" duration="3079000" />
       <workItem from="1664241862491" duration="37000" />
-      <workItem from="1664321526399" duration="386000" />
-    </task>
-    <task id="LOCAL-00061" summary="Get game in recommender view inside function">
-      <created>1660092042443</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1660092042444</updated>
+      <workItem from="1664321526399" duration="1672000" />
     </task>
     <task id="LOCAL-00062" summary="Get game in recommender view inside function">
       <created>1660696286008</created>
@@ -554,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664241880600</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Refactor">
+      <created>1664322112010</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1664322112011</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +573,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Better method name" />
     <MESSAGE value="values_list to increase speed" />
     <MESSAGE value="Prepare data" />
     <MESSAGE value="create_tfidf_matrix in view" />
@@ -597,7 +597,8 @@
     <MESSAGE value="Search multiple stores" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Fix 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix 2" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
