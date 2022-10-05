@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finish gamepricing endpoint" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finish gamepricing endpoint">
+      <change afterPath="$PROJECT_DIR$/nerdvana/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/methods/send_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,13 +212,8 @@
       <workItem from="1663976143919" duration="3079000" />
       <workItem from="1664241862491" duration="37000" />
       <workItem from="1664321526399" duration="5243000" />
-    </task>
-    <task id="LOCAL-00065" summary="Get list of games for recommendation">
-      <created>1661213794445</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1661213794445</updated>
+      <workItem from="1664930147981" duration="960000" />
+      <workItem from="1664931140135" duration="297000" />
     </task>
     <task id="LOCAL-00066" summary="Better method name">
       <created>1661214016599</created>
@@ -551,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664327457059</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Finish gamepricing endpoint">
+      <created>1664930206127</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1664930206127</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
