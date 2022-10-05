@@ -5,14 +5,16 @@ from nerdvana import settings
 class SendNotification:
     from_email = settings.EMAIL_HOST_USER
 
-    def send_email(self, recipient):
+    def send_email(self, to_email):
         send_mail(
-            subject='Email de teste',
-            message='Oi bolinho',
+            subject='Email do Django',
+            message='Oi bolinho. Peo meleca',
             from_email=self.from_email,
-            recipient_list=['oliveira.marcos@engenharia.ufjf.br', 'elisa.oliveira@engenharia.ufjf.br']
+            recipient_list=[settings.EMAIL_RECIPIENT_ADDRESS, to_email]
         )
 
 
 notification = SendNotification()
-notification.send_email(recipient=None)
+notification.send_email(
+    to_email='elisa.oliveira@engenharia.ufjf.br'
+)
