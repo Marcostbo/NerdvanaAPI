@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create gamepricing url">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/gamepricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/gamepricing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/gamepricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/gamepricing.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finish gamepricing endpoint" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,14 +206,7 @@
       <workItem from="1663803226349" duration="613000" />
       <workItem from="1663976143919" duration="3079000" />
       <workItem from="1664241862491" duration="37000" />
-      <workItem from="1664321526399" duration="4550000" />
-    </task>
-    <task id="LOCAL-00064" summary="Get list of games for recommendation">
-      <created>1660697391563</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1660697391563</updated>
+      <workItem from="1664321526399" duration="5243000" />
     </task>
     <task id="LOCAL-00065" summary="Get list of games for recommendation">
       <created>1661213794445</created>
@@ -557,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664323717029</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Finish gamepricing endpoint">
+      <created>1664327457059</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1664327457059</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create_tfidf_matrix in view" />
     <MESSAGE value="Finish recommendation endpoint" />
     <MESSAGE value="Create game_pricing.py file" />
     <MESSAGE value="Define steps for game_pricing" />
@@ -600,7 +593,8 @@
     <MESSAGE value="Refactor" />
     <MESSAGE value="Start gamepricing endpoint" />
     <MESSAGE value="Create gamepricing url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create gamepricing url" />
+    <MESSAGE value="Finish gamepricing endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish gamepricing endpoint" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
