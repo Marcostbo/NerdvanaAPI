@@ -13,8 +13,12 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import datetime
 import environ
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 import corsheaders.middleware
+
+env = environ.Env()
+environ.Env.read_env()
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -182,9 +186,6 @@ twitch_client_id = '3d2zdvuspo8925eerye9r9etrs67dd'
 twitch_secret = 'peimgz6p1bvmfsoar7kp7tuqb3o7d8'
 
 # Email Settings
-env = environ.Env()
-environ.Env.read_env()
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = env('EMAIL_HOST')
 EMAIL_PORT = 587

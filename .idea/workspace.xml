@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Start email settings" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/send_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/gamepricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/gamepricing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +57,7 @@
       <recent name="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\nerdvanapp\scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.Django API">
+  <component name="RunManager" selected="Python.send_email">
     <configuration name="0008_add_games_via_json_pt1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,6 +125,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="send_email" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NerdvanaAPI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="nerdvana.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nerdvanapp/methods" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nerdvanapp/methods/send_email.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Django API" type="Python.DjangoServer" factoryName="Django server">
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,11 +175,13 @@
     <list>
       <item itemvalue="Django Server.Django API" />
       <item itemvalue="Python.game_pricing" />
+      <item itemvalue="Python.send_email" />
       <item itemvalue="Python.0008_add_games_via_json_pt1" />
       <item itemvalue="Python.games_twich_connection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.send_email" />
         <item itemvalue="Python.0008_add_games_via_json_pt1" />
         <item itemvalue="Python.games_twich_connection" />
       </list>
@@ -209,21 +239,7 @@
       <workItem from="1664241862491" duration="37000" />
       <workItem from="1664321526399" duration="5243000" />
       <workItem from="1664930147981" duration="960000" />
-      <workItem from="1664931140135" duration="630000" />
-    </task>
-    <task id="LOCAL-00068" summary="values_list to increase speed">
-      <created>1661352403812</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1661352403812</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Prepare data">
-      <created>1661352895578</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1661352895578</updated>
+      <workItem from="1664931140135" duration="4152000" />
     </task>
     <task id="LOCAL-00070" summary="create_tfidf_matrix in view">
       <created>1661354213638</created>
@@ -554,7 +570,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664931677797</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="Fix">
+      <created>1664931847599</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1664931847599</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Fix">
+      <created>1664931937718</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1664931937718</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,16 +620,25 @@
     <MESSAGE value="TODO" />
     <MESSAGE value="Improve webdriver call" />
     <MESSAGE value="Search multiple stores" />
-    <MESSAGE value="Fix" />
     <MESSAGE value="Fix 2" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="Start gamepricing endpoint" />
     <MESSAGE value="Create gamepricing url" />
     <MESSAGE value="Finish gamepricing endpoint" />
     <MESSAGE value="Start email settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start email settings" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nerdvanapp/methods/send_email.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
         <watch expression="recommended_games" />
@@ -610,5 +649,6 @@
     <SUITE FILE_PATH="coverage/NerdvanaAPI$games_twich_connection.coverage" NAME="games_twich_connection Coverage Results" MODIFIED="1658087818715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/scripts" />
     <SUITE FILE_PATH="coverage/NerdvanaAPI$0007_add_games_via_json.coverage" NAME="0007_add_games_via_json Coverage Results" MODIFIED="1658097079845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/migrations" />
     <SUITE FILE_PATH="coverage/NerdvanaAPI$game_pricing.coverage" NAME="game_pricing Coverage Results" MODIFIED="1664321784076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
+    <SUITE FILE_PATH="coverage/NerdvanaAPI$send_email.coverage" NAME="send_email Coverage Results" MODIFIED="1664935488117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nerdvanapp/methods" />
   </component>
 </project>
