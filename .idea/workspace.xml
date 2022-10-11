@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add notification.urls">
-      <change afterPath="$PROJECT_DIR$/notification/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/models.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add SentNotification model">
+      <change afterPath="$PROJECT_DIR$/notification/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/models/sent_notification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/models.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,14 +240,7 @@
       <workItem from="1664321526399" duration="5243000" />
       <workItem from="1664930147981" duration="960000" />
       <workItem from="1664931140135" duration="4823000" />
-      <workItem from="1665514805980" duration="1046000" />
-    </task>
-    <task id="LOCAL-00075" summary="Finish recommendation endpoint">
-      <created>1661733235294</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1661733235294</updated>
+      <workItem from="1665514805980" duration="1812000" />
     </task>
     <task id="LOCAL-00076" summary="Create game_pricing.py file">
       <created>1661733413992</created>
@@ -584,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665515269677</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Add SentNotification model">
+      <created>1665516234607</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1665516234607</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test" />
     <MESSAGE value="Chromedriver and Webscrap with Selenium" />
     <MESSAGE value="Webscrap to get the url" />
     <MESSAGE value="link field in Store model" />
@@ -627,7 +627,8 @@
     <MESSAGE value="Add store migrtion to git" />
     <MESSAGE value="Add notification app" />
     <MESSAGE value="Add notification.urls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add notification.urls" />
+    <MESSAGE value="Add SentNotification model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SentNotification model" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
