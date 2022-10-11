@@ -87,5 +87,3 @@ admin.site.register(Games, GameAdmin)
 admin.site.register(Family, FamilyAdmin)
 admin.site.register(GameCompany, GameCompanyAdmin)
 admin.site.register(Store, StoreAdmin)
-
-

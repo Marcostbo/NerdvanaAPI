@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add SentNotification model">
-      <change afterPath="$PROJECT_DIR$/notification/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/models/sent_notification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/models.py" beforeDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add SentNotification model in admin">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvana/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,14 +242,7 @@
       <workItem from="1664321526399" duration="5243000" />
       <workItem from="1664930147981" duration="960000" />
       <workItem from="1664931140135" duration="4823000" />
-      <workItem from="1665514805980" duration="1812000" />
-    </task>
-    <task id="LOCAL-00076" summary="Create game_pricing.py file">
-      <created>1661733413992</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1661733413992</updated>
+      <workItem from="1665514805980" duration="5187000" />
     </task>
     <task id="LOCAL-00077" summary="Define steps for game_pricing">
       <created>1661733617624</created>
@@ -585,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665516234607</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Add SentNotification model in admin">
+      <created>1665516923719</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1665516923722</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Chromedriver and Webscrap with Selenium" />
     <MESSAGE value="Webscrap to get the url" />
     <MESSAGE value="link field in Store model" />
     <MESSAGE value="Test new games" />
@@ -628,7 +629,8 @@
     <MESSAGE value="Add notification app" />
     <MESSAGE value="Add notification.urls" />
     <MESSAGE value="Add SentNotification model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add SentNotification model" />
+    <MESSAGE value="Add SentNotification model in admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SentNotification model in admin" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

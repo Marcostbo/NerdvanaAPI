@@ -8,5 +8,5 @@ class SentNotificationAdmin(admin.ModelAdmin):
     list_filter = ('reason',)
 
 
-admin.register(SentNotification, SentNotificationAdmin)
+admin.site.register(SentNotification, SentNotificationAdmin)
 
