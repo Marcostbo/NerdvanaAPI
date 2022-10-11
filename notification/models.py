@@ -1,3 +1,13 @@
 from django.db import models
+from notification.constants import EMAIL_REASON
 
-# Create your models here.
+
+class SentNotification(models.Model):
+    recipient = models.ForeignKey('nerdvanapp.User', on_delete=models.CASCADE)
+    content = models.TextField(blank=True, null=True)
+    reason = models.CharField(max_length=20, null=True, choices=EMAIL_REASON)
+    sent = models.BooleanField(default=False)
+
+    class Meta:
+        verbose_name = 'Sent Notification'
+        verbose_name_plural = 'Sent Notifications'
