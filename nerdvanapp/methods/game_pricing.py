@@ -40,7 +40,7 @@ class GamePricing:
             link = self.find_between(page_source, start, self.end)
             full_link = store_url + link
             store_result = {
-                'store_name': store_name,
+                'store_name': store[2],
                 'price': smaller_price,
                 'url': full_link
             }

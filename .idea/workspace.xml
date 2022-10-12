@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add SentNotification model in admin">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,14 +238,7 @@
       <workItem from="1664321526399" duration="5243000" />
       <workItem from="1664930147981" duration="960000" />
       <workItem from="1664931140135" duration="4823000" />
-      <workItem from="1665514805980" duration="5187000" />
-    </task>
-    <task id="LOCAL-00077" summary="Define steps for game_pricing">
-      <created>1661733617624</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1661733617624</updated>
+      <workItem from="1665514805980" duration="6305000" />
     </task>
     <task id="LOCAL-00078" summary="Define steps for game_pricing">
       <created>1661733709551</created>
@@ -587,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665516923722</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="Fix">
+      <created>1665523251691</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1665523251691</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,14 +619,14 @@
     <MESSAGE value="Create gamepricing url" />
     <MESSAGE value="Finish gamepricing endpoint" />
     <MESSAGE value="Start email settings" />
-    <MESSAGE value="Fix" />
     <MESSAGE value="Make email generation work" />
     <MESSAGE value="Add store migrtion to git" />
     <MESSAGE value="Add notification app" />
     <MESSAGE value="Add notification.urls" />
     <MESSAGE value="Add SentNotification model" />
     <MESSAGE value="Add SentNotification model in admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add SentNotification model in admin" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

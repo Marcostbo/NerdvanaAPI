@@ -47,4 +47,4 @@ class GamePricingView(APIView):
 
     @staticmethod
     def get_all_stores_object():
-        return Store.objects.all().values_list('search_name', 'link')
+        return Store.objects.all().values_list('search_name', 'link', 'name')
