@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Return store name instead of search name">
-      <change afterPath="$PROJECT_DIR$/notification/models/codes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add Passoword recovery and email validation models">
+      <change beforePath="$PROJECT_DIR$/notification/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,14 +238,7 @@
       <workItem from="1664930147981" duration="960000" />
       <workItem from="1664931140135" duration="4823000" />
       <workItem from="1665514805980" duration="6484000" />
-      <workItem from="1666055249912" duration="293000" />
-    </task>
-    <task id="LOCAL-00079" summary="Define steps for game_pricing">
-      <created>1661734063067</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1661734063067</updated>
+      <workItem from="1666055249912" duration="685000" />
     </task>
     <task id="LOCAL-00080" summary="Start store model">
       <created>1661821897975</created>
@@ -584,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665534475311</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="Add Passoword recovery and email validation models">
+      <created>1666055756518</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1666055756518</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +601,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="link field in Store model" />
     <MESSAGE value="Test new games" />
     <MESSAGE value="Create stores migration" />
     <MESSAGE value="Add stores in admin" />
@@ -627,7 +625,8 @@
     <MESSAGE value="Add SentNotification model in admin" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Return store name instead of search name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Return store name instead of search name" />
+    <MESSAGE value="Add Passoword recovery and email validation models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Passoword recovery and email validation models" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

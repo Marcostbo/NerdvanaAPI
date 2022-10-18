@@ -3,3 +3,8 @@ EMAIL_REASON = (
     ("Email Validation", "Email Validation"),
     ("Game Price Alert", "Game Price Alert")
 )
+
+CODE_REASON = (
+    ("Password Recovery", "Password Recovery"),
+    ("Email Validation", "Email Validation"),
+)
