@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add Passoword recovery and email validation in admin. Fix migration">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/constants.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create new property Is_valid">
       <change beforePath="$PROJECT_DIR$/notification/models/codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/models/codes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,14 +238,7 @@
       <workItem from="1664930147981" duration="960000" />
       <workItem from="1664931140135" duration="4823000" />
       <workItem from="1665514805980" duration="6484000" />
-      <workItem from="1666055249912" duration="2426000" />
-    </task>
-    <task id="LOCAL-00081" summary="Image as filefield (evaluate)">
-      <created>1661822119018</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1661822119018</updated>
+      <workItem from="1666055249912" duration="2748000" />
     </task>
     <task id="LOCAL-00082" summary="Image as filefield (evaluate)">
       <created>1661822526425</created>
@@ -587,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666056058732</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Create new property Is_valid">
+      <created>1666057932589</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1666057932589</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +601,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create stores migration" />
     <MESSAGE value="Add stores in admin" />
     <MESSAGE value="Create GamePrincing class" />
     <MESSAGE value="Treate price string" />
@@ -630,7 +625,8 @@
     <MESSAGE value="Return store name instead of search name" />
     <MESSAGE value="Add Passoword recovery and email validation models" />
     <MESSAGE value="Add Passoword recovery and email validation in admin. Fix migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Passoword recovery and email validation in admin. Fix migration" />
+    <MESSAGE value="Create new property Is_valid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new property Is_valid" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
