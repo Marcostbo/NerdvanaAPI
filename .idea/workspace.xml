@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Return store name instead of search name">
+      <change afterPath="$PROJECT_DIR$/notification/models/codes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,14 +238,8 @@
       <workItem from="1664321526399" duration="5243000" />
       <workItem from="1664930147981" duration="960000" />
       <workItem from="1664931140135" duration="4823000" />
-      <workItem from="1665514805980" duration="6305000" />
-    </task>
-    <task id="LOCAL-00078" summary="Define steps for game_pricing">
-      <created>1661733709551</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1661733709551</updated>
+      <workItem from="1665514805980" duration="6484000" />
+      <workItem from="1666055249912" duration="293000" />
     </task>
     <task id="LOCAL-00079" summary="Define steps for game_pricing">
       <created>1661734063067</created>
@@ -583,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665523251691</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Return store name instead of search name">
+      <created>1665534475311</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1665534475311</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +602,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Webscrap to get the url" />
     <MESSAGE value="link field in Store model" />
     <MESSAGE value="Test new games" />
     <MESSAGE value="Create stores migration" />
@@ -626,7 +626,8 @@
     <MESSAGE value="Add SentNotification model" />
     <MESSAGE value="Add SentNotification model in admin" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Return store name instead of search name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Return store name instead of search name" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
