@@ -8,19 +8,22 @@ class SentNotificationAdmin(admin.ModelAdmin):
     list_filter = ('reason',)
 
 
-class PasswordRecoveryCodeAdmin(admin.ModelAdmin):
-    list_display = ['code', 'user', 'creation_date', 'reason']
+class BaseCodeAdmin(admin.ModelAdmin):
+    list_display = ['code', 'user', 'creation_date', 'reason', 'is_valid']
     search_fields = ['id', 'user', 'reason']
     list_filter = ['reason', ]
+    fields = ['code', 'user', 'creation_date', 'reason', 'is_valid']
+    readonly_fields = ('is_valid', )
 
 
-class ValidateEmailCodeAdmin(admin.ModelAdmin):
-    list_display = ['code', 'user', 'creation_date', 'reason']
-    search_fields = ['id', 'user', 'reason']
-    list_filter = ['reason', ]
+class PasswordRecoveryCodeAdmin(BaseCodeAdmin):
+    pass
+
+
+class ValidateEmailCodeAdmin(BaseCodeAdmin):
+    pass
 
 
 admin.site.register(SentNotification, SentNotificationAdmin)
 admin.site.register(PasswordRecoveryCode, PasswordRecoveryCodeAdmin)
 admin.site.register(ValidateEmailCode, ValidateEmailCodeAdmin)
-
