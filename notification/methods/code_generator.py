@@ -3,7 +3,7 @@ from random import randint
 
 class CodeGenerator:
     min_digits = 4
-    max_digits = 6
+    max_digits = 8
 
     def generate_random_code(self, number_of_digits):
         if self.min_digits <= number_of_digits <= self.max_digits:
