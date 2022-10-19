@@ -9,6 +9,7 @@ class BaseCode(models.Model):
     code = models.IntegerField(max_length=6)
     creation_date = models.DateTimeField()
     reason = models.CharField(max_length=20, null=True, choices=CODE_REASON)
+    validated = models.BooleanField(default=False, null=True, verbose_name='Code was validated?')
 
     class Meta:
         abstract = True

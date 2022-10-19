@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Set 8 as max">
-      <change afterPath="$PROJECT_DIR$/notification/methods/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/methods/send_email.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Move send_email class to Notification app">
+      <change afterPath="$PROJECT_DIR$/notification/views/generate_valid_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/models/codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/models/codes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\nerdvanapp\scripts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\notification\methods" />
     </key>
   </component>
   <component name="RunManager" selected="Python.send_email">
@@ -240,14 +245,7 @@
       <workItem from="1664931140135" duration="4823000" />
       <workItem from="1665514805980" duration="6484000" />
       <workItem from="1666055249912" duration="2948000" />
-      <workItem from="1666143218093" duration="424000" />
-    </task>
-    <task id="LOCAL-00085" summary="Test">
-      <created>1662422535774</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1662422535775</updated>
+      <workItem from="1666143218093" duration="957000" />
     </task>
     <task id="LOCAL-00086" summary="Chromedriver and Webscrap with Selenium">
       <created>1662426975773</created>
@@ -585,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666143550491</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="Move send_email class to Notification app">
+      <created>1666143675603</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1666143675603</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +608,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Return as float" />
     <MESSAGE value="Return as float (FIX)" />
     <MESSAGE value="TODO" />
     <MESSAGE value="Improve webdriver call" />
@@ -628,7 +632,8 @@
     <MESSAGE value="Better description" />
     <MESSAGE value="Create code generator class" />
     <MESSAGE value="Set 8 as max" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set 8 as max" />
+    <MESSAGE value="Move send_email class to Notification app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move send_email class to Notification app" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

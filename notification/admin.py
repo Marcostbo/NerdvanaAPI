@@ -9,11 +9,11 @@ class SentNotificationAdmin(admin.ModelAdmin):
 
 
 class BaseCodeAdmin(admin.ModelAdmin):
-    list_display = ['code', 'user', 'creation_date', 'reason', 'get_is_valid']
+    list_display = ['code', 'user', 'creation_date', 'reason', 'get_is_valid', 'validated']
     search_fields = ['id', 'user', 'reason']
-    list_filter = ['reason', ]
-    fields = ['code', 'user', 'creation_date', 'reason', 'get_is_valid']
-    readonly_fields = ('get_is_valid', )
+    list_filter = ['creation_date', 'validated', ]
+    fields = ['code', 'user', 'creation_date', 'reason', 'get_is_valid', 'validated']
+    readonly_fields = ('get_is_valid', 'validated')
 
     @staticmethod
     @admin.display(boolean=True, description='Is valid?')
