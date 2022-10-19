@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create new property Is_valid">
-      <change beforePath="$PROJECT_DIR$/notification/models/codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/models/codes.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better description" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -238,14 +236,7 @@
       <workItem from="1664930147981" duration="960000" />
       <workItem from="1664931140135" duration="4823000" />
       <workItem from="1665514805980" duration="6484000" />
-      <workItem from="1666055249912" duration="2748000" />
-    </task>
-    <task id="LOCAL-00082" summary="Image as filefield (evaluate)">
-      <created>1661822526425</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1661822526425</updated>
+      <workItem from="1666055249912" duration="2948000" />
     </task>
     <task id="LOCAL-00083" summary="Image as filefield (evaluate)">
       <created>1661903531647</created>
@@ -583,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666057932589</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Better description">
+      <created>1666058234974</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1666058234974</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +599,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add stores in admin" />
     <MESSAGE value="Create GamePrincing class" />
     <MESSAGE value="Treate price string" />
     <MESSAGE value="Return as float" />
@@ -626,7 +623,8 @@
     <MESSAGE value="Add Passoword recovery and email validation models" />
     <MESSAGE value="Add Passoword recovery and email validation in admin. Fix migration" />
     <MESSAGE value="Create new property Is_valid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create new property Is_valid" />
+    <MESSAGE value="Better description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better description" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
