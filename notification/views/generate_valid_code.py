@@ -8,3 +8,7 @@ class GenerateValidCodeView(APIView):
     def post(self):
         request = self.request
         return None
+
+    # this view must:
+    # generate code
+    # validate code

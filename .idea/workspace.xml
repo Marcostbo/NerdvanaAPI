@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Move send_email class to Notification app">
-      <change afterPath="$PROJECT_DIR$/notification/views/generate_valid_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/models/codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/models/codes.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Improve codes in Admin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,21 +240,7 @@
       <workItem from="1664931140135" duration="4823000" />
       <workItem from="1665514805980" duration="6484000" />
       <workItem from="1666055249912" duration="2948000" />
-      <workItem from="1666143218093" duration="957000" />
-    </task>
-    <task id="LOCAL-00086" summary="Chromedriver and Webscrap with Selenium">
-      <created>1662426975773</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1662426975773</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Chromedriver and Webscrap with Selenium">
-      <created>1662427134650</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1662427134650</updated>
+      <workItem from="1666143218093" duration="1382000" />
     </task>
     <task id="LOCAL-00088" summary="Webscrap to get the url">
       <created>1662509635650</created>
@@ -590,7 +571,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666143675603</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="Create new field 'validated' for Codes">
+      <created>1666144253726</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1666144253726</updated>
+    </task>
+    <task id="LOCAL-00136" summary="Improve codes in Admin">
+      <created>1666144307387</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1666144307387</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,8 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Return as float (FIX)" />
-    <MESSAGE value="TODO" />
     <MESSAGE value="Improve webdriver call" />
     <MESSAGE value="Search multiple stores" />
     <MESSAGE value="Fix 2" />
@@ -633,7 +626,9 @@
     <MESSAGE value="Create code generator class" />
     <MESSAGE value="Set 8 as max" />
     <MESSAGE value="Move send_email class to Notification app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move send_email class to Notification app" />
+    <MESSAGE value="Create new field 'validated' for Codes" />
+    <MESSAGE value="Improve codes in Admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve codes in Admin" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
