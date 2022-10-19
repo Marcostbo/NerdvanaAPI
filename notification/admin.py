@@ -13,7 +13,7 @@ class BaseCodeAdmin(admin.ModelAdmin):
     search_fields = ['id', 'user', 'reason']
     list_filter = ['creation_date', 'validated', ]
     fields = ['code', 'user', 'creation_date', 'reason', 'get_is_valid', 'validated']
-    readonly_fields = ('get_is_valid', 'validated')
+    readonly_fields = ('get_is_valid', 'validated', 'creation_date')
 
     @staticmethod
     @admin.display(boolean=True, description='Is valid?')
