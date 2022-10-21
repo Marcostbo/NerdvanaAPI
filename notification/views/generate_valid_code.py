@@ -11,3 +11,5 @@ class GenerateValidCodeView(APIView):
 
     # this view must:
     # generate code
+        # receive number of digits
+        # receive reason: validate_email or change_password
