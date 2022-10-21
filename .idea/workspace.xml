@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Improve codes in Admin" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Todos" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,14 +240,7 @@
       <workItem from="1664931140135" duration="4823000" />
       <workItem from="1665514805980" duration="6484000" />
       <workItem from="1666055249912" duration="2948000" />
-      <workItem from="1666143218093" duration="1382000" />
-    </task>
-    <task id="LOCAL-00088" summary="Webscrap to get the url">
-      <created>1662509635650</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1662509635652</updated>
+      <workItem from="1666143218093" duration="1510000" />
     </task>
     <task id="LOCAL-00089" summary="link field in Store model">
       <created>1662509662881</created>
@@ -585,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666144307387</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="Todos">
+      <created>1666144720010</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1666144720010</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improve webdriver call" />
     <MESSAGE value="Search multiple stores" />
     <MESSAGE value="Fix 2" />
     <MESSAGE value="Refactor" />
@@ -628,7 +627,8 @@
     <MESSAGE value="Move send_email class to Notification app" />
     <MESSAGE value="Create new field 'validated' for Codes" />
     <MESSAGE value="Improve codes in Admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve codes in Admin" />
+    <MESSAGE value="Todos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Todos" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
