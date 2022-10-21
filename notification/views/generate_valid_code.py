@@ -11,4 +11,3 @@ class GenerateValidCodeView(APIView):
 
     # this view must:
     # generate code
-    # validate code
