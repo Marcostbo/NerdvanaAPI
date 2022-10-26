@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Todos" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Define view goals" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,34 +241,7 @@
       <workItem from="1665514805980" duration="6484000" />
       <workItem from="1666055249912" duration="2948000" />
       <workItem from="1666143218093" duration="1510000" />
-    </task>
-    <task id="LOCAL-00089" summary="link field in Store model">
-      <created>1662509662881</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1662509662881</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Test new games">
-      <created>1662677180431</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1662677180431</updated>
-    </task>
-    <task id="LOCAL-00091" summary="Test new games">
-      <created>1662678452439</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1662678452439</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Create stores migration">
-      <created>1662681202885</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1662681202885</updated>
+      <workItem from="1666317070640" duration="170000" />
     </task>
     <task id="LOCAL-00093" summary="Add stores in admin">
       <created>1662682008564</created>
@@ -585,7 +558,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666144720010</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="Fix">
+      <created>1666317096369</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1666317096370</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Add migrations to repo">
+      <created>1666317119249</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1666317119249</updated>
+    </task>
+    <task id="LOCAL-00140" summary="Fix">
+      <created>1666317161411</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1666317161411</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Define view goals">
+      <created>1666317229194</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1666317229194</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,8 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Search multiple stores" />
-    <MESSAGE value="Fix 2" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="Start gamepricing endpoint" />
     <MESSAGE value="Create gamepricing url" />
@@ -616,7 +615,6 @@
     <MESSAGE value="Add notification.urls" />
     <MESSAGE value="Add SentNotification model" />
     <MESSAGE value="Add SentNotification model in admin" />
-    <MESSAGE value="Fix" />
     <MESSAGE value="Return store name instead of search name" />
     <MESSAGE value="Add Passoword recovery and email validation models" />
     <MESSAGE value="Add Passoword recovery and email validation in admin. Fix migration" />
@@ -628,7 +626,10 @@
     <MESSAGE value="Create new field 'validated' for Codes" />
     <MESSAGE value="Improve codes in Admin" />
     <MESSAGE value="Todos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Todos" />
+    <MESSAGE value="Add migrations to repo" />
+    <MESSAGE value="Fix" />
+    <MESSAGE value="Define view goals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Define view goals" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
