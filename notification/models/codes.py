@@ -31,6 +31,10 @@ class PasswordRecoveryCode(BaseCode):
     is_valid.fget.short_description = u"Is valid?"
     is_valid.fget.boolean = True
 
+    @property
+    def valid_until(self):
+        return self.creation_date + timedelta(minutes=EMAIL_VALIDATION_VALID_TIME)
+
 
 class ValidateEmailCode(BaseCode):
 
@@ -47,3 +51,7 @@ class ValidateEmailCode(BaseCode):
             return True
     is_valid.fget.short_description = u"Is valid?"
     is_valid.fget.boolean = True
+
+    @property
+    def valid_until(self):
+        return self.creation_date + timedelta(minutes=EMAIL_VALIDATION_VALID_TIME)

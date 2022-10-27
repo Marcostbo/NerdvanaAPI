@@ -1,7 +1,8 @@
 from rest_framework import serializers
+from nerdvanapp.serializers import UserSerializer
 
 
-class GenerateCodeSerializer(serializers.Serializer):
+class GenerateCodeRequestSerializer(serializers.Serializer):
     def update(self, instance, validated_data):
         pass
 
@@ -11,3 +12,16 @@ class GenerateCodeSerializer(serializers.Serializer):
     code = serializers.IntegerField(required=True)
     user = serializers.IntegerField(required=True)
     reason = serializers.CharField(required=True)
+
+
+class NewCodeSerializer(serializers.Serializer):
+    def update(self, instance, validated_data):
+        pass
+
+    def create(self, validated_data):
+        pass
+
+    user = UserSerializer()
+    code = serializers.CharField(required=True)
+    creation_date = serializers.CharField()
+    valid_until = serializers.DateTimeField()
