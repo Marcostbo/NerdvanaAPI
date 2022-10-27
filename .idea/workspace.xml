@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Define view goals" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Define view goals">
+      <change afterPath="$PROJECT_DIR$/notification/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/views/generate_valid_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/views/generate_valid_code.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,13 +246,8 @@
       <workItem from="1666055249912" duration="2948000" />
       <workItem from="1666143218093" duration="1510000" />
       <workItem from="1666317070640" duration="170000" />
-    </task>
-    <task id="LOCAL-00093" summary="Add stores in admin">
-      <created>1662682008564</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1662682008564</updated>
+      <workItem from="1666752259707" duration="19000" />
+      <workItem from="1666830572591" duration="1174000" />
     </task>
     <task id="LOCAL-00094" summary="Add stores in admin">
       <created>1662773735401</created>
@@ -586,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666317229194</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Define view goals">
+      <created>1666752267121</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1666752267122</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
