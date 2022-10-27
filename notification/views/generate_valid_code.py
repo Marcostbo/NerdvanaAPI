@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from notification.serializers import GenerateCodeRequestSerializer, NewCodeSerializer
-from notification.methods.code_generator import CodeGenerator
+from notification.methods import CodeGenerator
 from notification.models import PasswordRecoveryCode, ValidateEmailCode
 from nerdvanapp.models import User
 from datetime import datetime
@@ -10,9 +10,9 @@ from django.shortcuts import get_object_or_404
 
 class GenerateValidCodeView(APIView):
 
-    def post(self):
+    def post(self, request):
         request = self.request
-        request_data = GenerateCodeRequestSerializer(request.data)
+        request_data = GenerateCodeRequestSerializer(data=request.data)
         request_data.is_valid(raise_exception=True)
 
         generated_code = CodeGenerator().generate_random_code(
