@@ -8,7 +8,7 @@ from django.utils import timezone
 from django.shortcuts import get_object_or_404
 
 
-class GenerateValidCodeView(APIView):
+class GenerateValidPasswordCodeView(APIView):
 
     def post(self, request):
         request = self.request
@@ -28,7 +28,26 @@ class GenerateValidCodeView(APIView):
                 creation_date=timezone.now(),
                 reason=reason
             )
-        elif reason == 'Email Validation':
+        else:
+            raise ValueError
+
+        return Response(NewCodeSerializer(new_code).data)
+
+
+class GenerateValidEmailCodeView(APIView):
+
+    def post(self, request):
+        request = self.request
+        request_data = GenerateCodeRequestSerializer(data=request.data)
+        request_data.is_valid(raise_exception=True)
+
+        generated_code = CodeGenerator().generate_random_code(
+            number_of_digits=6
+        )
+        reason = request_data.validated_data.get('reason')
+        user_id = request_data.validated_data.get('user')
+        user = get_object_or_404(User, pk=user_id)
+        if reason == 'Email Validation':
             new_code = ValidateEmailCode.objects.create(
                 user=user,
                 code=generated_code,
