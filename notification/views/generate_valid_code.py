@@ -4,7 +4,7 @@ from notification.serializers import GenerateCodeRequestSerializer, NewCodeSeria
 from notification.methods import CodeGenerator
 from notification.models import PasswordRecoveryCode, ValidateEmailCode
 from nerdvanapp.models import User
-from datetime import datetime
+from django.utils import timezone
 from django.shortcuts import get_object_or_404
 
 
@@ -25,14 +25,14 @@ class GenerateValidCodeView(APIView):
             new_code = PasswordRecoveryCode.objects.create(
                 user=user,
                 code=generated_code,
-                creation_date=datetime.now(),
+                creation_date=timezone.now(),
                 reason=reason
             )
         elif reason == 'Email Validation':
             new_code = ValidateEmailCode.objects.create(
                 user=user,
                 code=generated_code,
-                creation_date=datetime.now(),
+                creation_date=timezone.now(),
                 reason=reason
             )
         else:
