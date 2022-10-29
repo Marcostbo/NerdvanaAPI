@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finalize generate code view">
-      <change beforePath="$PROJECT_DIR$/notification/views/generate_valid_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/views/generate_valid_code.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Separete views (password and email)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,21 +243,7 @@
       <workItem from="1666143218093" duration="1510000" />
       <workItem from="1666317070640" duration="170000" />
       <workItem from="1666752259707" duration="19000" />
-      <workItem from="1666830572591" duration="2862000" />
-    </task>
-    <task id="LOCAL-00097" summary="Add stores in admin">
-      <created>1662937566155</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1662937566155</updated>
-    </task>
-    <task id="LOCAL-00098" summary="Fix">
-      <created>1663104025120</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1663104025120</updated>
+      <workItem from="1666830572591" duration="3132000" />
     </task>
     <task id="LOCAL-00099" summary="Create GamePrincing class">
       <created>1663293084866</created>
@@ -590,7 +574,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666833415324</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="Fix timezone">
+      <created>1666833518533</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1666833518533</updated>
+    </task>
+    <task id="LOCAL-00147" summary="Separete views (password and email)">
+      <created>1666833729095</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1666833729095</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,8 +606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create gamepricing url" />
-    <MESSAGE value="Finish gamepricing endpoint" />
     <MESSAGE value="Start email settings" />
     <MESSAGE value="Make email generation work" />
     <MESSAGE value="Add store migrtion to git" />
@@ -633,7 +629,9 @@
     <MESSAGE value="Define view goals" />
     <MESSAGE value="Star generate code view" />
     <MESSAGE value="Finalize generate code view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalize generate code view" />
+    <MESSAGE value="Fix timezone" />
+    <MESSAGE value="Separete views (password and email)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separete views (password and email)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
