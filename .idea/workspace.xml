@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Separete views (password and email)">
-      <change beforePath="$PROJECT_DIR$/notification/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/views/generate_valid_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/views/generate_valid_code.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Email is authenticated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,14 +245,7 @@
       <workItem from="1666752259707" duration="19000" />
       <workItem from="1666830572591" duration="3132000" />
       <workItem from="1667083713829" duration="70000" />
-      <workItem from="1667266045680" duration="393000" />
-    </task>
-    <task id="LOCAL-00101" summary="Return as float">
-      <created>1663293335740</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1663293335746</updated>
+      <workItem from="1667266045680" duration="725000" />
     </task>
     <task id="LOCAL-00102" summary="Return as float (FIX)">
       <created>1663294357148</created>
@@ -593,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667266258541</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="Email is authenticated">
+      <created>1667266720725</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1667266720725</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +608,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Start email settings" />
     <MESSAGE value="Make email generation work" />
     <MESSAGE value="Add store migrtion to git" />
     <MESSAGE value="Add notification app" />
@@ -636,7 +632,8 @@
     <MESSAGE value="Finalize generate code view" />
     <MESSAGE value="Fix timezone" />
     <MESSAGE value="Separete views (password and email)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separete views (password and email)" />
+    <MESSAGE value="Email is authenticated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Email is authenticated" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
