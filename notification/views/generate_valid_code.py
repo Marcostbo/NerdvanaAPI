@@ -4,6 +4,7 @@ from notification.serializers import GenerateCodeRequestSerializer, NewCodeSeria
 from notification.methods import CodeGenerator
 from notification.models import PasswordRecoveryCode, ValidateEmailCode
 from nerdvanapp.models import User
+from rest_framework.permissions import IsAuthenticated
 from django.utils import timezone
 from django.shortcuts import get_object_or_404
 
@@ -35,6 +36,7 @@ class GenerateValidPasswordCodeView(APIView):
 
 
 class GenerateValidEmailCodeView(APIView):
+    permission_classes = (IsAuthenticated,)
 
     def post(self, request):
         request = self.request
@@ -45,8 +47,7 @@ class GenerateValidEmailCodeView(APIView):
             number_of_digits=6
         )
         reason = request_data.validated_data.get('reason')
-        user_id = request_data.validated_data.get('user')
-        user = get_object_or_404(User, pk=user_id)
+        user = self.request.user
         if reason == 'Email Validation':
             new_code = ValidateEmailCode.objects.create(
                 user=user,

@@ -9,7 +9,7 @@ class GenerateCodeRequestSerializer(serializers.Serializer):
     def create(self, validated_data):
         pass
 
-    user = serializers.IntegerField(required=True)
+    user = serializers.IntegerField(required=False)
     reason = serializers.CharField(required=True)
 
 
