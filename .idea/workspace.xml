@@ -244,13 +244,7 @@
       <workItem from="1666317070640" duration="170000" />
       <workItem from="1666752259707" duration="19000" />
       <workItem from="1666830572591" duration="3132000" />
-    </task>
-    <task id="LOCAL-00099" summary="Create GamePrincing class">
-      <created>1663293084866</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1663293084866</updated>
+      <workItem from="1667083713829" duration="70000" />
     </task>
     <task id="LOCAL-00100" summary="Treate price string">
       <created>1663293307643</created>
@@ -588,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666833729095</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="Separete views (password and email)">
+      <created>1667083763445</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1667083763446</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
