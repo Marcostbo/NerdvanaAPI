@@ -6,3 +6,4 @@ from .games import *
 from .recommender import *
 from .gamepricing import *
 from .utils.custom_basic_views import *
+from .email_validation import *

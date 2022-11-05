@@ -12,9 +12,3 @@ class SendNotification:
             from_email=self.from_email,
             recipient_list=[settings.EMAIL_RECIPIENT_ADDRESS, to_email]
         )
-
-
-notification = SendNotification()
-notification.send_email(
-    to_email='elisa.oliveira@engenharia.ufjf.br'
-)

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Start email validation endpoint">
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/__init__.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Subject and message as input">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/views/email_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/email_validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/methods/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/methods/send_email.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,14 +254,7 @@
       <workItem from="1667083713829" duration="70000" />
       <workItem from="1667266045680" duration="725000" />
       <workItem from="1667338980215" duration="79000" />
-      <workItem from="1667658700870" duration="1970000" />
-    </task>
-    <task id="LOCAL-00104" summary="TODO">
-      <created>1663294887806</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1663294887806</updated>
+      <workItem from="1667658700870" duration="4745000" />
     </task>
     <task id="LOCAL-00105" summary="TODO">
       <created>1663803239865</created>
@@ -595,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667660349970</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="Subject and message as input">
+      <created>1667661186219</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1667661186219</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +617,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add store migrtion to git" />
     <MESSAGE value="Add notification app" />
     <MESSAGE value="Add notification.urls" />
     <MESSAGE value="Add SentNotification model" />
@@ -638,7 +641,8 @@
     <MESSAGE value="Separete views (password and email)" />
     <MESSAGE value="Email is authenticated" />
     <MESSAGE value="Start email validation endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start email validation endpoint" />
+    <MESSAGE value="Subject and message as input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subject and message as input" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
