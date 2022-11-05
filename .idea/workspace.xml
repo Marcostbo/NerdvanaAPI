@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Email is authenticated" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Email is authenticated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -246,13 +248,8 @@
       <workItem from="1666830572591" duration="3132000" />
       <workItem from="1667083713829" duration="70000" />
       <workItem from="1667266045680" duration="725000" />
-    </task>
-    <task id="LOCAL-00102" summary="Return as float (FIX)">
-      <created>1663294357148</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1663294357148</updated>
+      <workItem from="1667338980215" duration="79000" />
+      <workItem from="1667658700870" duration="1048000" />
     </task>
     <task id="LOCAL-00103" summary="Return as float (FIX)">
       <created>1663294735348</created>
@@ -590,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667266720725</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Email is authenticated">
+      <created>1667339044854</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1667339044854</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
