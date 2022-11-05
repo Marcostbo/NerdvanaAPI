@@ -3,4 +3,5 @@ from .game import FullGameSerializer, GameSerializer, SimpleGameSerializer, Game
 from .game_company import GameCompanySerializer
 from .recommender import RecommenderQuerySerializer
 from .gamepricing import *
+from .email_validation import *
 
