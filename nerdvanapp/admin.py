@@ -13,7 +13,7 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = (
         (None, {'fields': ('email', 'name', 'password')}),
         ('Permissions', {'fields': ('is_staff', 'is_active')}),
-        ('Email Validation', {'fields': ('email_validated', )})
+        ('Email Validation', {'fields': ('validated_on', 'email_validated', )})
     )
     add_fieldsets = (
         (None, {
@@ -21,7 +21,7 @@ class CustomUserAdmin(UserAdmin):
             'fields': ('email', 'password1', 'password2', 'is_staff', 'is_active')}
          ),
     )
-    readonly_fields = ('email_validated', )
+    readonly_fields = ('validated_on', 'email_validated', )
     search_fields = ('email',)
     ordering = ('email',)
 
