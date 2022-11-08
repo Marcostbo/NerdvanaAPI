@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Send email for validate email">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Validate code input method">
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/email_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/email_validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/methods/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/methods/send_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/models/sent_notification.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification/models/sent_notification.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,13 +252,7 @@
       <workItem from="1667266045680" duration="725000" />
       <workItem from="1667338980215" duration="79000" />
       <workItem from="1667658700870" duration="5393000" />
-    </task>
-    <task id="LOCAL-00106" summary="Improve webdriver call">
-      <created>1663977198947</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1663977198948</updated>
+      <workItem from="1667947351756" duration="1094000" />
     </task>
     <task id="LOCAL-00107" summary="Search multiple stores">
       <created>1663978756806</created>
@@ -595,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667663619329</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="Validate code input method">
+      <created>1667948119091</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1667948119092</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +615,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add notification.urls" />
     <MESSAGE value="Add SentNotification model" />
     <MESSAGE value="Add SentNotification model in admin" />
     <MESSAGE value="Return store name instead of search name" />
@@ -638,7 +639,8 @@
     <MESSAGE value="Start email validation endpoint" />
     <MESSAGE value="Subject and message as input" />
     <MESSAGE value="Send email for validate email" />
-    <option name="LAST_COMMIT_MESSAGE" value="Send email for validate email" />
+    <MESSAGE value="Validate code input method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validate code input method" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

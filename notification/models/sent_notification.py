@@ -11,3 +11,7 @@ class SentNotification(models.Model):
     class Meta:
         verbose_name = 'Sent Notification'
         verbose_name_plural = 'Sent Notifications'
+
+    def set_sent(self):
+        self.sent = True
+        self.save(update_fields=['sent'])

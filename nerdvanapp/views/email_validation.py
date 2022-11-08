@@ -40,7 +40,9 @@ class SendEmailValidateCode(APIView):
         SendNotification().send_email(
             to_email=user.email,
             subject='Login Nerdvana - Código de Validação',
-            message=text
+            message=text,
+            user=user,
+            reason="Email Validation"
         )
 
         return HttpResponse(status=201)
