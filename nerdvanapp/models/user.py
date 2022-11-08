@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
 from nerdvanapp.managers import CustomUserManager
 
@@ -23,3 +24,8 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.email
+
+    def validate(self):
+        self.validated_on = timezone.now()
+        self.email_validated = True
+        self.save(update_fields=['validated_on', 'email_validated'])
