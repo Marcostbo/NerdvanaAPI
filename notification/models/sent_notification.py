@@ -15,3 +15,6 @@ class SentNotification(models.Model):
     def set_sent(self):
         self.sent = True
         self.save(update_fields=['sent'])
+
+    def __str__(self):
+        return f'{self.reason} - {self.recipient.email}'

@@ -3,9 +3,9 @@ from .models import SentNotification, PasswordRecoveryCode, ValidateEmailCode
 
 
 class SentNotificationAdmin(admin.ModelAdmin):
-    list_display = ['id', 'recipient', 'reason']
+    list_display = ['id', 'recipient', 'reason', 'sent']
     search_fields = ['id', 'reason']
-    list_filter = ('reason',)
+    list_filter = ('reason', 'sent')
 
 
 class BaseCodeAdmin(admin.ModelAdmin):
