@@ -18,12 +18,11 @@ class SendEmailValidateCode(APIView):
         user = self.request.user
 
         code_object = ValidateEmailCode.objects.get(code=code)
-        if not code_object:
-            raise ValidationError('Code does not exists')
-        elif code_object.user != user:
-            raise ValidationError('Invalid code for this user')
-        elif not code_object.is_valid:
-            raise ValidationError('Code not valid anymore')
+
+        self.validate_code_input(
+            code_object=code_object,
+            user=user
+        )
 
         text = f'Olá, {user.first_name} \n' \
                f'\n'\
@@ -45,3 +44,12 @@ class SendEmailValidateCode(APIView):
         )
 
         return HttpResponse(status=201)
+
+    @staticmethod
+    def validate_code_input(code_object, user):
+        if not code_object:
+            raise ValidationError('Code does not exists')
+        elif code_object.user != user:
+            raise ValidationError('Invalid code for this user')
+        elif not code_object.is_valid:
+            raise ValidationError('Code not valid anymore')
