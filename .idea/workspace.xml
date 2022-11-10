@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add email validation fields for user">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/user.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create validate user method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,21 +250,7 @@
       <workItem from="1667266045680" duration="725000" />
       <workItem from="1667338980215" duration="79000" />
       <workItem from="1667658700870" duration="5393000" />
-      <workItem from="1667947351756" duration="2565000" />
-    </task>
-    <task id="LOCAL-00110" summary="Refactor">
-      <created>1664322112010</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1664322112011</updated>
-    </task>
-    <task id="LOCAL-00111" summary="Start gamepricing endpoint">
-      <created>1664323579326</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1664323579326</updated>
+      <workItem from="1667947351756" duration="4661000" />
     </task>
     <task id="LOCAL-00112" summary="Create gamepricing url">
       <created>1664323717029</created>
@@ -597,7 +581,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667949921818</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="Fix">
+      <created>1667950032362</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1667950032362</updated>
+    </task>
+    <task id="LOCAL-00160" summary="Create validate user method">
+      <created>1667950169967</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1667950169967</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +613,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Passoword recovery and email validation models" />
     <MESSAGE value="Add Passoword recovery and email validation in admin. Fix migration" />
     <MESSAGE value="Create new property Is_valid" />
     <MESSAGE value="Better description" />
@@ -626,7 +623,6 @@
     <MESSAGE value="Improve codes in Admin" />
     <MESSAGE value="Todos" />
     <MESSAGE value="Add migrations to repo" />
-    <MESSAGE value="Fix" />
     <MESSAGE value="Define view goals" />
     <MESSAGE value="Star generate code view" />
     <MESSAGE value="Finalize generate code view" />
@@ -640,7 +636,9 @@
     <MESSAGE value="Register new sent_notification" />
     <MESSAGE value="Better admin for sentnotification" />
     <MESSAGE value="Add email validation fields for user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add email validation fields for user" />
+    <MESSAGE value="Fix" />
+    <MESSAGE value="Create validate user method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create validate user method" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
