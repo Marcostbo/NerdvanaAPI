@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create validate user method">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/utils/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/email_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/email_validation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,13 +255,7 @@
       <workItem from="1667338980215" duration="79000" />
       <workItem from="1667658700870" duration="5393000" />
       <workItem from="1667947351756" duration="4661000" />
-    </task>
-    <task id="LOCAL-00112" summary="Create gamepricing url">
-      <created>1664323717029</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1664323717029</updated>
+      <workItem from="1668122713407" duration="748000" />
     </task>
     <task id="LOCAL-00113" summary="Finish gamepricing endpoint">
       <created>1664327457059</created>
@@ -595,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667950169967</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="Create validate user method">
+      <created>1668122721083</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1668122721084</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

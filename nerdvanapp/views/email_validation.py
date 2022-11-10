@@ -3,11 +3,11 @@ from rest_framework.views import APIView
 from nerdvanapp.serializers import SendEmailDataSerializer
 from notification.models import ValidateEmailCode
 from notification.methods import SendNotification
-from rest_framework.exceptions import ValidationError
+from nerdvanapp.views.utils.functions import validate_code_input
 from django.http import HttpResponse
 
 
-class SendEmailValidateCode(APIView):
+class SendEmailValidateCodeView(APIView):
     permission_classes = (IsAuthenticated,)
 
     def post(self, request):
@@ -19,7 +19,7 @@ class SendEmailValidateCode(APIView):
 
         code_object = ValidateEmailCode.objects.get(code=code)
 
-        self.validate_code_input(
+        validate_code_input(
             code_object=code_object,
             user=user
         )
@@ -47,11 +47,24 @@ class SendEmailValidateCode(APIView):
 
         return HttpResponse(status=201)
 
-    @staticmethod
-    def validate_code_input(code_object, user):
-        if not code_object:
-            raise ValidationError('Code does not exists')
-        elif code_object.user != user:
-            raise ValidationError('Invalid code for this user')
-        elif not code_object.is_valid:
-            raise ValidationError('Code not valid anymore')
+
+class ValidateEmailView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def post(self, request):
+        data = SendEmailDataSerializer(data=self.request.data)
+        data.is_valid(raise_exception=True)
+
+        code = data.validated_data.get('code')
+        user = self.request.user
+
+        code_object = ValidateEmailCode.objects.get(code=code)
+
+        validate_code_input(
+            code_object=code_object,
+            user=user
+        )
+
+        user.validate()
+
+        return HttpResponse(status=201)

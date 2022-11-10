@@ -5,7 +5,8 @@ from rest_framework_simplejwt import views as jwt_views
 urlpatterns = [
     # Register routes
     path('register', views.RegisterView.as_view()),
-    path('email-validate', views.SendEmailValidateCode.as_view()),
+    path('email-validate', views.SendEmailValidateCodeView.as_view()),
+    path('email-validate/user', views.ValidateEmailView.as_view()),
     # Authentication routes
     path('token', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
