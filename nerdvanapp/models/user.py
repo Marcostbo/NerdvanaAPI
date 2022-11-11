@@ -10,6 +10,7 @@ class User(AbstractUser):
     password = models.CharField(max_length=255)
     validated_on = models.DateTimeField()
     email_validated = models.BooleanField(default=False)
+    password_changed = models.BooleanField(default=False)
     username = None
 
     USERNAME_FIELD = 'email'
@@ -29,3 +30,10 @@ class User(AbstractUser):
         self.validated_on = timezone.now()
         self.email_validated = True
         self.save(update_fields=['validated_on', 'email_validated'])
+
+    def change_password(self, new_password):
+        self.password_changed = True
+        self.set_password(
+            raw_password=new_password
+        )
+        self.save()

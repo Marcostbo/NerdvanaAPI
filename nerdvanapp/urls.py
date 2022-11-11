@@ -15,6 +15,7 @@ urlpatterns = [
     path('validate-password', views.LoginView.as_view()),
     path('logged-user', views.UserView.as_view()),
     path('logout', views.LogoutView.as_view()),
+    path('user/change-password', views.ChangePasswordView.as_view()),
     # Game routes
     path('games', views.GameListView.as_view()),
     path('games/<int:pk>/', views.GameView.as_view()),
