@@ -9,3 +9,5 @@ class SendEmailDataSerializer(serializers.Serializer):
         pass
 
     code = serializers.IntegerField(required=True)
+    user = serializers.IntegerField(required=False)
+

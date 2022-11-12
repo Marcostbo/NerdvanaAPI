@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Display password_changed in admin" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Display password_changed in admin">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/views/password_recovery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/email_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/email_validation.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,13 +254,7 @@
       <workItem from="1667658700870" duration="5393000" />
       <workItem from="1667947351756" duration="4661000" />
       <workItem from="1668122713407" duration="2288000" />
-    </task>
-    <task id="LOCAL-00117" summary="Fix">
-      <created>1664931847599</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1664931847599</updated>
+      <workItem from="1668214216429" duration="1389000" />
     </task>
     <task id="LOCAL-00118" summary="Fix">
       <created>1664931937718</created>
@@ -594,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668125013607</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="Display password_changed in admin">
+      <created>1668214398510</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1668214398512</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
