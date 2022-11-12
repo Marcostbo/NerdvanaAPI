@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Change URL names">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/serializers/change_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Display password_changed in admin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -256,21 +249,7 @@
       <workItem from="1667338980215" duration="79000" />
       <workItem from="1667658700870" duration="5393000" />
       <workItem from="1667947351756" duration="4661000" />
-      <workItem from="1668122713407" duration="2097000" />
-    </task>
-    <task id="LOCAL-00115" summary="Start email settings">
-      <created>1664931555055</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1664931555055</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Start email settings">
-      <created>1664931677797</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1664931677797</updated>
+      <workItem from="1668122713407" duration="2288000" />
     </task>
     <task id="LOCAL-00117" summary="Fix">
       <created>1664931847599</created>
@@ -601,7 +580,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668123630197</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="Create change password view">
+      <created>1668124926513</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1668124926513</updated>
+    </task>
+    <task id="LOCAL-00165" summary="Display password_changed in admin">
+      <created>1668125013606</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1668125013607</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,8 +612,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Better description" />
-    <MESSAGE value="Create code generator class" />
     <MESSAGE value="Set 8 as max" />
     <MESSAGE value="Move send_email class to Notification app" />
     <MESSAGE value="Create new field 'validated' for Codes" />
@@ -644,7 +635,9 @@
     <MESSAGE value="Create validate user method" />
     <MESSAGE value="Create view to validate user email" />
     <MESSAGE value="Change URL names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change URL names" />
+    <MESSAGE value="Create change password view" />
+    <MESSAGE value="Display password_changed in admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display password_changed in admin" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
