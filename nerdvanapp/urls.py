@@ -7,6 +7,8 @@ urlpatterns = [
     path('register', views.RegisterView.as_view()),
     path('email/generate-code', views.SendEmailValidateCodeView.as_view()),
     path('email/validate-user', views.ValidateEmailView.as_view()),
+    # Password Recovery routes
+    path('password-recovery/generate-code', views.SendEmailPasswordRecoveryView.as_view()),
     # Authentication routes
     path('token', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),

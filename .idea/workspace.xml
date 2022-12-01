@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Start password recovery view" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Start password recovery view">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/password_recovery.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/password_recovery.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -251,13 +256,7 @@
       <workItem from="1667947351756" duration="4661000" />
       <workItem from="1668122713407" duration="2288000" />
       <workItem from="1668214216429" duration="1483000" />
-    </task>
-    <task id="LOCAL-00119" summary="Make email generation work">
-      <created>1664935707714</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1664935707714</updated>
+      <workItem from="1669933031477" duration="959000" />
     </task>
     <task id="LOCAL-00120" summary="Make email generation work">
       <created>1664935910897</created>
@@ -595,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668215703223</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="Start password recovery view">
+      <created>1669933054171</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1669933054172</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
