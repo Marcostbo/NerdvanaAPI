@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Start password recovery view">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Send email for password recovery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/password_recovery.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/password_recovery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,14 +254,7 @@
       <workItem from="1667947351756" duration="4661000" />
       <workItem from="1668122713407" duration="2288000" />
       <workItem from="1668214216429" duration="1483000" />
-      <workItem from="1669933031477" duration="959000" />
-    </task>
-    <task id="LOCAL-00120" summary="Make email generation work">
-      <created>1664935910897</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1664935910907</updated>
+      <workItem from="1669933031477" duration="1745000" />
     </task>
     <task id="LOCAL-00121" summary="Add store migrtion to git">
       <created>1665514900593</created>
@@ -601,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669933054172</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="Send email for password recovery">
+      <created>1669934331373</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1669934331373</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +617,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Move send_email class to Notification app" />
     <MESSAGE value="Create new field 'validated' for Codes" />
     <MESSAGE value="Improve codes in Admin" />
     <MESSAGE value="Todos" />
@@ -644,7 +641,8 @@
     <MESSAGE value="Create change password view" />
     <MESSAGE value="Display password_changed in admin" />
     <MESSAGE value="Start password recovery view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start password recovery view" />
+    <MESSAGE value="Send email for password recovery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Send email for password recovery" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

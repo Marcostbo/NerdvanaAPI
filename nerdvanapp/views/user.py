@@ -1,7 +1,9 @@
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from nerdvanapp.models import User
+from notification.models import PasswordRecoveryCode
 from nerdvanapp.serializers import UserSerializer, PasswordRecoverySerializer
+from nerdvanapp.views.utils.functions import validate_code_input
 from rest_framework.response import Response
 from django.http import HttpResponse
 
@@ -25,6 +27,14 @@ class ChangePasswordView(APIView):
 
         user_email = data.validated_data.get('user_email')
         user = User.objects.get(email=user_email)
+
+        code = data.validated_data.get('code')
+        code_object = PasswordRecoveryCode.objects.get(code=code)
+
+        validate_code_input(
+            code_object=code_object,
+            user=user
+        )
 
         new_password = data.validated_data.pop('new_password')
         user.change_password(
