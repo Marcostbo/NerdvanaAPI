@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Send email for password recovery">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finalize change password view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -254,14 +255,7 @@
       <workItem from="1667947351756" duration="4661000" />
       <workItem from="1668122713407" duration="2288000" />
       <workItem from="1668214216429" duration="1483000" />
-      <workItem from="1669933031477" duration="1745000" />
-    </task>
-    <task id="LOCAL-00121" summary="Add store migrtion to git">
-      <created>1665514900593</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1665514900593</updated>
+      <workItem from="1669933031477" duration="2145000" />
     </task>
     <task id="LOCAL-00122" summary="Add notification app">
       <created>1665514991941</created>
@@ -599,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669934331373</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="Finalize change password view">
+      <created>1669935203970</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1669935203970</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +618,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create new field 'validated' for Codes" />
     <MESSAGE value="Improve codes in Admin" />
     <MESSAGE value="Todos" />
     <MESSAGE value="Add migrations to repo" />
@@ -642,7 +642,8 @@
     <MESSAGE value="Display password_changed in admin" />
     <MESSAGE value="Start password recovery view" />
     <MESSAGE value="Send email for password recovery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Send email for password recovery" />
+    <MESSAGE value="Finalize change password view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalize change password view" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
