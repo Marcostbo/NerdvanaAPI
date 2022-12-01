@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finalize change password view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,14 +253,7 @@
       <workItem from="1667947351756" duration="4661000" />
       <workItem from="1668122713407" duration="2288000" />
       <workItem from="1668214216429" duration="1483000" />
-      <workItem from="1669933031477" duration="2145000" />
-    </task>
-    <task id="LOCAL-00122" summary="Add notification app">
-      <created>1665514991941</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1665514991941</updated>
+      <workItem from="1669933031477" duration="2811000" />
     </task>
     <task id="LOCAL-00123" summary="Add notification.urls">
       <created>1665515269672</created>
@@ -600,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669935203970</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="Finalize change password view">
+      <created>1669935446370</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1669935446371</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
