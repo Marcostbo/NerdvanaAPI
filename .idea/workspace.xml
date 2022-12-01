@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Finalize change password view">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create PriceAlert model">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/models/price_alert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,14 +256,7 @@
       <workItem from="1667947351756" duration="4661000" />
       <workItem from="1668122713407" duration="2288000" />
       <workItem from="1668214216429" duration="1483000" />
-      <workItem from="1669933031477" duration="2811000" />
-    </task>
-    <task id="LOCAL-00123" summary="Add notification.urls">
-      <created>1665515269672</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1665515269677</updated>
+      <workItem from="1669933031477" duration="3728000" />
     </task>
     <task id="LOCAL-00124" summary="Add SentNotification model">
       <created>1665516234607</created>
@@ -598,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669935446371</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Create PriceAlert model">
+      <created>1669936781961</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1669936781961</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +619,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improve codes in Admin" />
     <MESSAGE value="Todos" />
     <MESSAGE value="Add migrations to repo" />
     <MESSAGE value="Define view goals" />
@@ -641,7 +643,8 @@
     <MESSAGE value="Start password recovery view" />
     <MESSAGE value="Send email for password recovery" />
     <MESSAGE value="Finalize change password view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalize change password view" />
+    <MESSAGE value="Create PriceAlert model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create PriceAlert model" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
