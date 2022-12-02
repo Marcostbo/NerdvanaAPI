@@ -1,5 +1,6 @@
 from django.db import models
 from nerdvanapp.models import User, Games
+from django.utils import timezone
 
 
 class PriceAlert(models.Model):
@@ -18,3 +19,15 @@ class PriceAlert(models.Model):
 
     def __str__(self):
         return f'Alert for {self.game.name} with price R${self.price} to {self.user.email}'
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            self.created_on = timezone.now()
+        super(PriceAlert, self).save(*args, **kwargs)
+
+    def resolve(self, price, link):
+        self.is_resolved = True
+        self.price_resolved = price
+        self.link_resolved = link
+        self.resolved_on = timezone.now()
+        self.save()
