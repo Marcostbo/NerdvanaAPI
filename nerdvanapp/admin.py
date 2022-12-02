@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .forms import CustomUserCreationForm, CustomUserChangeForm
-from .models import User, Console, Company, Family, Games, GameCompany, Store
+from .models import User, Console, Company, Family, Games, GameCompany, Store, PriceAlert
 
 
 class CustomUserAdmin(UserAdmin):
@@ -82,6 +82,12 @@ class GameCompanyAdmin(admin.ModelAdmin):
     ]
 
 
+class PriceAlertAdmin(admin.ModelAdmin):
+    list_display = ['game', 'user', 'price', 'created_on', 'is_resolved']
+    search_fields = ['id', 'game']
+    list_filter = ['is_resolved']
+
+
 admin.site.register(User, CustomUserAdmin)
 admin.site.register(Console, ConsoleAdmin)
 admin.site.register(Company, CompanyAdmin)
@@ -89,3 +95,4 @@ admin.site.register(Games, GameAdmin)
 admin.site.register(Family, FamilyAdmin)
 admin.site.register(GameCompany, GameCompanyAdmin)
 admin.site.register(Store, StoreAdmin)
+admin.site.register(PriceAlert, PriceAlertAdmin)

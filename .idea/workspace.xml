@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create PriceAlert model">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/models/price_alert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/price_alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/price_alert.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,14 +256,7 @@
       <workItem from="1667947351756" duration="4661000" />
       <workItem from="1668122713407" duration="2288000" />
       <workItem from="1668214216429" duration="1483000" />
-      <workItem from="1669933031477" duration="3728000" />
-    </task>
-    <task id="LOCAL-00124" summary="Add SentNotification model">
-      <created>1665516234607</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1665516234607</updated>
+      <workItem from="1669933031477" duration="5333000" />
     </task>
     <task id="LOCAL-00125" summary="Add SentNotification model in admin">
       <created>1665516923719</created>
@@ -601,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669936781961</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="Create PriceAlert model">
+      <created>1669936821392</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1669936821392</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
