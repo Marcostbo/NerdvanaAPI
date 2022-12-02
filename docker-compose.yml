@@ -1,0 +1,34 @@
+version: "3"
+services:
+  broker:
+    container_name: broker
+    image: rabbitmq:3-management
+    environment:
+      DEFAULT_USER: guest
+      DEFAULT_PASS: guest
+      DEFAULT_VHOST: local
+      RABBITMQ_NODE_PORT: 5672
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  celery:
+    container_name: celery
+    build: .
+    volumes:
+      - ./:/backend
+    command: celery -A nerdvana.celery worker --pool=prefork -l info
+    depends_on:
+      - broker
+
+  celeryscheduler:
+    container_name: celeryscheduler
+    build: .
+    volumes:
+      - ./:/app
+    command: celery -A nerdvana.celery beat -l info
+    depends_on:
+      - celery
+
+volumes:
+  rabbitmq_data:

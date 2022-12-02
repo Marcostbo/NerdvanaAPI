@@ -12,11 +12,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import datetime
-import environ
-import corsheaders.middleware
-
-env = environ.Env()
-environ.Env.read_env()
+import os
+# import environ
+#
+# env = environ.Env()
+# environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'nerdvanapp',
     'notification',
+    'django_celery_results',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -188,9 +190,23 @@ twitch_secret = 'peimgz6p1bvmfsoar7kp7tuqb3o7d8'
 
 # Email Settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = env('EMAIL_HOST')
+EMAIL_HOST = os.getenv('EMAIL_HOST')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = env('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-EMAIL_RECIPIENT_ADDRESS = env('RECIPIENT_ADDRESS')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_RECIPIENT_ADDRESS = os.getenv('RECIPIENT_ADDRESS')
+
+# Rabbit MQ Settings
+RABBIT_MQ_HOST = "localhost"
+RABBIT_MQ_PORT = "5672"
+RABBIT_MQ_USER = "guest"
+RABBIT_MQ_PASS = "guest"
+BROKER_VIRTUAL_HOST = "local"
+
+# celery settings
+CELERY_BROKER_URL = f"amqp://{RABBIT_MQ_USER}:{RABBIT_MQ_PASS}@{RABBIT_MQ_HOST}:{RABBIT_MQ_PORT}/{BROKER_VIRTUAL_HOST}"
+CELERY_ACCEPT_CONTENT = ["application/json"]
+CELERY_TASK_SERIALIZER = "json"
+CELERY_RESULT_SERIALIZER = "json"
+CELERY_TASK_TRACK_STARTED = True
