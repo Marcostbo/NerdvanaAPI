@@ -86,6 +86,7 @@ class PriceAlertAdmin(admin.ModelAdmin):
     list_display = ['game', 'user', 'price', 'created_on', 'is_resolved']
     search_fields = ['id', 'game']
     list_filter = ['is_resolved']
+    readonly_fields = ('user', 'game', 'created_on')
 
 
 admin.site.register(User, CustomUserAdmin)
