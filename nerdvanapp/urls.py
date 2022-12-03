@@ -26,5 +26,6 @@ urlpatterns = [
     # Game Pricing routes
     path('gamepricing', views.GamePricingView.as_view()),
     # Price Alert routes
-    path('price-alert/create', views.PriceAlertCreateView.as_view())
+    path('price-alert/create', views.PriceAlertCreateView.as_view()),
+    path('price-alert/list', views.PriceAlertListView.as_view())
 ]

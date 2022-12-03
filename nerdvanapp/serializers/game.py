@@ -41,7 +41,7 @@ class FullGameSerializer(serializers.ModelSerializer):
         api_filter_name = 'full_game_serializer'
 
 
-class SimpleGameSerializer(serializers.Serializer):
+class SimpleGameSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         raise NotImplementedError
 

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create view to post new price alert">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Read only fields in Admin">
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/price_alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/price_alert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/price_alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/price_alert.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,14 +278,7 @@
       <workItem from="1669987793871" duration="2014000" />
       <workItem from="1670003892646" duration="679000" />
       <workItem from="1670005628579" duration="18309000" />
-      <workItem from="1670107657099" duration="2604000" />
-    </task>
-    <task id="LOCAL-00131" summary="Better description">
-      <created>1666058234974</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1666058234974</updated>
+      <workItem from="1670107657099" duration="3066000" />
     </task>
     <task id="LOCAL-00132" summary="Create code generator class">
       <created>1666143534055</created>
@@ -623,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670110474261</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="Read only fields in Admin">
+      <created>1670111107556</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1670111107556</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +641,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix timezone" />
     <MESSAGE value="Separete views (password and email)" />
     <MESSAGE value="Email is authenticated" />
     <MESSAGE value="Start email validation endpoint" />
@@ -666,7 +665,8 @@
     <MESSAGE value="Dockerize Rabbitmq. Install Celery and Celery beat" />
     <MESSAGE value="Test celery worker" />
     <MESSAGE value="Create view to post new price alert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create view to post new price alert" />
+    <MESSAGE value="Read only fields in Admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read only fields in Admin" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

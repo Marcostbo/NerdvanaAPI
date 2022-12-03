@@ -1,7 +1,7 @@
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from nerdvanapp.models import PriceAlert, Games
-from nerdvanapp.serializers import PriceAlertDataSerializer
+from nerdvanapp.serializers import PriceAlertDataSerializer, PriceAlertSerializer
 from rest_framework.response import Response
 from django.http import HttpResponse
 
@@ -26,3 +26,15 @@ class PriceAlertCreateView(APIView):
             price=price
         )
         return HttpResponse(status=201)
+
+
+class PriceAlertListView(APIView):
+    permission_classes = (IsAuthenticated, )
+
+    def get(self, request):
+        user = self.request.user
+        price_alerts = PriceAlert.objects.filter(
+            user_id=user.id
+        )
+
+        return Response(PriceAlertSerializer(price_alerts, many=True).data)
