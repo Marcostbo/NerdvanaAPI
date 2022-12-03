@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create method to resolve PriceAlert">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvana/celery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Dockerize Rabbitmq. Install Celery and Celery beat">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/tasks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/tasks/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <recent name="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\notification\methods" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.broker: Compose Deployment">
+  <component name="RunManager" selected="Django Server.Django API">
     <configuration name="0008_add_games_via_json_pt1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -278,14 +275,7 @@
       <workItem from="1669933031477" duration="6107000" />
       <workItem from="1669987793871" duration="2014000" />
       <workItem from="1670003892646" duration="679000" />
-      <workItem from="1670005628579" duration="13164000" />
-    </task>
-    <task id="LOCAL-00127" summary="Return store name instead of search name">
-      <created>1665534475311</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1665534475311</updated>
+      <workItem from="1670005628579" duration="15601000" />
     </task>
     <task id="LOCAL-00128" summary="Add Passoword recovery and email validation models">
       <created>1666055756518</created>
@@ -623,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669988472823</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="Dockerize Rabbitmq. Install Celery and Celery beat">
+      <created>1670024911429</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1670024911430</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Define view goals" />
     <MESSAGE value="Star generate code view" />
     <MESSAGE value="Finalize generate code view" />
     <MESSAGE value="Fix timezone" />
@@ -666,7 +662,8 @@
     <MESSAGE value="Create PriceAlert model" />
     <MESSAGE value="PriceAlert in Admin" />
     <MESSAGE value="Create method to resolve PriceAlert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create method to resolve PriceAlert" />
+    <MESSAGE value="Dockerize Rabbitmq. Install Celery and Celery beat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerize Rabbitmq. Install Celery and Celery beat" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -7,12 +7,16 @@ from nerdvanapp.views.utils.functions import validate_code_input
 from rest_framework.response import Response
 from django.http import HttpResponse
 
+from nerdvanapp.tasks import test_celery
+
 
 class UserView(APIView):
     permission_classes = (IsAuthenticated,)
 
     def get(self, request):
         user = self.request.user
+
+        test_celery.delay()
 
         return Response(UserSerializer(user).data)
 
