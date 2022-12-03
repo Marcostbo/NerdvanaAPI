@@ -5,3 +5,4 @@ from .recommender import RecommenderQuerySerializer
 from .gamepricing import *
 from .email_validation import *
 from .change_password import *
+from .price_alert import *

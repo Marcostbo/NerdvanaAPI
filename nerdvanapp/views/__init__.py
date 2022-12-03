@@ -8,3 +8,4 @@ from .gamepricing import *
 from .utils.custom_basic_views import *
 from .email_validation import *
 from .password_recovery import *
+from .price_alert import *
