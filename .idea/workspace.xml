@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Dockerize Rabbitmq. Install Celery and Celery beat">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/tasks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/tasks/test.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Test celery worker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,8 +131,12 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="nerdvana.settings" />
+        <env name="EMAIL_HOST" value="smtp.gmail.com" />
+        <env name="EMAIL_HOST_USER" value="oliveira.marcos@engenharia.ufjf.br" />
+        <env name="EMAIL_RECIPIENT_ADDRESS" value="oliveira.marcos@engenharia.ufjf.br" />
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="EMAIL_HOST_PASSWORD" value="jmxfpoyolqndiunu" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -275,14 +276,7 @@
       <workItem from="1669933031477" duration="6107000" />
       <workItem from="1669987793871" duration="2014000" />
       <workItem from="1670003892646" duration="679000" />
-      <workItem from="1670005628579" duration="15601000" />
-    </task>
-    <task id="LOCAL-00128" summary="Add Passoword recovery and email validation models">
-      <created>1666055756518</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1666055756518</updated>
+      <workItem from="1670005628579" duration="17652000" />
     </task>
     <task id="LOCAL-00129" summary="Add Passoword recovery and email validation in admin. Fix migration">
       <created>1666056058732</created>
@@ -620,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670024911430</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="Test celery worker">
+      <created>1670027744174</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1670027744175</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Star generate code view" />
     <MESSAGE value="Finalize generate code view" />
     <MESSAGE value="Fix timezone" />
     <MESSAGE value="Separete views (password and email)" />
@@ -663,7 +663,8 @@
     <MESSAGE value="PriceAlert in Admin" />
     <MESSAGE value="Create method to resolve PriceAlert" />
     <MESSAGE value="Dockerize Rabbitmq. Install Celery and Celery beat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerize Rabbitmq. Install Celery and Celery beat" />
+    <MESSAGE value="Test celery worker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test celery worker" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

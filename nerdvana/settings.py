@@ -204,7 +204,7 @@ RABBIT_MQ_USER = "guest"
 RABBIT_MQ_PASS = "guest"
 BROKER_VIRTUAL_HOST = "local"
 
-# celery settings
+# Celery settings
 CELERY_BROKER_URL = f"amqp://{RABBIT_MQ_USER}:{RABBIT_MQ_PASS}@{RABBIT_MQ_HOST}:{RABBIT_MQ_PORT}/{BROKER_VIRTUAL_HOST}"
 CELERY_ACCEPT_CONTENT = ["application/json"]
 CELERY_TASK_SERIALIZER = "json"
