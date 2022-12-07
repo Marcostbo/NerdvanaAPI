@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import datetime
 import os
+from celery.schedules import crontab
+
 # import environ
 #
 # env = environ.Env()
@@ -210,3 +212,10 @@ CELERY_ACCEPT_CONTENT = ["application/json"]
 CELERY_TASK_SERIALIZER = "json"
 CELERY_RESULT_SERIALIZER = "json"
 CELERY_TASK_TRACK_STARTED = True
+
+CELERYBEAT_SCHEDULE = {
+    "new_task": {
+        "task": "nerdvanapp.tasks.test_celery",
+        "schedule": crontab(minute="*/1"),
+    },
+}

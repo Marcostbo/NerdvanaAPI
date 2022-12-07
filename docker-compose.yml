@@ -17,7 +17,7 @@ services:
     build: .
     volumes:
       - ./:/backend
-    command: celery -A nerdvana.celery worker --pool=prefork -l info
+    command: celery -A nerdvana worker -l info -P gevent
     depends_on:
       - broker
 
@@ -26,7 +26,7 @@ services:
     build: .
     volumes:
       - ./:/app
-    command: celery -A nerdvana.celery beat -l info
+    command: celery -A nerdvana beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
     depends_on:
       - celery
 

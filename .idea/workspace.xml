@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Read only fields in Admin">
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/price_alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/price_alert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/price_alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/price_alert.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Endpoint to list user alerts">
+      <change afterPath="$PROJECT_DIR$/nerdvanapp/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvana/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/tasks/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/tasks/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,14 +283,9 @@
       <workItem from="1669987793871" duration="2014000" />
       <workItem from="1670003892646" duration="679000" />
       <workItem from="1670005628579" duration="18309000" />
-      <workItem from="1670107657099" duration="3066000" />
-    </task>
-    <task id="LOCAL-00132" summary="Create code generator class">
-      <created>1666143534055</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1666143534056</updated>
+      <workItem from="1670107657099" duration="3339000" />
+      <workItem from="1670280281556" duration="2479000" />
+      <workItem from="1670371866985" duration="5585000" />
     </task>
     <task id="LOCAL-00133" summary="Set 8 as max">
       <created>1666143550491</created>
@@ -623,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670111107556</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="Endpoint to list user alerts">
+      <created>1670111806051</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1670111806051</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +648,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Separete views (password and email)" />
     <MESSAGE value="Email is authenticated" />
     <MESSAGE value="Start email validation endpoint" />
     <MESSAGE value="Subject and message as input" />
@@ -666,7 +672,8 @@
     <MESSAGE value="Test celery worker" />
     <MESSAGE value="Create view to post new price alert" />
     <MESSAGE value="Read only fields in Admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read only fields in Admin" />
+    <MESSAGE value="Endpoint to list user alerts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Endpoint to list user alerts" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
