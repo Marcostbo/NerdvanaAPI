@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Endpoint to list user alerts">
-      <change afterPath="$PROJECT_DIR$/nerdvanapp/tasks.py" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Setup django-celery-beat and create schedule task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/celery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/tasks/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/tasks/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,14 +278,8 @@
       <workItem from="1670005628579" duration="18309000" />
       <workItem from="1670107657099" duration="3339000" />
       <workItem from="1670280281556" duration="2479000" />
-      <workItem from="1670371866985" duration="5585000" />
-    </task>
-    <task id="LOCAL-00133" summary="Set 8 as max">
-      <created>1666143550491</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1666143550491</updated>
+      <workItem from="1670371866985" duration="5692000" />
+      <workItem from="1671062446883" duration="620000" />
     </task>
     <task id="LOCAL-00134" summary="Move send_email class to Notification app">
       <created>1666143675603</created>
@@ -630,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670111806051</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Setup django-celery-beat and create schedule task">
+      <created>1670377595420</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1670377595421</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,7 +642,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Email is authenticated" />
     <MESSAGE value="Start email validation endpoint" />
     <MESSAGE value="Subject and message as input" />
     <MESSAGE value="Send email for validate email" />
@@ -673,7 +666,8 @@
     <MESSAGE value="Create view to post new price alert" />
     <MESSAGE value="Read only fields in Admin" />
     <MESSAGE value="Endpoint to list user alerts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Endpoint to list user alerts" />
+    <MESSAGE value="Setup django-celery-beat and create schedule task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup django-celery-beat and create schedule task" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
