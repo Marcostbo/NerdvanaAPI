@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Setup django-celery-beat and create schedule task">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add unversioned celery files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,28 +280,8 @@
       <workItem from="1670107657099" duration="3339000" />
       <workItem from="1670280281556" duration="2479000" />
       <workItem from="1670371866985" duration="5692000" />
-      <workItem from="1671062446883" duration="620000" />
-    </task>
-    <task id="LOCAL-00134" summary="Move send_email class to Notification app">
-      <created>1666143675603</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1666143675603</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Create new field 'validated' for Codes">
-      <created>1666144253726</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1666144253726</updated>
-    </task>
-    <task id="LOCAL-00136" summary="Improve codes in Admin">
-      <created>1666144307387</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1666144307387</updated>
+      <workItem from="1671062446883" duration="4780000" />
+      <workItem from="1671137040248" duration="1062000" />
     </task>
     <task id="LOCAL-00137" summary="Todos">
       <created>1666144720010</created>
@@ -624,7 +605,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670377595421</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="Setup django-celery-beat and create schedule task">
+      <created>1671063135152</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1671063135154</updated>
+    </task>
+    <task id="LOCAL-00184" summary="Add unversioned migrations">
+      <created>1671063162281</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1671063162281</updated>
+    </task>
+    <task id="LOCAL-00185" summary="Add unversioned celery files">
+      <created>1671063177480</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1671063177480</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,8 +644,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Start email validation endpoint" />
-    <MESSAGE value="Subject and message as input" />
     <MESSAGE value="Send email for validate email" />
     <MESSAGE value="Validate code input method" />
     <MESSAGE value="Register new sent_notification" />
@@ -667,7 +667,9 @@
     <MESSAGE value="Read only fields in Admin" />
     <MESSAGE value="Endpoint to list user alerts" />
     <MESSAGE value="Setup django-celery-beat and create schedule task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup django-celery-beat and create schedule task" />
+    <MESSAGE value="Add unversioned migrations" />
+    <MESSAGE value="Add unversioned celery files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unversioned celery files" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
