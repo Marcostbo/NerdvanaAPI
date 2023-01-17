@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add unversioned celery files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,13 +281,8 @@
       <workItem from="1670371866985" duration="5692000" />
       <workItem from="1671062446883" duration="4780000" />
       <workItem from="1671137040248" duration="1062000" />
-    </task>
-    <task id="LOCAL-00137" summary="Todos">
-      <created>1666144720010</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1666144720010</updated>
+      <workItem from="1671677878317" duration="75000" />
+      <workItem from="1673880384542" duration="1744000" />
     </task>
     <task id="LOCAL-00138" summary="Fix">
       <created>1666317096369</created>
@@ -626,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671063177480</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="Add unversioned celery files">
+      <created>1671677914410</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1671677914410</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
