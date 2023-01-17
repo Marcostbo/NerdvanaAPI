@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add unversioned celery files">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Im back">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/tasks.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,14 +283,7 @@
       <workItem from="1671062446883" duration="4780000" />
       <workItem from="1671137040248" duration="1062000" />
       <workItem from="1671677878317" duration="75000" />
-      <workItem from="1673880384542" duration="1744000" />
-    </task>
-    <task id="LOCAL-00138" summary="Fix">
-      <created>1666317096369</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1666317096370</updated>
+      <workItem from="1673880384542" duration="2109000" />
     </task>
     <task id="LOCAL-00139" summary="Add migrations to repo">
       <created>1666317119249</created>
@@ -627,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671677914410</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="Im back">
+      <created>1673916578833</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1673916578836</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +646,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Send email for validate email" />
     <MESSAGE value="Validate code input method" />
     <MESSAGE value="Register new sent_notification" />
     <MESSAGE value="Better admin for sentnotification" />
@@ -670,7 +670,8 @@
     <MESSAGE value="Setup django-celery-beat and create schedule task" />
     <MESSAGE value="Add unversioned migrations" />
     <MESSAGE value="Add unversioned celery files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add unversioned celery files" />
+    <MESSAGE value="Im back" />
+    <option name="LAST_COMMIT_MESSAGE" value="Im back" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

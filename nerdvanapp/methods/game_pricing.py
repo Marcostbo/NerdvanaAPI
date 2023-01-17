@@ -12,7 +12,7 @@ class GamePricing:
         # self.end = '" data-agdh="arwt" id="vplap0"'
         self.end = '"'
 
-    def get_smaller_price_and_url_for_multiple_stores(self, game, console, stores_list):
+    def get_smaller_price_and_url_for_multiple_stores(self, game: str, console: str, stores_list: list):
         options = Options()
         options.add_argument("--headless")
         options.add_argument('--disable-dev-shm-usage')
