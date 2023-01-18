@@ -87,6 +87,10 @@ class PriceAlertAdmin(admin.ModelAdmin):
     search_fields = ['id', 'game']
     list_filter = ['is_resolved']
     readonly_fields = ('user', 'game', 'created_on')
+    fieldsets = (
+        (None, {'fields': ('created_on', 'user', 'game', 'price', 'is_resolved')}),
+        ('Alert Resolving', {'fields': ('price_resolved', 'link_resolved', 'resolved_on')})
+    )
 
 
 admin.site.register(User, CustomUserAdmin)
