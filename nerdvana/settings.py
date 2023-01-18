@@ -215,7 +215,7 @@ CELERY_TASK_TRACK_STARTED = True
 
 CELERYBEAT_SCHEDULE = {
     "new_task": {
-        "task": "nerdvanapp.tasks.test_celery",
-        "schedule": crontab(minute="*/1"),
+        "task": "nerdvanapp.tasks.evaluate_price_alerts",
+        "schedule": crontab(minute="*/3"),
     },
 }

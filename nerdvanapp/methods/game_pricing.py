@@ -32,19 +32,20 @@ class GamePricing:
             driver.get(search_url)
 
             results = driver.find_elements(By.CLASS_NAME, self.class_name)
-            smaller_price = results[0].text
-            smaller_price = self.treate_price_string(smaller_price=smaller_price)
+            if results:
+                smaller_price = results[0].text
+                smaller_price = self.treate_price_string(smaller_price=smaller_price)
 
-            page_source = results[0].parent.page_source
-            start = f'href="{store_url}'
-            link = self.find_between(page_source, start, self.end)
-            full_link = store_url + link
-            store_result = {
-                'store_name': store[2],
-                'price': smaller_price,
-                'url': full_link
-            }
-            store_prices.append(store_result)
+                page_source = results[0].parent.page_source
+                start = f'href="{store_url}'
+                link = self.find_between(page_source, start, self.end)
+                full_link = store_url + link
+                store_result = {
+                    'store_name': store[2],
+                    'price': smaller_price,
+                    'url': full_link
+                }
+                store_prices.append(store_result)
 
         return store_prices
 

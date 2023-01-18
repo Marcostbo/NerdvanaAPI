@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Start price alert task">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Evaluate price inside task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvana/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nerdvanapp/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,14 +290,7 @@
       <workItem from="1671137040248" duration="1062000" />
       <workItem from="1671677878317" duration="75000" />
       <workItem from="1673880384542" duration="2647000" />
-      <workItem from="1674065943239" duration="2525000" />
-    </task>
-    <task id="LOCAL-00140" summary="Fix">
-      <created>1666317161411</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1666317161411</updated>
+      <workItem from="1674065943239" duration="6809000" />
     </task>
     <task id="LOCAL-00141" summary="Define view goals">
       <created>1666317229194</created>
@@ -631,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673917446637</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="Evaluate price inside task">
+      <created>1674077571865</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1674077571866</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +653,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Register new sent_notification" />
     <MESSAGE value="Better admin for sentnotification" />
     <MESSAGE value="Add email validation fields for user" />
     <MESSAGE value="Fix" />
@@ -674,7 +677,8 @@
     <MESSAGE value="Add unversioned celery files" />
     <MESSAGE value="Im back" />
     <MESSAGE value="Start price alert task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start price alert task" />
+    <MESSAGE value="Evaluate price inside task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Evaluate price inside task" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

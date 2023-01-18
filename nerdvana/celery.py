@@ -13,8 +13,8 @@ app = Celery("nerdvana", broker=settings.CELERY_BROKER_URL)
 
 app.conf.beat_schedule = {
     "new_task": {
-        "task": "nerdvanapp.tasks.test_celery",
-        "schedule": crontab(minute="*/1"),
+        "task": "nerdvanapp.tasks.evaluate_price_alerts",
+        "schedule": crontab(minute="*/3"),
     },
 }
 
