@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Evaluate price inside task">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/celery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/user.py" afterDir="false" />
-    </list>
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better admin for price alert" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -290,21 +282,7 @@
       <workItem from="1671137040248" duration="1062000" />
       <workItem from="1671677878317" duration="75000" />
       <workItem from="1673880384542" duration="2647000" />
-      <workItem from="1674065943239" duration="6809000" />
-    </task>
-    <task id="LOCAL-00141" summary="Define view goals">
-      <created>1666317229194</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1666317229194</updated>
-    </task>
-    <task id="LOCAL-00142" summary="Define view goals">
-      <created>1666752267121</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1666752267122</updated>
+      <workItem from="1674065943239" duration="7735000" />
     </task>
     <task id="LOCAL-00143" summary="Star generate code view">
       <created>1666831798177</created>
@@ -635,7 +613,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674077571866</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="Finalize evaluate_price_alerts task">
+      <created>1674081672292</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1674081672292</updated>
+    </task>
+    <task id="LOCAL-00191" summary="Better admin for price alert">
+      <created>1674081964885</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1674081964885</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,8 +645,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Better admin for sentnotification" />
-    <MESSAGE value="Add email validation fields for user" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Create validate user method" />
     <MESSAGE value="Create view to validate user email" />
@@ -678,7 +668,9 @@
     <MESSAGE value="Im back" />
     <MESSAGE value="Start price alert task" />
     <MESSAGE value="Evaluate price inside task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Evaluate price inside task" />
+    <MESSAGE value="Finalize evaluate_price_alerts task" />
+    <MESSAGE value="Better admin for price alert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better admin for price alert" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
