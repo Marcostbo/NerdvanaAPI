@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Better admin for price alert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/price_alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/price_alert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/price_alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/price_alert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/price_alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/price_alert.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,14 +290,7 @@
       <workItem from="1671677878317" duration="75000" />
       <workItem from="1673880384542" duration="2647000" />
       <workItem from="1674065943239" duration="7735000" />
-      <workItem from="1674427389284" duration="339000" />
-    </task>
-    <task id="LOCAL-00144" summary="Finalize generate code view">
-      <created>1666832530195</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1666832530195</updated>
+      <workItem from="1674427389284" duration="2114000" />
     </task>
     <task id="LOCAL-00145" summary="Finalize generate code view">
       <created>1666833415324</created>
@@ -630,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674427480451</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="Better admin for price alert">
+      <created>1674428567835</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1674428567835</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

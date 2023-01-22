@@ -1,11 +1,12 @@
 from django.db import models
-from nerdvanapp.models import User, Games
+from nerdvanapp.models import User, Games, Console
 from django.utils import timezone
 
 
 class PriceAlert(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     game = models.ForeignKey(Games, on_delete=models.CASCADE)
+    console = models.CharField(max_length=256, null=True, blank=True)
     price = models.DecimalField(decimal_places=2, max_digits=8, null=False)
     created_on = models.DateTimeField(null=True, blank=True)
     resolved_on = models.DateTimeField(null=True, blank=True)

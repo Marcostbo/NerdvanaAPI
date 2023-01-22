@@ -10,6 +10,7 @@ class PriceAlertDataSerializer(serializers.Serializer):
         pass
 
     game_id = serializers.IntegerField(required=True)
+    console_id = serializers.IntegerField(required=True)
     price = serializers.DecimalField(required=True, decimal_places=2, max_digits=8)
 
 
