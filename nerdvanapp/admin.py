@@ -86,7 +86,7 @@ class PriceAlertAdmin(admin.ModelAdmin):
     list_display = ['game', 'console', 'user', 'price', 'created_on', 'is_resolved']
     search_fields = ['id', 'game']
     list_filter = ['is_resolved']
-    readonly_fields = ('user', 'game', 'created_on')
+    readonly_fields = ('user', 'game', 'console', 'created_on')
     fieldsets = (
         (None, {'fields': ('created_on', 'user', 'game', 'console', 'price', 'is_resolved')}),
         ('Alert Resolving', {'fields': ('price_resolved', 'link_resolved', 'resolved_on')})
