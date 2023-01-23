@@ -22,7 +22,7 @@ def evaluate_price_alerts():
         # Evaluate if the alert is resolved
         game_prices = GamePricing().get_smaller_price_and_url_for_multiple_stores(
             game=price_alert.game.name,
-            console='PS4',
+            console=price_alert.console,
             stores_list=stores
         )
         sorted_game_prices = sorted(game_prices, key=itemgetter('price'))
