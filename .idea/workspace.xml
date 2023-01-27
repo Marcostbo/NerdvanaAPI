@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create console field in admin" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Use new field console in task">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/gamepricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/gamepricing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +26,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/nerdvana/celery.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/nerdvana/settings.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/nerdvanapp/admin.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/nerdvanapp/models/price_alert.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/nerdvanapp/serializers/price_alert.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/nerdvanapp/tasks.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/nerdvanapp/views/price_alert.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,28 +71,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Django Server.Django API">
-    <configuration name="0008_add_games_via_json_pt1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="NerdvanaAPI" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/nerdvanapp/migrations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\nerdvanapp\migrations\0008_add_games_via_json_pt1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="game_pricing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,6 +165,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.celery: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="celery" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -188,20 +193,20 @@
     </configuration>
     <list>
       <item itemvalue="Django Server.Django API" />
+      <item itemvalue="Docker.docker-compose.yml.celery: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.broker: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Python.game_pricing" />
       <item itemvalue="Python.send_email" />
-      <item itemvalue="Python.0008_add_games_via_json_pt1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.celery: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.broker: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
         <item itemvalue="Python.send_email" />
-        <item itemvalue="Python.0008_add_games_via_json_pt1" />
       </list>
     </recent_temporary>
   </component>
@@ -283,14 +288,12 @@
       <workItem from="1671677878317" duration="75000" />
       <workItem from="1673880384542" duration="2647000" />
       <workItem from="1674065943239" duration="7735000" />
-      <workItem from="1674427389284" duration="3988000" />
-    </task>
-    <task id="LOCAL-00147" summary="Separete views (password and email)">
-      <created>1666833729095</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1666833729095</updated>
+      <workItem from="1674427389284" duration="5857000" />
+      <workItem from="1674495745216" duration="11842000" />
+      <workItem from="1674602473127" duration="4704000" />
+      <workItem from="1674686370404" duration="23000" />
+      <workItem from="1674686613732" duration="1677000" />
+      <workItem from="1674773339726" duration="7843000" />
     </task>
     <task id="LOCAL-00148" summary="Separete views (password and email)">
       <created>1667083763445</created>
@@ -628,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674432620510</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="Use new field console in task">
+      <created>1674433065898</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1674433065899</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,7 +656,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create view to validate user email" />
     <MESSAGE value="Change URL names" />
     <MESSAGE value="Create change password view" />
     <MESSAGE value="Display password_changed in admin" />
@@ -671,7 +680,8 @@
     <MESSAGE value="Better admin for price alert" />
     <MESSAGE value="Create console field for price alert" />
     <MESSAGE value="Create console field in admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create console field in admin" />
+    <MESSAGE value="Use new field console in task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use new field console in task" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

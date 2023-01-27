@@ -1,4 +1,5 @@
 import urllib.parse as parse
+import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -11,6 +12,28 @@ class GamePricing:
         self.class_name = 'T4OwTb'
         # self.end = '" data-agdh="arwt" id="vplap0"'
         self.end = '"'
+
+    def get_smaller_price_and_url_for_multiple_stores_v2(self, game: str, console: str, stores_list: list):
+        store_prices = []
+        for store in stores_list:
+            store_name = store[0]
+
+            query = game + ' ' + console + ' ' + store_name
+            search_url = self.search + parse.quote_plus(query)
+
+            result = requests.get(search_url)
+            html = result.content
+
+            smaller_price = self.treate_price_string_v2(self.find_between(str(html), "R$", "</"))
+            full_link = self.find_between(str(html), 'href="/url?q=', "&")
+
+            store_result = {
+                'store_name': store[2],
+                'price': smaller_price,
+                'url': full_link
+            }
+            store_prices.append(store_result)
+        return store_prices
 
     def get_smaller_price_and_url_for_multiple_stores(self, game: str, console: str, stores_list: list):
         options = Options()
@@ -59,9 +82,17 @@ class GamePricing:
             return ""
 
     @staticmethod
+    def treate_price_string_v2(smaller_price):
+        price = smaller_price
+        price = price.replace(',', '.')
+        price = price.replace('\\xa0', '')
+
+        return float(price)
+
+    @staticmethod
     def treate_price_string(smaller_price):
         price = smaller_price
         price = price.replace(',', '.')
-        price = price.replace('R$ ', '')
+        price = price.replace('R$', '')
 
         return float(price)

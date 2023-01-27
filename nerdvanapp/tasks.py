@@ -20,7 +20,7 @@ def evaluate_price_alerts():
     stores = Store.objects.all().values_list('search_name', 'link', 'name')
     for price_alert in price_alerts:
         # Evaluate if the alert is resolved
-        game_prices = GamePricing().get_smaller_price_and_url_for_multiple_stores(
+        game_prices = GamePricing().get_smaller_price_and_url_for_multiple_stores_v2(
             game=price_alert.game.name,
             console=price_alert.console,
             stores_list=stores

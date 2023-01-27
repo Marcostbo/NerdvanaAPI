@@ -24,7 +24,7 @@ class GamePricingView(APIView):
         stores_object = self.get_all_stores_object()
 
         game_price = GamePricing()
-        price_result = game_price.get_smaller_price_and_url_for_multiple_stores(
+        price_result = game_price.get_smaller_price_and_url_for_multiple_stores_v2(
             game=game_name,
             console=console_initials,
             stores_list=stores_object
