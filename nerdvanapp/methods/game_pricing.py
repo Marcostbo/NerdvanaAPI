@@ -18,14 +18,18 @@ class GamePricing:
         for store in stores_list:
             store_name = store[0]
 
-            query = game + ' ' + console + ' ' + store_name
+            query = f'{game} {console} {store_name} mais barato'
             search_url = self.search + parse.quote_plus(query)
 
             result = requests.get(search_url)
             html = result.content
 
-            smaller_price = self.treate_price_string_v2(self.find_between(str(html), "R$", "</"))
-            full_link = self.find_between(str(html), 'href="/url?q=', "&")
+            try:
+                smaller_price = self.treate_price_string_v2(self.find_between(str(html), "R$", "</"))
+                full_link = self.find_between(str(html), 'href="/url?q=', "&")
+            except Exception as e:
+                smaller_price = None
+                full_link = None
 
             store_result = {
                 'store_name': store[2],

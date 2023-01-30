@@ -21,8 +21,8 @@ class GamePricingOutputSerializer(serializers.Serializer):
         pass
 
     store_name = serializers.CharField()
-    price = serializers.DecimalField(decimal_places=2, max_digits=12)
-    url = serializers.CharField()
+    price = serializers.DecimalField(decimal_places=2, max_digits=12, allow_null=True, required=False)
+    url = serializers.CharField(allow_null=True, required=False)
 
 
 class StoresSerializer(serializers.ModelSerializer):
