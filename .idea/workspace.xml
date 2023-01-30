@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Use new field console in task">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="New engine to get prices - Insanely faster!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/views/gamepricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/views/gamepricing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,14 +291,7 @@
       <workItem from="1674602473127" duration="4704000" />
       <workItem from="1674686370404" duration="23000" />
       <workItem from="1674686613732" duration="1677000" />
-      <workItem from="1674773339726" duration="7843000" />
-    </task>
-    <task id="LOCAL-00148" summary="Separete views (password and email)">
-      <created>1667083763445</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1667083763446</updated>
+      <workItem from="1674773339726" duration="8180000" />
     </task>
     <task id="LOCAL-00149" summary="Separete views (password and email)">
       <created>1667266258541</created>
@@ -638,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674433065899</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="New engine to get prices - Insanely faster!!">
+      <created>1674783469111</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1674783469115</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +654,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change URL names" />
     <MESSAGE value="Create change password view" />
     <MESSAGE value="Display password_changed in admin" />
     <MESSAGE value="Start password recovery view" />
@@ -681,7 +678,8 @@
     <MESSAGE value="Create console field for price alert" />
     <MESSAGE value="Create console field in admin" />
     <MESSAGE value="Use new field console in task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use new field console in task" />
+    <MESSAGE value="New engine to get prices - Insanely faster!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="New engine to get prices - Insanely faster!!" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
