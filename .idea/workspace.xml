@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Bloco try except">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/serializers/gamepricing.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/serializers/gamepricing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,14 +292,7 @@
       <workItem from="1674686370404" duration="23000" />
       <workItem from="1674686613732" duration="1677000" />
       <workItem from="1674773339726" duration="8180000" />
-      <workItem from="1675042686987" duration="2028000" />
-    </task>
-    <task id="LOCAL-00150" summary="Email is authenticated">
-      <created>1667266720725</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1667266720725</updated>
+      <workItem from="1675042686987" duration="2982000" />
     </task>
     <task id="LOCAL-00151" summary="Email is authenticated">
       <created>1667339044854</created>
@@ -640,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675042729112</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="Bloco try except">
+      <created>1675045152944</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1675045152944</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +655,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Display password_changed in admin" />
     <MESSAGE value="Start password recovery view" />
     <MESSAGE value="Send email for password recovery" />
     <MESSAGE value="Finalize change password view" />
@@ -683,7 +679,8 @@
     <MESSAGE value="Use new field console in task" />
     <MESSAGE value="New engine to get prices - Insanely faster!!" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Bloco try except" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bloco try except" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
