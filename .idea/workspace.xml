@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Bloco try except">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add migration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,20 +295,7 @@
       <workItem from="1674686613732" duration="1677000" />
       <workItem from="1674773339726" duration="8180000" />
       <workItem from="1675042686987" duration="2982000" />
-    </task>
-    <task id="LOCAL-00151" summary="Email is authenticated">
-      <created>1667339044854</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1667339044854</updated>
-    </task>
-    <task id="LOCAL-00152" summary="Start email validation endpoint">
-      <created>1667660349970</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1667660349970</updated>
+      <workItem from="1678405432107" duration="1325000" />
     </task>
     <task id="LOCAL-00153" summary="Subject and message as input">
       <created>1667661186219</created>
@@ -637,7 +626,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675045152944</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="Bloco try except">
+      <created>1678405513340</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1678405513341</updated>
+    </task>
+    <task id="LOCAL-00201" summary="Add migration">
+      <created>1678405609637</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1678405609637</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,7 +658,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Start password recovery view" />
     <MESSAGE value="Send email for password recovery" />
     <MESSAGE value="Finalize change password view" />
     <MESSAGE value="Create PriceAlert model" />
@@ -680,9 +682,19 @@
     <MESSAGE value="New engine to get prices - Insanely faster!!" />
     <MESSAGE value="Fix" />
     <MESSAGE value="Bloco try except" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bloco try except" />
+    <MESSAGE value="Add migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add migration" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
         <watch expression="recommended_games" />
