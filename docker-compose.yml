@@ -11,24 +11,30 @@ services:
     ports:
       - "5672:5672"
       - "15672:15672"
+    expose:
+      - "5672"
 
   celery:
     container_name: celery
-    build: .
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     volumes:
-      - ./:/backend
+      - .:/app
     command: celery -A nerdvana worker -l info -P gevent
     depends_on:
       - broker
 
   celeryscheduler:
     container_name: celeryscheduler
-    build: .
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     volumes:
-      - ./:/app
+      - .:/app
     command: celery -A nerdvana beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
-    depends_on:
-      - celery
+#    depends_on:
+#      - celery
 
 volumes:
   rabbitmq_data:
