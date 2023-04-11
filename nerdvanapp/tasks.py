@@ -25,12 +25,12 @@ def evaluate_price_alerts():
             console=price_alert.console,
             stores_list=stores
         )
-        sorted_game_prices = sorted(game_prices, key=itemgetter('price'))
-        for game_price in sorted_game_prices:
+        game_prices.sort(key=lambda x: (x['price'] is not None, x['price']), reverse=True)
+        for game_price in game_prices:
             is_resolved = evaluate_price(
                 price_limit=price_alert.price,
                 current_price=game_price.get('price')
-            )
+            ) if game_price.get('price') else False
             if is_resolved:
                 price_alert.is_resolved = True
                 price_alert.price_resolved = game_price.get('price')
