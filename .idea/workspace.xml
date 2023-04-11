@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Update requirements">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix search for null values">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvana/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvana/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/tasks.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,21 +286,7 @@
       <workItem from="1678405432107" duration="2612000" />
       <workItem from="1679519092929" duration="944000" />
       <workItem from="1681161175722" duration="8550000" />
-      <workItem from="1681248175717" duration="3379000" />
-    </task>
-    <task id="LOCAL-00157" summary="Better admin for sentnotification">
-      <created>1667949044748</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1667949044748</updated>
-    </task>
-    <task id="LOCAL-00158" summary="Add email validation fields for user">
-      <created>1667949921818</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1667949921818</updated>
+      <workItem from="1681248175717" duration="5000000" />
     </task>
     <task id="LOCAL-00159" summary="Fix">
       <created>1667950032362</created>
@@ -635,7 +617,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681165548689</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="Fix docker-compose">
+      <created>1681251664220</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1681251664221</updated>
+    </task>
+    <task id="LOCAL-00207" summary="Fix search for null values">
+      <created>1681251684762</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1681251684762</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,8 +649,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PriceAlert in Admin" />
-    <MESSAGE value="Create method to resolve PriceAlert" />
     <MESSAGE value="Dockerize Rabbitmq. Install Celery and Celery beat" />
     <MESSAGE value="Test celery worker" />
     <MESSAGE value="Create view to post new price alert" />
@@ -678,18 +672,11 @@
     <MESSAGE value="Add migration to fix registration date" />
     <MESSAGE value="Change docker file" />
     <MESSAGE value="Update requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update requirements" />
+    <MESSAGE value="Fix docker-compose" />
+    <MESSAGE value="Fix search for null values" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix search for null values" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/nerdvanapp/methods/game_pricing.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
         <watch expression="recommended_games" />
