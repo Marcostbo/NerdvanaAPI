@@ -1,40 +1,41 @@
 version: "3"
 services:
   broker:
-    container_name: broker
-    image: rabbitmq:3-management
-    environment:
-      DEFAULT_USER: guest
-      DEFAULT_PASS: guest
-      DEFAULT_VHOST: local
-      RABBITMQ_NODE_PORT: 5672
-    ports:
-      - "5672:5672"
-      - "15672:15672"
-    expose:
-      - "5672"
+      network_mode: local-net
+      hostname: rabbitmqhost
+      container_name: broker
+      ports:
+          - '15672:15672'
+          - '5672:5672'
+      image: 'rabbitmq:3-management'
 
   celery:
     container_name: celery
+    network_mode: local-net
     build:
       context: .
       dockerfile: ./Dockerfile
     volumes:
       - .:/app
     command: celery -A nerdvana worker -l info -P gevent
+    environment:
+      DEBUG: "True"
     depends_on:
       - broker
 
   celeryscheduler:
     container_name: celeryscheduler
+    network_mode: local-net
     build:
       context: .
       dockerfile: ./Dockerfile
     volumes:
       - .:/app
     command: celery -A nerdvana beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
-#    depends_on:
-#      - celery
+    environment:
+      DEBUG: "True"
+    depends_on:
+      - celery
 
 volumes:
   rabbitmq_data:
