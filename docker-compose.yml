@@ -1,9 +1,9 @@
 version: "3"
 services:
   broker:
+      container_name: broker
       network_mode: local-net
       hostname: rabbitmqhost
-      container_name: broker
       ports:
           - '15672:15672'
           - '5672:5672'
