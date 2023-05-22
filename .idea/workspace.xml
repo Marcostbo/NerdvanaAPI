@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix search for null values">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,21 +286,10 @@
       <workItem from="1678405432107" duration="2612000" />
       <workItem from="1679519092929" duration="944000" />
       <workItem from="1681161175722" duration="8550000" />
-      <workItem from="1681248175717" duration="5000000" />
-    </task>
-    <task id="LOCAL-00159" summary="Fix">
-      <created>1667950032362</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1667950032362</updated>
-    </task>
-    <task id="LOCAL-00160" summary="Create validate user method">
-      <created>1667950169967</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1667950169967</updated>
+      <workItem from="1681248175717" duration="6134000" />
+      <workItem from="1681320980798" duration="677000" />
+      <workItem from="1683758850436" duration="735000" />
+      <workItem from="1684797654208" duration="389000" />
     </task>
     <task id="LOCAL-00161" summary="Create validate user method">
       <created>1668122721083</created>
@@ -631,7 +620,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681251684762</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="Fix search for null values">
+      <created>1681253910934</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1681253910934</updated>
+    </task>
+    <task id="LOCAL-00209" summary="Fix">
+      <created>1681265613620</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1681265613620</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +669,6 @@
     <MESSAGE value="Create console field in admin" />
     <MESSAGE value="Use new field console in task" />
     <MESSAGE value="New engine to get prices - Insanely faster!!" />
-    <MESSAGE value="Fix" />
     <MESSAGE value="Bloco try except" />
     <MESSAGE value="Add migration" />
     <MESSAGE value="Add migration to fix registration date" />
@@ -674,7 +676,8 @@
     <MESSAGE value="Update requirements" />
     <MESSAGE value="Fix docker-compose" />
     <MESSAGE value="Fix search for null values" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix search for null values" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
