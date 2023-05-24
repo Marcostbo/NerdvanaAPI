@@ -1,5 +1,17 @@
 version: "3"
 services:
+  api:
+      container_name: api
+      network_mode: local-net
+      build:
+        context: .
+        dockerfile: ./Dockerfile
+      command:
+        - python manage.py runserver 0.0.0.0:8000
+      volumes:
+        - .:/app
+      ports:
+        - '8000:8000'
   broker:
       container_name: broker
       network_mode: local-net
