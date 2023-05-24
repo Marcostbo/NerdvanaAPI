@@ -1,3 +1,4 @@
 1 - All email's must be sent async
+2 - Send email after price alert is resolved
 2 - Auto generate code in password recovery email endpoint
 3 - Parallel store requests (assync, multiprocessing...)
