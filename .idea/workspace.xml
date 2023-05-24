@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add next steps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,14 +290,7 @@
       <workItem from="1681248175717" duration="6134000" />
       <workItem from="1681320980798" duration="677000" />
       <workItem from="1683758850436" duration="735000" />
-      <workItem from="1684797654208" duration="389000" />
-    </task>
-    <task id="LOCAL-00161" summary="Create validate user method">
-      <created>1668122721083</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1668122721084</updated>
+      <workItem from="1684797654208" duration="2355000" />
     </task>
     <task id="LOCAL-00162" summary="Create view to validate user email">
       <created>1668123485729</created>
@@ -634,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681265613620</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="Add next steps">
+      <created>1684798155849</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1684798155850</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,7 +653,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dockerize Rabbitmq. Install Celery and Celery beat" />
     <MESSAGE value="Test celery worker" />
     <MESSAGE value="Create view to post new price alert" />
     <MESSAGE value="Read only fields in Admin" />
@@ -677,7 +677,8 @@
     <MESSAGE value="Fix docker-compose" />
     <MESSAGE value="Fix search for null values" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Add next steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add next steps" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
