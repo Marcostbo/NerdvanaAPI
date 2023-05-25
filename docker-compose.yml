@@ -1,14 +1,13 @@
 version: "3"
 services:
   api:
+      container_name: api
       network_mode: local-net
       build:
         context: .
-        dockerfile: ./Dockerfile
-      command:
-        - python ./NerdvanaAPI/manage.py runserver 0.0.0.0:8000
+        dockerfile: DockerFiles/Dockerfile-API
       volumes:
-        - .:/app
+        - .:/app/
       ports:
         - '8000:8000'
   broker:
@@ -25,7 +24,7 @@ services:
     network_mode: local-net
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: DockerFiles/Dockerfile-Celery
     volumes:
       - .:/app
     command: celery -A nerdvana worker -l info -P gevent
@@ -39,7 +38,7 @@ services:
     network_mode: local-net
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: DockerFiles/Dockerfile-Celery
     volumes:
       - .:/app
     command: celery -A nerdvana beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
