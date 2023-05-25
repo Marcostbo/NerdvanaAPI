@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Test celery beat">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Add new step">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +71,7 @@
       <recent name="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\notification\methods" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.Django API">
+  <component name="RunManager" selected="Docker.docker-compose.yml.api: Compose Deployment">
     <configuration name="game_pricing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,6 +130,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="api" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.broker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -167,35 +182,22 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="rabbitmq" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Django Server.Django API" />
+      <item itemvalue="Docker.docker-compose.yml.api: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.celeryscheduler: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.celery: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.broker: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Python.game_pricing" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.api: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.celeryscheduler: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.celery: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.broker: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -291,21 +293,7 @@
       <workItem from="1681320980798" duration="677000" />
       <workItem from="1683758850436" duration="735000" />
       <workItem from="1684797654208" duration="2355000" />
-      <workItem from="1684968360516" duration="596000" />
-    </task>
-    <task id="LOCAL-00163" summary="Change URL names">
-      <created>1668123630196</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1668123630197</updated>
-    </task>
-    <task id="LOCAL-00164" summary="Create change password view">
-      <created>1668124926513</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1668124926513</updated>
+      <workItem from="1684968360516" duration="3487000" />
     </task>
     <task id="LOCAL-00165" summary="Display password_changed in admin">
       <created>1668125013606</created>
@@ -636,7 +624,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684968453538</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="Run API in docker-compose">
+      <created>1684969112573</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1684969112573</updated>
+    </task>
+    <task id="LOCAL-00213" summary="Add new step">
+      <created>1684969165968</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1684969165968</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,8 +656,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create view to post new price alert" />
-    <MESSAGE value="Read only fields in Admin" />
     <MESSAGE value="Endpoint to list user alerts" />
     <MESSAGE value="Setup django-celery-beat and create schedule task" />
     <MESSAGE value="Add unversioned migrations" />
@@ -679,7 +679,9 @@
     <MESSAGE value="Fix" />
     <MESSAGE value="Add next steps" />
     <MESSAGE value="Test celery beat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test celery beat" />
+    <MESSAGE value="Run API in docker-compose" />
+    <MESSAGE value="Add new step" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new step" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -1,13 +1,12 @@
 version: "3"
 services:
   api:
-      container_name: api
       network_mode: local-net
       build:
         context: .
         dockerfile: ./Dockerfile
       command:
-        - python manage.py runserver 0.0.0.0:8000
+        - python ./NerdvanaAPI/manage.py runserver 0.0.0.0:8000
       volumes:
         - .:/app
       ports:
