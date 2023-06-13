@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix dockerfile">
-      <change afterPath="$PROJECT_DIR$/DockerFiles/Dockerfile-API" afterDir="false" />
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix dockerfile and separate docker files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/DockerFiles/Dockerfile-Celery" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/games.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/games.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,14 +294,8 @@
       <workItem from="1684797654208" duration="2355000" />
       <workItem from="1684968360516" duration="4398000" />
       <workItem from="1685022036295" duration="446000" />
-      <workItem from="1685024394055" duration="6861000" />
-    </task>
-    <task id="LOCAL-00166" summary="Display password_changed in admin">
-      <created>1668214398510</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1668214398512</updated>
+      <workItem from="1685024394055" duration="8126000" />
+      <workItem from="1686685635189" duration="396000" />
     </task>
     <task id="LOCAL-00167" summary="Start password recovery view">
       <created>1668215703223</created>
@@ -642,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684973540305</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="Fix dockerfile and separate docker files">
+      <created>1685047548916</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1685047548918</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +658,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Setup django-celery-beat and create schedule task" />
     <MESSAGE value="Add unversioned migrations" />
     <MESSAGE value="Add unversioned celery files" />
     <MESSAGE value="Im back" />
@@ -685,7 +682,8 @@
     <MESSAGE value="Run API in docker-compose" />
     <MESSAGE value="Add new step" />
     <MESSAGE value="Fix dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix dockerfile" />
+    <MESSAGE value="Fix dockerfile and separate docker files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix dockerfile and separate docker files" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
