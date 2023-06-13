@@ -5,3 +5,4 @@
 4 - ChatGPT can help find game prices? Check that 
     - Update: Can't be done
 5 - Create indexes in Games table
+    - Update: Done in 13/06/2023
