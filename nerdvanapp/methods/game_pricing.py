@@ -1,8 +1,11 @@
 import urllib.parse as parse
 import requests
+from nerdvanapp.models.user import User
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+
+from notification.methods import SendNotification
 
 
 class GamePricing:
@@ -100,3 +103,31 @@ class GamePricing:
         price = price.replace('R$', '')
 
         return float(price)
+
+    @staticmethod
+    def evaluate_price(price_limit: float, current_price: float):
+        if current_price < price_limit:
+            return True
+        return False
+
+    @staticmethod
+    def send_email_price_alert_resolved(user: User, game_name: str, price: float, link: str, store: str):
+        client_name = User.name
+        text = f'Olá, {client_name} \n' \
+               f'\n'\
+               f'O seu alerta para o jogo {game_name} foi ativado!. \n' \
+               f'\n' \
+               f'Jogo: {game_name} \n' \
+               f'Loja: {store} \n' \
+               f'Preço: {price} \n' \
+               f'Link: {link} \n' \
+               f'\n' \
+               f'Obrigado'
+
+        SendNotification().send_email(
+            to_email=user.email,
+            subject=f'Encontramos um resultado para seu alerta de preço pra o jogo {game_name}',
+            message=text,
+            user=user,
+            reason="Game Price Alert"
+        )

@@ -5,12 +5,6 @@ from nerdvanapp.methods.game_pricing import GamePricing
 from django.utils import timezone
 
 
-def evaluate_price(price_limit: float, current_price: float):
-    if current_price < price_limit:
-        return True
-    return False
-
-
 @shared_task
 def evaluate_price_alerts():
     """ This task evaluates all the price alerts create
@@ -27,14 +21,23 @@ def evaluate_price_alerts():
         )
         game_prices.sort(key=lambda x: (x['price'] is not None, x['price']), reverse=True)
         for game_price in game_prices:
-            is_resolved = evaluate_price(
+            is_resolved = GamePricing().evaluate_price(
                 price_limit=price_alert.price,
                 current_price=game_price.get('price')
             ) if game_price.get('price') else False
             if is_resolved:
+                # Mark price_alert as resolved
                 price_alert.is_resolved = True
                 price_alert.price_resolved = game_price.get('price')
                 price_alert.link_resolved = game_price.get('url')
                 price_alert.resolved_on = timezone.now()
                 price_alert.save()
+                # Send email to client about the resolved price alert
+                GamePricing().send_email_price_alert_resolved(
+                    user=price_alert.user,
+                    game_name=price_alert.game.name,
+                    price=game_price.get('price'),
+                    link=game_price.get('url'),
+                    store=game_price.get('store_name')
+                )
                 break
