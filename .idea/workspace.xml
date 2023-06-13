@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Fix dockerfile and separate docker files">
+    <list default="true" id="3ecceae7-bd6a-4303-b922-e4d8ede01016" name="Changes" comment="Create new method send_email_price_alert_resolved">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerdvanapp/models/games.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerdvanapp/models/games.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <recent name="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\notification\methods" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.api: Compose Deployment">
+  <component name="RunManager" selected="Django Server.Django API">
     <configuration name="game_pricing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NerdvanaAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,12 +99,12 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="nerdvana.settings" />
         <env name="EMAIL_HOST" value="smtp.gmail.com" />
+        <env name="EMAIL_HOST_PASSWORD" value="slkvpesvrodfwagw" />
         <env name="EMAIL_HOST_USER" value="oliveira.marcos@engenharia.ufjf.br" />
         <env name="EMAIL_RECIPIENT_ADDRESS" value="oliveira.marcos@engenharia.ufjf.br" />
-        <env name="EMAIL_HOST_PASSWORD" value="jmxfpoyolqndiunu" />
+        <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -295,28 +296,7 @@
       <workItem from="1684968360516" duration="4398000" />
       <workItem from="1685022036295" duration="446000" />
       <workItem from="1685024394055" duration="8126000" />
-      <workItem from="1686685635189" duration="396000" />
-    </task>
-    <task id="LOCAL-00167" summary="Start password recovery view">
-      <created>1668215703223</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1668215703223</updated>
-    </task>
-    <task id="LOCAL-00168" summary="Start password recovery view">
-      <created>1669933054171</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1669933054172</updated>
-    </task>
-    <task id="LOCAL-00169" summary="Send email for password recovery">
-      <created>1669934331373</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1669934331373</updated>
+      <workItem from="1686685635189" duration="6764000" />
     </task>
     <task id="LOCAL-00170" summary="Finalize change password view">
       <created>1669935203970</created>
@@ -640,7 +620,28 @@
       <option name="project" value="LOCAL" />
       <updated>1685047548918</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="Add index for field name in Games table">
+      <created>1686686425766</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1686686425767</updated>
+    </task>
+    <task id="LOCAL-00217" summary="Update next_steps.txt">
+      <created>1686686642975</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1686686642975</updated>
+    </task>
+    <task id="LOCAL-00218" summary="Create new method send_email_price_alert_resolved">
+      <created>1686687894602</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1686687894602</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,9 +659,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add unversioned migrations" />
-    <MESSAGE value="Add unversioned celery files" />
-    <MESSAGE value="Im back" />
     <MESSAGE value="Start price alert task" />
     <MESSAGE value="Evaluate price inside task" />
     <MESSAGE value="Finalize evaluate_price_alerts task" />
@@ -683,7 +681,10 @@
     <MESSAGE value="Add new step" />
     <MESSAGE value="Fix dockerfile" />
     <MESSAGE value="Fix dockerfile and separate docker files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix dockerfile and separate docker files" />
+    <MESSAGE value="Add index for field name in Games table" />
+    <MESSAGE value="Update next_steps.txt" />
+    <MESSAGE value="Create new method send_email_price_alert_resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new method send_email_price_alert_resolved" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -8,6 +8,8 @@ services:
         dockerfile: DockerFiles/Dockerfile-API
       volumes:
         - .:/app/
+      env_file:
+        - /nerdvana/.env
       ports:
         - '8000:8000'
   broker:
@@ -30,6 +32,8 @@ services:
     command: celery -A nerdvana worker -l info -P gevent
     environment:
       DEBUG: "True"
+    env_file:
+      - /nerdvana/.env
     depends_on:
       - broker
 
@@ -44,6 +48,8 @@ services:
     command: celery -A nerdvana beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
     environment:
       DEBUG: "True"
+    env_file:
+      - /nerdvana/.env
     depends_on:
       - celery
 
