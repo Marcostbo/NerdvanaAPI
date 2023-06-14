@@ -1,8 +1,9 @@
 1 - All email's must be sent async
 2 - Send email after price alert is resolved
+    - Update: Done on 13/06/2023
 2 - Auto generate code in password recovery email endpoint
 3 - Parallel store requests (assync, multiprocessing...)
 4 - ChatGPT can help find game prices? Check that 
     - Update: Can't be done
 5 - Create indexes in Games table
-    - Update: Done in 13/06/2023
+    - Update: Done on 13/06/2023
