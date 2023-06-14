@@ -112,7 +112,7 @@ class GamePricing:
 
     @staticmethod
     def send_email_price_alert_resolved(user: User, game_name: str, price: float, link: str, store: str):
-        client_name = User.name
+        client_name = user.first_name
         text = f'Olá, {client_name} \n' \
                f'\n'\
                f'O seu alerta para o jogo {game_name} foi ativado!. \n' \
