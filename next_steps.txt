@@ -1,4 +1,5 @@
 1 - All email's must be sent async
+    - Create new queue and worker (maybe)
 2 - Send email after price alert is resolved
     - Update: Done on 13/06/2023
 2 - Auto generate code in password recovery email endpoint
