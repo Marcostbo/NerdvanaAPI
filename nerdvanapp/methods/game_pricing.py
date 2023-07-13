@@ -7,6 +7,10 @@ from selenium.webdriver.chrome.options import Options
 
 from notification.methods import SendNotification
 
+import asyncio
+import aiohttp
+import async_timeout
+
 
 class GamePricing:
     def __init__(self):
@@ -15,6 +19,46 @@ class GamePricing:
         self.class_name = 'T4OwTb'
         # self.end = '" data-agdh="arwt" id="vplap0"'
         self.end = '"'
+
+    def get_smaller_price_and_url_for_multiple_stores_async(self, game: str, console: str, stores_list: list):
+
+        async def fetch(session, url):
+            with async_timeout.timeout(10):
+                async with session.get(url) as response:
+                    return await response.text()
+
+        async def main(urls):
+            async with aiohttp.ClientSession() as session:
+                tasks = [fetch(session, url) for url in urls]
+                results = await asyncio.gather(*tasks)
+                return results
+
+        search_urls = []
+        for store in stores_list:
+            store_name = store[0]
+
+            query = f'{game} {console} {store_name} mais barato'
+            search_url = self.search + parse.quote_plus(query)
+            search_urls.append(search_url)
+
+        details_async = asyncio.run(main(search_urls))
+
+        store_prices = []
+        for html in details_async:
+            try:
+                smaller_price = self.treate_price_string_v2(self.find_between(str(html), "R$", "</"))
+                full_link = self.find_between(str(html), 'href="/url?q=', "&")
+            except Exception as e:
+                smaller_price = None
+                full_link = None
+
+            store_result = {
+                'store_name': 'teste',
+                'price': smaller_price,
+                'url': full_link
+            }
+            store_prices.append(store_result)
+        return None
 
     def get_smaller_price_and_url_for_multiple_stores_v2(self, game: str, console: str, stores_list: list):
         store_prices = []
