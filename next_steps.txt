@@ -1,8 +1,10 @@
 1 - All email's must be sent async
-    - Create new queue and worker (maybe)
+    - Create new queue and worker
+    - One queue/worker for send_email and another queue/worker for price resolving
 2 - Send email after price alert is resolved
     - Update: Done on 13/06/2023
 2 - Auto generate code in password recovery email endpoint
+    - Do everythins in only one request
 3 - Parallel store requests (assync, multiprocessing...)
 4 - ChatGPT can help find game prices? Check that 
     - Update: Can't be done
