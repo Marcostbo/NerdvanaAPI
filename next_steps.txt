@@ -6,6 +6,8 @@
 2 - Auto generate code in password recovery email endpoint
     - Do everythins in only one request
 3 - Parallel store requests (assync, multiprocessing...)
+    - Google returned 403;
+    - Check threads or multiprocessing
 4 - ChatGPT can help find game prices? Check that 
     - Update: Can't be done
 5 - Create indexes in Games table
