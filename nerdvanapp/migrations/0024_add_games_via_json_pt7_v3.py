@@ -13,14 +13,14 @@ def create_games(apps, schema_editor):
     # 2) Request Headers
     headers = {
         'Client-ID': '3d2zdvuspo8925eerye9r9etrs67dd',
-        'Authorization': 'Bearer wcmfeo7h84uz38ayxcrm5ry964f8g5',
+        'Authorization': 'Bearer d5cvxhhkrr6q3ntmh4whgjb4aek29t',
         'Accept': 'application/json'
     }
 
     # 3) Read games from Json
-    games_data = open(r"\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\nerdvanapp\scripts\games_v4.json")
+    games_data = open(r"\Users\Marcos Oliveira\PycharmProjects\NerdvanaAPI\nerdvanapp\scripts\games_v5.json")
     games = json.load(games_data)
-    games = games[16000:]
+    games = games[0:4000]
 
     # 4) Create GameCompany and Game
     filtered_games = games
