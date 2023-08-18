@@ -13,7 +13,7 @@ class GameRecommenderView(APIView):
 
     def get(self, request):
         request = self.request
-        recommender_params = RecommenderQuerySerializer(data=request.data)
+        recommender_params = RecommenderQuerySerializer(data=request.query_params)
         recommender_params.is_valid(raise_exception=True)
 
         game_id = recommender_params.validated_data.get('game_id')
