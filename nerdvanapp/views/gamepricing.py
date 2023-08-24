@@ -12,7 +12,7 @@ class GamePricingView(APIView):
     default_serializer = GamePricingOutputSerializer
 
     def get(self, request):
-        query_params = GamePricingQuerySerializer(data=self.request.data)
+        query_params = GamePricingQuerySerializer(data=self.request.query_params)
         query_params.is_valid(raise_exception=True)
 
         game_name = self.get_game_name(
