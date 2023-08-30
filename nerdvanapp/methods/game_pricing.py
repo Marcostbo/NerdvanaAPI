@@ -37,26 +37,26 @@ class GamePricing:
         for store in stores_list:
             store_name = store[0]
 
-            query = f'{game} {console} {store_name} mais barato'
+            query = f'{game} {console} {store_name} jogo midia fisica'
             search_url = self.search + parse.quote_plus(query)
             search_urls.append(search_url)
 
         details_async = asyncio.run(main(search_urls))
 
         store_prices = []
+        store_result = {}
         for html in details_async:
             try:
                 smaller_price = self.treate_price_string_v2(self.find_between(str(html), "R$", "</"))
                 full_link = self.find_between(str(html), 'href="/url?q=', "&")
+                store_result = {
+                    'store_name': 'teste',
+                    'price': smaller_price,
+                    'url': full_link
+                }
             except Exception as e:
                 smaller_price = None
                 full_link = None
-
-            store_result = {
-                'store_name': 'teste',
-                'price': smaller_price,
-                'url': full_link
-            }
             store_prices.append(store_result)
         return None
 
@@ -70,20 +70,17 @@ class GamePricing:
 
             result = requests.get(search_url)
             html = result.content
-
             try:
                 smaller_price = self.treate_price_string_v2(self.find_between(str(html), "R$", "</"))
                 full_link = self.find_between(str(html), 'href="/url?q=', "&")
+                store_result = {
+                    'store_name': store[2],
+                    'price': smaller_price,
+                    'url': full_link
+                }
+                store_prices.append(store_result)
             except Exception as e:
-                smaller_price = None
-                full_link = None
-
-            store_result = {
-                'store_name': store[2],
-                'price': smaller_price,
-                'url': full_link
-            }
-            store_prices.append(store_result)
+                pass
         return store_prices
 
     def get_smaller_price_and_url_for_multiple_stores(self, game: str, console: str, stores_list: list):
