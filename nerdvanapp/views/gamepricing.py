@@ -29,6 +29,7 @@ class GamePricingView(APIView):
             console=console_initials,
             stores_list=stores_object
         )
+        price_result = sorted(price_result, key=lambda d: float(d['price']))
         return Response(GamePricingOutputSerializer(price_result, many=True).data)
 
     @staticmethod
