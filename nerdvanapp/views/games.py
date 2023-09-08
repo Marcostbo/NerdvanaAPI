@@ -53,8 +53,11 @@ class GameView(APIView, SerializerFilterView):
 
         serializer = self.get_serializer_class()
         if not game.game_cover_link:
-            game.game_cover_link = self.get_game_cover_link(game_name=game.name)
-            game.save(update_fields=['game_cover_link'])
+            try:
+                game.game_cover_link = self.get_game_cover_link(game_name=game.name)
+                game.save(update_fields=['game_cover_link'])
+            except:
+                pass
         return Response(serializer(game).data)
 
     @staticmethod
