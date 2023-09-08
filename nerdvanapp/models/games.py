@@ -10,6 +10,7 @@ class Games(models.Model):
     game_company = models.ForeignKey('GameCompany', on_delete=models.CASCADE, blank=True, null=True)
     rating = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
     rating_count = models.IntegerField(blank=True, null=True)
+    game_cover_link = models.CharField(max_length=254, blank=True, null=True)
 
     def __str__(self):
         return self.name
