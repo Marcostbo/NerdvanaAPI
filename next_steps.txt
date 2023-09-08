@@ -14,5 +14,6 @@
     - Update: Done on 13/06/2023
 6 - Create User security table
     - Lock user when puts wrong password 3 times;
+    - Need to overrite the jwt token generator.
 7 - Do webscrap specific for each store
     - Remember to put headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"} in requests headers
