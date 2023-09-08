@@ -6,6 +6,8 @@ from nerdvanapp.models import Games
 from nerdvanapp.serializers import FullGameSerializer, GameSerializer, SimpleGameSerializer, GameQuerySerializer
 from nerdvanapp.views.utils.custom_basic_views import SerializerFilterView, PaginatedViewSet
 
+import os, requests
+
 
 class GameListView(APIView, SerializerFilterView, PaginatedViewSet):
     serializer_class = GameSerializer
@@ -50,6 +52,9 @@ class GameView(APIView, SerializerFilterView):
         game = self.get_object_by_pk(game_id)
 
         serializer = self.get_serializer_class()
+        if not game.game_cover_link:
+            game.game_cover_link = self.get_game_cover_link(game_name=game.name)
+            game.save(update_fields=['game_cover_link'])
         return Response(serializer(game).data)
 
     @staticmethod
@@ -58,3 +63,14 @@ class GameView(APIView, SerializerFilterView):
             return Games.objects.get(pk=pk)
         except Games.DoesNotExist:
             raise Http404
+
+    @staticmethod
+    def get_game_cover_link(game_name):
+        cx_id = os.environ.get('CX_ID')
+        google_api_key = os.environ.get('GOOGLE_API_KEY')
+
+        query = f'"{game_name}" site: https: // howlongtobeat.com'
+        url = f"https://www.googleapis.com/customsearch/v1?q={query}&cx={cx_id}&key={google_api_key}&safe=high"
+
+        response = requests.get(url)
+        return response.json()['items'][0]['pagemap']['cse_image'][0]['src']
