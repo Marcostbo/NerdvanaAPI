@@ -11,7 +11,7 @@ class User(AbstractUser):
     validated_on = models.DateTimeField(null=True)
     email_validated = models.BooleanField(default=False)
     password_changed = models.BooleanField(default=False)
-    username = None
+    username = models.CharField(max_length=150, unique=True, null=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
