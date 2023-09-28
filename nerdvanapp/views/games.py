@@ -34,6 +34,7 @@ class GameListView(APIView, SerializerFilterView, PaginatedViewSet):
         else:
             raise ValidationError('Select at least one filter')
 
+        games = games.filter(rating_count__gte=10).order_by('-rating')
         serializer = self.get_serializer_class()
         paginated_games, headers = self.paginate_queryset(
             queryset=games
@@ -75,5 +76,5 @@ class GameView(APIView, SerializerFilterView):
         query = f'"{game_name}" site: https: // howlongtobeat.com'
         url = f"https://www.googleapis.com/customsearch/v1?q={query}&cx={cx_id}&key={google_api_key}&safe=high"
 
-        response = requests.get(url)
+        response = requests.get(url, timeout=5)
         return response.json()['items'][0]['pagemap']['cse_image'][0]['src']
