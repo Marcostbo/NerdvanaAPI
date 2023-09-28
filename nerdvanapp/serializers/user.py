@@ -5,7 +5,7 @@ from nerdvanapp.models import User
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'name', 'first_name', 'last_name', 'email', 'is_active', 'password']
+        fields = ['id', 'name', 'username', 'first_name', 'last_name', 'email', 'is_active', 'password']
         extra_kwargs = {
             'password': {'write_only': True}
         }
