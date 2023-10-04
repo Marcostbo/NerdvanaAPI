@@ -45,7 +45,10 @@ class GameRecommenderView(APIView):
 
     @staticmethod
     def get_list_of_games_for_recommendation(console_id):
-        games = Games.objects.filter(console__in=[console_id]).filter(rating__isnull=False).filter(rating__gte=80)\
+        games = Games.objects.filter(console__in=[console_id])\
+            .filter(rating__isnull=False)\
+            .filter(rating__gte=80)\
+            .filter(rating_count__gte=50)\
             .values_list('id', 'summary')
         return games
 
