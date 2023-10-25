@@ -21,15 +21,31 @@ services:
           - '5672:5672'
       image: 'rabbitmq:3-management'
 
-  celery:
-    container_name: celery
+  celery-email:
+    container_name: celery-email
     network_mode: local-net
     build:
       context: .
       dockerfile: DockerFiles/Dockerfile-Celery
     volumes:
       - .:/app
-    command: celery -A nerdvana worker -l info -P gevent
+    command: celery -A nerdvana worker -Q email_sending -l info -P gevent
+    environment:
+      DEBUG: "True"
+    env_file:
+      - /nerdvana/.env
+    depends_on:
+      - broker
+
+  celery-pricing:
+    container_name: celery-pricing
+    network_mode: local-net
+    build:
+      context: .
+      dockerfile: DockerFiles/Dockerfile-Celery
+    volumes:
+      - .:/app
+    command: celery -A nerdvana worker -Q game_pricing -l info -P gevent
     environment:
       DEBUG: "True"
     env_file:
@@ -51,7 +67,7 @@ services:
     env_file:
       - /nerdvana/.env
     depends_on:
-      - celery
+      - celery-pricing
 
 volumes:
   rabbitmq_data:
