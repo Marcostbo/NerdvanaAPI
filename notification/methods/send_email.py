@@ -1,21 +1,17 @@
-from notification.models import SentNotification
-from django.core.mail import send_mail
+from notification.tasks import send_email
 from nerdvana import settings
 
 
 class SendNotification:
     from_email = settings.EMAIL_HOST_USER
 
-    def send_email(self, to_email, subject, message, user, reason):
-        sent_notification = SentNotification.objects.create(
-            recipient=user,
-            content=message,
-            reason=reason
-        )
-        send_mail(
+    @classmethod
+    def send_email_proxy(cls, to_email, subject, message, user_id, reason):
+        send_email.delay(
+            from_email=cls.from_email,
+            to_email=to_email,
             subject=subject,
             message=message,
-            from_email=self.from_email,
-            recipient_list=[settings.EMAIL_RECIPIENT_ADDRESS, to_email]
+            user_id=user_id,
+            reason=reason
         )
-        sent_notification.set_sent()
