@@ -37,11 +37,11 @@ class SendEmailValidateCodeView(APIView):
                f'\n' \
                f'Obrigado'
 
-        SendNotification().send_email(
+        SendNotification.send_email_proxy(
             to_email=user.email,
             subject='Login Nerdvana - Código de Validação',
             message=text,
-            user=user,
+            user_id=user.id,
             reason="Email Validation"
         )
 
