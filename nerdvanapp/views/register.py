@@ -1,19 +1,30 @@
-from rest_framework.views import APIView
-from nerdvanapp.serializers import UserSerializer
+from rest_framework.exceptions import PermissionDenied
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework import status
+
+from nerdvanapp.models import User
+from nerdvanapp.serializers import UserSerializer
 
 
-class RegisterView(APIView):
-    @staticmethod
-    def post(request):
-        # Build user input data
-        user_data = request.data.copy()
-        first_name = request.data.get('first_name')
-        last_name = request.data.get('last_name')
-        user_data['name'] = f'{first_name} {last_name}'
-        # Serialize and create user
-        user = UserSerializer(data=user_data)
-        user.is_valid(raise_exception=True)
-        user.save()
+class RegisterView(ModelViewSet):
+    serializer_class = UserSerializer
 
-        return Response(user.data)
+    def get_queryset(self):
+        user = self.request.user
+        return User.objects.all().filter(id=user.id)
+
+    @action(detail=True, methods=['patch'], permission_classes=(IsAuthenticated,))
+    def patch(self, request, pk=None):
+        user = self.get_object()
+        if user.id != self.request.user.id:
+            raise PermissionDenied
+        serializer = UserSerializer(user, data=request.data, partial=True)
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
