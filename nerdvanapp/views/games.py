@@ -1,20 +1,23 @@
-from django.http import Http404
+from django.shortcuts import get_object_or_404
 from rest_framework.exceptions import ValidationError
+from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.response import Response
-from rest_framework.views import APIView
+from rest_framework.viewsets import ReadOnlyModelViewSet
 from nerdvanapp.models import Games
 from nerdvanapp.serializers import FullGameSerializer, GameSerializer, SimpleGameSerializer, GameQuerySerializer
-from nerdvanapp.views.utils.custom_basic_views import SerializerFilterView, PaginatedViewSet
+from nerdvanapp.views.utils.custom_basic_views import SerializerFilterView
 
-import os, requests
+import os
+import requests
 
 
-class GameListView(APIView, SerializerFilterView, PaginatedViewSet):
+class GamesViewSet(ReadOnlyModelViewSet, SerializerFilterView):
     serializer_class = GameSerializer
     default_serializer = GameSerializer
     serializers = (GameSerializer, SimpleGameSerializer, FullGameSerializer)
+    pagination_class = LimitOffsetPagination
 
-    def get(self, request):
+    def get_queryset(self):
         query_params = GameQuerySerializer(data=self.request.query_params)
         query_params.is_valid(raise_exception=True)
 
@@ -34,23 +37,10 @@ class GameListView(APIView, SerializerFilterView, PaginatedViewSet):
         else:
             raise ValidationError('Select at least one filter')
 
-        games = games.filter(rating_count__gte=10).order_by('-rating')
-        serializer = self.get_serializer_class()
-        paginated_games, headers = self.paginate_queryset(
-            queryset=games
-        )
+        return games.filter(rating_count__gte=10).order_by('-rating')
 
-        return Response(serializer(paginated_games, many=True).data, headers=headers)
-
-
-class GameView(APIView, SerializerFilterView):
-    serializer_class = GameSerializer
-    default_serializer = GameSerializer
-    serializers = (GameSerializer, SimpleGameSerializer, FullGameSerializer)
-
-    def get(self, request, pk=None):
-        game_id = pk
-        game = self.get_object_by_pk(game_id)
+    def retrieve(self, request, *args, **kwargs):
+        game = get_object_or_404(Games, pk=kwargs.get('pk'))
 
         serializer = self.get_serializer_class()
         if not game.game_cover_link:
@@ -60,13 +50,6 @@ class GameView(APIView, SerializerFilterView):
             except:
                 pass
         return Response(serializer(game).data)
-
-    @staticmethod
-    def get_object_by_pk(pk):
-        try:
-            return Games.objects.get(pk=pk)
-        except Games.DoesNotExist:
-            raise Http404
 
     @staticmethod
     def get_game_cover_link(game_name):
