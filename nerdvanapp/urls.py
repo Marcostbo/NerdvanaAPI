@@ -5,7 +5,7 @@ from rest_framework_simplejwt import views as jwt_views
 urlpatterns = [
     # Register routes
     path('register', views.RegisterView.as_view({'post': 'create'})),
-    path('register/<int:pk>/partial_update_user/', views.RegisterView.as_view({'patch': 'patch'})),
+    path('register/<int:pk>/update-register/', views.RegisterView.as_view({'patch': 'patch'})),
     path('email/generate-code', views.SendEmailValidateCodeView.as_view()),
     path('email/validate-user', views.ValidateEmailView.as_view()),
     # Password Recovery routes
