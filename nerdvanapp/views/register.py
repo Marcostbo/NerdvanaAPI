@@ -13,8 +13,7 @@ class RegisterView(ModelViewSet):
     serializer_class = UserSerializer
 
     def get_queryset(self):
-        user = self.request.user
-        return User.objects.all().filter(id=user.id)
+        return User.objects.all()
 
     @action(detail=True, methods=['patch'], permission_classes=(IsAuthenticated,))
     def patch(self, request, pk=None):
@@ -22,9 +21,7 @@ class RegisterView(ModelViewSet):
         if user.id != self.request.user.id:
             raise PermissionDenied
         serializer = UserSerializer(user, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
 
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_200_OK)
