@@ -25,3 +25,14 @@ class RegisterView(ModelViewSet):
 
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+    @action(detail=True, methods=['post'], permission_classes=(IsAuthenticated,))
+    def inactivate_profile(self, request, pk=None):
+        user = self.get_object()
+        if user.id != self.request.user.id:
+            raise PermissionDenied
+
+        user.is_active = False
+        user.save(update_fields=['is_active'])
+
+        return Response(status=status.HTTP_201_CREATED)

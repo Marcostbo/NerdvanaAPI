@@ -6,6 +6,7 @@ urlpatterns = [
     # Register routes
     path('register', views.RegisterView.as_view({'post': 'create'})),
     path('register/<int:pk>/update-register/', views.RegisterView.as_view({'patch': 'patch'})),
+    path('register/<int:pk>/inactivate-profile/', views.RegisterView.as_view({'post': 'inactivate_profile'})),
     path('email/generate-code', views.SendEmailValidateCodeView.as_view()),
     path('email/validate-user', views.ValidateEmailView.as_view()),
     # Password Recovery routes
