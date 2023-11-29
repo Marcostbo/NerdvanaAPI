@@ -37,7 +37,8 @@ class GameAdmin(admin.ModelAdmin):
     list_filter = ('console',)
     filter_horizontal = ('console',)
     fieldsets = (
-        (None, {'fields': ('name', 'game_cover_link', 'release', 'summary', 'storyline', 'console', 'game_company')}),
+        (None, {'fields': ('name', 'game_cover_link', 'release', 'summary', 'storyline', 'console', 'game_company',
+                           'top_game')}),
         ('Twitch Ratings', {'fields': ('rating', 'rating_count')})
     )
 
