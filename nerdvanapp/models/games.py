@@ -11,6 +11,7 @@ class Games(models.Model):
     rating = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True)
     rating_count = models.IntegerField(blank=True, null=True)
     game_cover_link = models.CharField(max_length=254, blank=True, null=True)
+    top_game = models.BooleanField(blank=True, null=True, default=False)
 
     def __str__(self):
         return self.name
