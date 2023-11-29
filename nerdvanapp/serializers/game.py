@@ -8,6 +8,7 @@ class GameQuerySerializer(serializers.Serializer):
     name_contains = serializers.CharField(required=False)
     company_id = serializers.IntegerField(required=False)
     console_id = serializers.IntegerField(required=False)
+    top_games = serializers.BooleanField(required=False)
 
     def update(self, instance, validated_data):
         raise NotImplementedError

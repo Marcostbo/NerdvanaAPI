@@ -25,6 +25,7 @@ class GamesViewSet(ReadOnlyModelViewSet, SerializerFilterView):
         name_contains = query_params.validated_data.get('name_contains')
         company_id = query_params.validated_data.get('company_id')
         console_id = query_params.validated_data.get('console_id')
+        top_games = query_params.validated_data.get('top_games')
 
         if name:
             games = Games.objects.filter(name__contains=name)
@@ -34,6 +35,8 @@ class GamesViewSet(ReadOnlyModelViewSet, SerializerFilterView):
             games = Games.objects.filter(game_company__id=company_id).filter(rating__isnull=False)
         elif console_id:
             games = Games.objects.filter(console__in=[console_id]).filter(rating__isnull=False)
+        elif top_games:
+            games = Games.objects.filter(top_game=True)
         else:
             raise ValidationError('Select at least one filter')
 
