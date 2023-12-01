@@ -5,9 +5,6 @@ from rest_framework.exceptions import ValidationError
 class SerializerFilterView:
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.request = None
-        self.serializers = None
-        self.default_serializer = None
 
     def get_serializer_class(self):
         selected_serializer = self.request.query_params.get('serializer')
