@@ -4,13 +4,14 @@ from rest_framework_simplejwt import views as jwt_views
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
+# Register routes
 router.register(r'register', views.RegisterViewSet, basename='register')
+# Price Alert routes
+router.register(r'price-alert', views.PriceAlertViewSet, basename='price-alert')
 
 urlpatterns = [
     # Routers from viewset
     path('', include(router.urls)),
-    # path('register/<int:pk>/update-register/', views.RegisterView.as_view({'patch': 'patch'})),
-    # path('register/<int:pk>/inactivate-profile/', views.RegisterView.as_view({'post': 'inactivate_profile'})),
     path('email/generate-code', views.SendEmailValidateCodeView.as_view()),
     path('email/validate-user', views.ValidateEmailView.as_view()),
     # Password Recovery routes
@@ -33,7 +34,4 @@ urlpatterns = [
     path('recommender', views.GameRecommenderView.as_view()),
     # Game Pricing routes
     path('gamepricing', views.GamePricingView.as_view()),
-    # Price Alert routes
-    path('price-alert/create', views.PriceAlertCreateView.as_view()),
-    path('price-alert/list', views.PriceAlertListView.as_view())
 ]
