@@ -9,13 +9,13 @@ from nerdvanapp.models import User
 from nerdvanapp.serializers import UserSerializer
 
 
-class RegisterView(ModelViewSet):
+class RegisterViewSet(ModelViewSet):
     serializer_class = UserSerializer
 
     def get_queryset(self):
         return User.objects.all()
 
-    @action(detail=True, methods=['patch'], permission_classes=(IsAuthenticated,))
+    @action(detail=True, methods=['patch'], url_path='update-register', permission_classes=(IsAuthenticated,))
     def patch(self, request, pk=None):
         user = self.get_object()
         if user.id != self.request.user.id:
@@ -26,7 +26,7 @@ class RegisterView(ModelViewSet):
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    @action(detail=True, methods=['post'], permission_classes=(IsAuthenticated,))
+    @action(detail=True, methods=['post'], url_path='inactivate-profile', permission_classes=(IsAuthenticated,))
     def inactivate_profile(self, request, pk=None):
         user = self.get_object()
         if user.id != self.request.user.id:

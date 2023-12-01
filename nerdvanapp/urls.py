@@ -1,12 +1,16 @@
-from django.urls import path
+from django.urls import path, include
 from nerdvanapp import views
 from rest_framework_simplejwt import views as jwt_views
+from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()
+router.register(r'register', views.RegisterViewSet, basename='register')
 
 urlpatterns = [
-    # Register routes
-    path('register', views.RegisterView.as_view({'post': 'create'})),
-    path('register/<int:pk>/update-register/', views.RegisterView.as_view({'patch': 'patch'})),
-    path('register/<int:pk>/inactivate-profile/', views.RegisterView.as_view({'post': 'inactivate_profile'})),
+    # Routers from viewset
+    path('', include(router.urls)),
+    # path('register/<int:pk>/update-register/', views.RegisterView.as_view({'patch': 'patch'})),
+    # path('register/<int:pk>/inactivate-profile/', views.RegisterView.as_view({'post': 'inactivate_profile'})),
     path('email/generate-code', views.SendEmailValidateCodeView.as_view()),
     path('email/validate-user', views.ValidateEmailView.as_view()),
     # Password Recovery routes
