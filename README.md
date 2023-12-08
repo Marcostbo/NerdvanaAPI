@@ -1,5 +1,7 @@
 # 🎮 NerdvanaAPI 🎮
 
+This is the repository for NerdvanaAPI, designed for those who love video games!
+
 ## Introduction
 
 Welcome to the Video Game API, your one-stop solution for accessing a comprehensive database of video games, fetching prices from various stores, receiving personalized game recommendations through machine learning, and setting up alerts for price drops. The game database is sourced from the TwitchAPI, ensuring up-to-date and accurate information.
