@@ -1,4 +1,4 @@
-# NerdvanaAPI - Built for people that loves vídeo games
+# 🎮 NerdvanaAPI - Built for people that loves video games 🎮
 
 ## Built using a Modern stack 💎
 
