@@ -54,12 +54,10 @@ To run the Nerdvana API locally, follow these steps:
    - Celery Worker for Game Price Alert Cron Container: Managing periodic tasks for game price alerts.
 3. Migrate Database
    ```bash
-   Copy code
    docker-compose exec api python manage.py migrate
    ```
 4. Create Superuser (Optional, but recommended to use Django Admin)
    ```bash
-   Copy code
    docker-compose exec api python manage.py createsuperuser
    ```
    Follow the prompts to create a superuser account.
@@ -68,7 +66,6 @@ To run the Nerdvana API locally, follow these steps:
 
 6. Stop the Containers
    ```bash
-   Copy code
    docker-compose down
    ```
 This will stop and remove the Docker containers.
